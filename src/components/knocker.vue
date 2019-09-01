@@ -62,7 +62,7 @@ export default {
       if (this.timeout) {
         return 4000;
       } else {
-        return 10;
+        return 100;
       }
     }
   }
