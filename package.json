@@ -1,8 +1,8 @@
 {
-  "name": "pax-timer",
-  "productName": "PAX VR Timer",
+  "name": "virtual-watch",
+  "productName": "Virtual Watch",
   "version": "1.0.0",
-  "description": "Timer for PAX VR",
+  "description": "Timer designed specifically for helping run VR sessions",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
