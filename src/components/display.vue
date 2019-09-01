@@ -5,8 +5,8 @@
     </div>
     <div class="inset-0 absolute flex justify-center">
       <div
-        class="text-4xl bg-white transition"
-        :class="value >= 30 ? 'opacity-0 hover:opacity-75' : 'text-red-700'"
+        class="text-4xl bg-white"
+        :class="[value >= 30 ? 'opacity-0 hover:opacity-75' : 'text-red-700', disableTransition || 'transition']"
       >{{ time }}</div>
     </div>
   </div>
@@ -18,7 +18,8 @@ import moment from "moment";
 export default {
   props: {
     value: Number,
-    playing: Boolean
+    playing: Boolean,
+    disableTransition: Boolean
   },
   computed: {
     time() {

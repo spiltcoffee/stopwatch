@@ -13,13 +13,13 @@
       :inner-radius="90"
       :transition-duration="0"
       easing="Linear.None"
-      class="gauge relative z-10 drag transition"
-      :class="value >= 30 ? 'text-pax-aus' : 'text-red-700'"
+      class="gauge relative z-10 drag"
+      :class="[value >= 30 ? 'text-pax-aus' : 'text-red-700', disableTransition || 'transition']"
     >
       <div class="w-full h-full flex justify-center items-center">
         <knocker refs="knocker"></knocker>
         <div class="flex flex-col justify-center items-center drag-none">
-          <display :value="value" :playing="playing"></display>
+          <display :value="value" :playing="playing" :disable-transition="disableTransition"></display>
 
           <div
             class="hover:opacity-100 opacity-50 transition flex flex-col justify-center items-center"
@@ -69,7 +69,8 @@ export default {
       max: 0,
       currentMax: 0,
       value: 0,
-      interval: null
+      interval: null,
+      disableTransition: false
     };
   },
   created() {
@@ -97,8 +98,12 @@ export default {
       if (this.value > 0) {
         this.logSession("stopped");
       }
+      this.disableTransition = true;
       this.value = this.max;
       this.currentMax = this.max;
+      setTimeout(() => {
+        this.disableTransition = false;
+      }, 25);
     },
     pause() {
       clearInterval(this.interval);

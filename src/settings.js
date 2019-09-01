@@ -5,7 +5,7 @@ const defaultConfig = {
   max: 900,
   autoKnock: true,
   alwaysOnTop: true,
-  openAtLogin: true,
+  openAtLogin: PRODUCTION,
   radius: 200
 };
 
