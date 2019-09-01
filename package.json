@@ -1,0 +1,96 @@
+{
+  "name": "pax-timer",
+  "productName": "PAX VR Timer",
+  "version": "1.0.0",
+  "description": "Timer for PAX VR",
+  "main": ".webpack/main",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "spiltcoffee",
+    "email": "spiltcoffee@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "pax_timer"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ],
+      "plugins": [
+        [
+          "@electron-forge/plugin-webpack",
+          {
+            "mainConfig": "./webpack.main.config.js",
+            "renderer": {
+              "config": "./webpack.renderer.config.js",
+              "entryPoints": [
+                {
+                  "html": "./src/index.html",
+                  "js": "./src/renderer.js",
+                  "name": "main_window"
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "6.0.0-beta.44",
+    "@electron-forge/maker-deb": "6.0.0-beta.44",
+    "@electron-forge/maker-rpm": "6.0.0-beta.44",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.44",
+    "@electron-forge/maker-zip": "6.0.0-beta.44",
+    "@electron-forge/plugin-webpack": "6.0.0-beta.44",
+    "@fortawesome/fontawesome-free": "^5.10.2",
+    "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "electron": "6.0.5",
+    "file-loader": "^4.2.0",
+    "fs-jetpack": "^2.2.2",
+    "mini-css-extract-plugin": "^0.8.0",
+    "moment": "^2.24.0",
+    "node-loader": "^0.6.0",
+    "postcss": "^7.0.17",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-url": "^8.0.0",
+    "tailwindcss": "^1.1.2",
+    "vue-loader": "^15.7.1",
+    "vue-svg-gauge": "hellocomet/vue-svg-gauge",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.3"
+  }
+}
