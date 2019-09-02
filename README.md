@@ -1,4 +1,4 @@
-# stopwatch
+# VR Stopwatch
 Stopwatch I made for use with managing Virtual Reality sessions. Probably useful in other scenarios.
 
 # Download
