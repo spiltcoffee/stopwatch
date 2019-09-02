@@ -27,6 +27,7 @@
             <adder @add="add" @remove="remove"></adder>
             <controls
               :playing="playing"
+              :playable="playable"
               :stoppable="stoppable"
               @play="play"
               @pause="pause"
@@ -158,6 +159,9 @@ export default {
   computed: {
     playing() {
       return !!this.interval;
+    },
+    playable() {
+      return !this.interval && this.value > 0;
     },
     stoppable() {
       return !this.interval && this.value < this.currentMax;
