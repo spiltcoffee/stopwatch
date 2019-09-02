@@ -1,6 +1,6 @@
 {
-  "name": "virtual-watch",
-  "productName": "Virtual Watch",
+  "name": "vr-stopwatch",
+  "productName": "VR Stopwatch",
   "version": "1.0.0",
   "description": "Timer designed specifically for helping run VR sessions",
   "main": ".webpack/main",
