@@ -8,7 +8,7 @@ const logger = require("./logger");
 const utils = require("./utils");
 
 const icon = path.resolve(__dirname, require("./favicon.ico"));
-const APP_ID = "SpiltCoffee.PAXVRTimer";
+const APP_ID = "SpiltCoffee.VRStopwatch";
 
 let mainWindow;
 
@@ -39,7 +39,7 @@ const createWindow = () => {
     appId: APP_ID,
     appIconPath: icon,
     relaunchCommand: app.getPath("exe"),
-    relaunchDisplayName: "PAX VR Timer"
+    relaunchDisplayName: "VR Stopwatch"
   });
 
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);

@@ -14,3 +14,9 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "Adder"
+};
+</script>

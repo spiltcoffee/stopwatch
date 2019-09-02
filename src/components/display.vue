@@ -16,6 +16,7 @@
 import moment from "moment";
 
 export default {
+  name: "Display",
   props: {
     value: Number,
     playing: Boolean,

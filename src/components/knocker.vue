@@ -28,12 +28,8 @@
 </template>
 
 <script>
-import { VueSvgGauge } from "vue-svg-gauge";
-
 export default {
-  components: {
-    VueSvgGauge
-  },
+  name: "Knocker",
   data() {
     return {
       value: true,

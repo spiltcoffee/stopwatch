@@ -1,10 +1,10 @@
 import Vue from "vue";
-import App from "./components/app.vue";
-import "./index.css";
+import VueSvgGauge from "vue-svg-gauge";
+import Components from "./components";
+
+Vue.use(VueSvgGauge);
+Vue.use(Components);
 
 new Vue({
-  el: "#app",
-  components: {
-    App
-  }
+  el: "#app"
 });

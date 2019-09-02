@@ -17,7 +17,6 @@
       :class="[value >= 30 ? 'text-pax-aus' : 'text-red-700', disableTransition || 'transition']"
     >
       <div class="w-full h-full flex justify-center items-center">
-        <knocker refs="knocker"></knocker>
         <div class="flex flex-col justify-center items-center drag-none">
           <display :value="value" :playing="playing" :disable-transition="disableTransition"></display>
 
@@ -35,35 +34,21 @@
             ></controls>
           </div>
         </div>
+        <knocker refs="knocker"></knocker>
+        <settings></settings>
       </div>
     </vue-svg-gauge>
-    <toolbar @minimize="minimize" @close="close"></toolbar>
+    <toolbar @settings="showSettings = true" @minimize="minimize" @close="close"></toolbar>
   </div>
 </template>
 
 <script>
 const { ipcRenderer } = require("electron");
-import { VueSvgGauge } from "vue-svg-gauge";
 import moment from "moment";
-
-import Adder from "./adder";
-import Controls from "./controls";
-import Display from "./display";
-import Knocker from "./knocker";
-import Toolbar from "./toolbar";
-
 const INCREMENT = 60;
 
 export default {
-  components: {
-    VueSvgGauge,
-
-    Adder,
-    Controls,
-    Display,
-    Knocker,
-    Toolbar
-  },
+  name: "App",
   data() {
     return {
       autoKnock: false,
@@ -169,3 +154,25 @@ export default {
   }
 };
 </script>
+
+<style>
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@tailwind base;
+@tailwind utilities;
+
+.transition {
+  transition: all 0.25s ease;
+}
+
+.clip-padding {
+  background-clip: padding-box;
+}
+
+.drag {
+  -webkit-app-region: drag;
+}
+
+.drag-none {
+  -webkit-app-region: no-drag;
+}
+</style>

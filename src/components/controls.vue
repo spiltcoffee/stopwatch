@@ -27,6 +27,7 @@
 
 <script>
 export default {
+  name: "Controls",
   props: {
     playing: Boolean,
     playable: Boolean,

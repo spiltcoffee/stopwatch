@@ -1,6 +1,5 @@
 const webpack = require("webpack");
 const { VueLoaderPlugin } = require("vue-loader");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   module: {
@@ -20,28 +19,19 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: "css-loader",
-            options: {
-              importLoaders: 1
-            }
-          },
-          "postcss-loader"
-        ]
-      },
-      {
         test: /\.vue$/,
         use: "vue-loader"
       },
       {
-        test: /\.(png|jpe?g|gif|svg|ico)$/,
+        test: /\.css$/,
+        use: ["style-loader", "css-loader", "postcss-loader"]
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|ico|eot|woff2?|ttf|otf)$/,
         use: {
           loader: "file-loader",
           options: {
-            name: "./[contenthash].[ext]"
+            name: "[contenthash].[ext]"
           }
         }
       }
@@ -51,7 +41,7 @@ module.exports = {
   resolve: {
     extensions: [".vue", ".js"],
     alias: {
-      vue: "vue/dist/vue.js"
+      vue: "vue/dist/vue.esm.js"
     }
   },
 
@@ -59,14 +49,6 @@ module.exports = {
     new webpack.DefinePlugin({
       PRODUCTION: process.env.NODE_ENV === "production"
     }),
-    new VueLoaderPlugin(),
-    new MiniCssExtractPlugin({
-      filename:
-        process.env.NODE_ENV === "production"
-          ? "[name].[hash].css"
-          : "[name].css",
-      chunkFilename:
-        process.env.NODE_ENV === "production" ? "[id].[hash].css" : "[id].css"
-    })
+    new VueLoaderPlugin()
   ]
 };
