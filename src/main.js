@@ -3,9 +3,9 @@ const path = require("path");
 const squirrel = require("electron-squirrel-startup");
 const { app, BrowserWindow, ipcMain } = require("electron");
 
-const settings = require("./settings");
-const logger = require("./logger");
-const utils = require("./utils");
+const settings = require("./utils/settings");
+const logger = require("./utils/logger");
+const bounds = require("./utils/bounds");
 
 const icon = path.resolve(__dirname, require("./favicon.ico"));
 const APP_ID = "SpiltCoffee.VRStopwatch";
@@ -17,12 +17,12 @@ if (squirrel || !app.requestSingleInstanceLock()) {
 }
 
 const createWindow = () => {
-  const { radius, alwaysOnTop, openAtLogin } = settings().load();
+  const { diameter, alwaysOnTop, openAtLogin } = settings().load();
 
   app.setLoginItemSettings({ openAtLogin });
 
   mainWindow = new BrowserWindow({
-    ...utils.desiredBounds(radius * 2),
+    ...bounds(diameter),
     alwaysOnTop,
     icon,
     transparent: true,
@@ -85,20 +85,20 @@ ipcMain.on("load-settings", event => {
   event.returnValue = settings().load();
 });
 
-ipcMain.on("save-settings", (_, settings) => {
+ipcMain.on("save-settings", (_, newSettings) => {
   const oldSettings = settings().load();
-  settings().save(settings);
+  settings().save(newSettings);
 
-  if (settings.radius !== oldSettings.radius) {
-    mainWindow.setBounds(utils.desiredBounds(radius * 2));
+  if (newSettings.diameter !== oldSettings.diameter) {
+    mainWindow.setBounds(bounds(newSettings.diameter));
   }
 
-  if (settings.alwaysOnTop !== oldSettings.alwaysOnTop) {
-    mainWindow.setAlwaysOnTop(settings.alwaysOnTop);
+  if (newSettings.alwaysOnTop !== oldSettings.alwaysOnTop) {
+    mainWindow.setAlwaysOnTop(newSettings.alwaysOnTop);
   }
 
-  if (settings.openAtLogin !== oldSettings.openAtLogin) {
-    app.setLoginItemSettings({ openAtLogin: settings.openAtLogin });
+  if (newSettings.openAtLogin !== oldSettings.openAtLogin) {
+    app.setLoginItemSettings({ openAtLogin: newSettings.openAtLogin });
   }
 });
 

@@ -6,7 +6,7 @@ const defaultConfig = {
   autoKnock: true,
   alwaysOnTop: true,
   openAtLogin: PRODUCTION,
-  radius: 200
+  diameter: 400
 };
 
 class Settings {
@@ -34,8 +34,16 @@ class Settings {
       this.config = config;
     }
 
+    const settingsToSave = Object.entries(this.config)
+      .filter(([key, value]) => {
+        return value !== defaultConfig[key];
+      })
+      .reduce((obj, [key, value]) => {
+        return Object.assign(obj, { [key]: value });
+      }, {});
+
     this.jetpack.file("settings.json", {
-      content: this.config
+      content: settingsToSave
     });
   }
 }

@@ -1,6 +1,7 @@
 const { app } = require("electron");
 const jetpack = require("fs-jetpack");
 const moment = require("moment");
+const instance = require("./instance");
 
 class Logger {
   constructor(dir) {
@@ -10,6 +11,7 @@ class Logger {
   session(session) {
     session = {
       ...session,
+      instance: instance().get(),
       timestamp: moment().toISOString()
     };
     this.jetpack.append("sessions.json.log", `${JSON.stringify(session)}\n`);

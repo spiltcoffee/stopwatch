@@ -35,10 +35,10 @@
           </div>
         </div>
         <knocker refs="knocker"></knocker>
-        <settings></settings>
       </div>
     </vue-svg-gauge>
-    <toolbar @settings="showSettings = true" @minimize="minimize" @close="close"></toolbar>
+    <settings class="z-10" v-if="showSettings" @apply="applySettings" ref="settings"></settings>
+    <toolbar @settings="showSettings" @minimize="minimize" @close="close"></toolbar>
   </div>
 </template>
 
@@ -127,18 +127,24 @@ export default {
       this.autoKnock = settings.autoKnock;
       this.stop();
     },
-    save() {
-      const settings = ipcRenderer.sendSync("load-settings");
-      settings.max = this.max;
-      settings.autoKnock = this.autoKnock;
-      ipcRenderer.send("save-settings", settings);
-    },
+    save() {},
     logSession(type) {
       ipcRenderer.send("finished", {
         type,
         value: this.value,
         max: this.currentMax
       });
+    },
+    showSettings() {
+      const settings = ipcRenderer.sendSync("load-settings");
+      this.$refs.settings.show(settings);
+    },
+    applySettings(settings) {
+      ipcRenderer.send("save-settings", {
+        ...ipcRenderer.sendSync("load-settings"),
+        ...settings
+      });
+      this.load();
     }
   },
   computed: {
