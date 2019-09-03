@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 const { VueLoaderPlugin } = require("vue-loader");
 
-module.exports = {
+module.exports = base => ({
   module: {
     rules: [
       {
@@ -31,7 +31,8 @@ module.exports = {
         use: {
           loader: "file-loader",
           options: {
-            name: "[contenthash].[ext]"
+            name: "[contenthash].[ext]",
+            publicPath: base
           }
         }
       }
@@ -51,4 +52,4 @@ module.exports = {
     }),
     new VueLoaderPlugin()
   ]
-};
+});
