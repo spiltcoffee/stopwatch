@@ -9,7 +9,10 @@
     <div class="inset-0 absolute flex justify-center">
       <div
         class="text-4xl bg-white"
-        :class="[value >= 30 ? 'opacity-0 hover:opacity-75' : 'text-red-700', disableTransition || 'transition']"
+        :class="[
+          value >= 30 ? 'opacity-0 hover:opacity-75' : 'text-red-700',
+          disableTransition || 'transition'
+        ]"
       >
         {{ time }}
       </div>

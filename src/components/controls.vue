@@ -3,7 +3,11 @@
     <button
       v-if="!playing"
       class="m-2 w-6 h-6 rounded text-white text-center shadow-md transition"
-      :class="playable ? 'bg-green-700 hover:bg-green-600 active:bg-green-500 hover:shadow-lg' : 'bg-gray-300'"
+      :class="
+        playable
+          ? 'bg-green-700 hover:bg-green-600 active:bg-green-500 hover:shadow-lg'
+          : 'bg-gray-300'
+      "
       :disabled="!playable"
       @click="$emit('play')"
     >
@@ -18,7 +22,11 @@
     </button>
     <button
       class="m-2 w-6 h-6 rounded text-white text-center shadow-md transition"
-      :class="stoppable ? 'bg-red-700 hover:bg-red-600 active:bg-red-500 hover:shadow-lg' : 'bg-gray-300'"
+      :class="
+        stoppable
+          ? 'bg-red-700 hover:bg-red-600 active:bg-red-500 hover:shadow-lg'
+          : 'bg-gray-300'
+      "
       :disabled="!stoppable"
       @click="$emit('stop')"
     >

@@ -14,7 +14,10 @@
       :transition-duration="0"
       easing="Linear.None"
       class="gauge relative z-10 drag"
-      :class="[value >= 30 ? 'text-pax-aus' : 'text-red-700', disableTransition || 'transition']"
+      :class="[
+        value >= 30 ? 'text-pax-aus' : 'text-red-700',
+        disableTransition || 'transition'
+      ]"
     >
       <div class="w-full h-full flex justify-center items-center">
         <div class="flex flex-col justify-center items-center drag-none">
@@ -27,10 +30,7 @@
           <div
             class="hover:opacity-100 opacity-50 transition flex flex-col justify-center items-center"
           >
-            <adder
-              @add="add"
-              @remove="remove"
-            />
+            <adder @add="add" @remove="remove" />
             <controls
               :playing="playing"
               :playable="playable"
@@ -50,11 +50,7 @@
       class="z-10"
       @apply="applySettings"
     />
-    <toolbar
-      @settings="showSettings"
-      @minimize="minimize"
-      @close="close"
-    />
+    <toolbar @settings="showSettings" @minimize="minimize" @close="close" />
   </div>
 </template>
 

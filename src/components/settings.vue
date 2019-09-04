@@ -14,27 +14,36 @@
           class="rounded border p-1"
           type="text"
           size="0"
-        >
+        />
       </label>
       <button
         class="p-1 bg-white text-left"
         @click="alwaysOnTop = !alwaysOnTop"
       >
-        <i :class="alwaysOnTop ? 'fa fa-check-square text-blue-600' : 'far fa-square'" />
+        <i
+          :class="
+            alwaysOnTop ? 'fa fa-check-square text-blue-600' : 'far fa-square'
+          "
+        />
         Always On Top
       </button>
       <button
         class="p-1 bg-white text-left"
         @click="openAtLogin = !openAtLogin"
       >
-        <i :class="openAtLogin ? 'fa fa-check-square text-blue-600' : 'far fa-square'" />
+        <i
+          :class="
+            openAtLogin ? 'fa fa-check-square text-blue-600' : 'far fa-square'
+          "
+        />
         <span class="flex-1">Open At Login</span>
       </button>
-      <button
-        class="p-1 bg-white text-left"
-        @click="autoKnock = !autoKnock"
-      >
-        <i :class="autoKnock ? 'fa fa-check-square text-blue-600' : 'far fa-square'" />
+      <button class="p-1 bg-white text-left" @click="autoKnock = !autoKnock">
+        <i
+          :class="
+            autoKnock ? 'fa fa-check-square text-blue-600' : 'far fa-square'
+          "
+        />
         Auto Knock
       </button>
       <div class="flex">

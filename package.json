@@ -10,7 +10,7 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "eslint": "eslint --ignore-path .gitignore \"**/*.{js,vue}\"",
-    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,json,ts,yml,md,html}\"",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,json,yml,md,html,vue}\"",
     "lint:fix": "yarn eslint --fix",
     "lint:check": "yarn eslint",
     "format:fix": "yarn prettier --write --list-different",
@@ -90,6 +90,8 @@
     "eslint-plugin-node": "^9.2.0",
     "eslint-plugin-vue": "^5.2.3",
     "file-loader": "^4.2.0",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
     "node-loader": "^0.6.0",
     "postcss": "^7.0.17",
     "postcss-loader": "^3.0.0",
@@ -99,6 +101,22 @@
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.39.3"
+  },
+  "lint-staged": {
+    "*.{json,yml,md,html,css,vue}": [
+      "prettier --ignore-path .gitignore --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --ignore-path .gitignore",
+      "prettier --ignore-path .gitignore --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "engines": {
     "node": ">=8.3.0"
