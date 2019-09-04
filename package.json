@@ -9,7 +9,12 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "eslint": "eslint --ignore-path .gitignore \"**/*.{js,vue}\"",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,json,ts,yml,md,html}\"",
+    "lint:fix": "yarn eslint --fix",
+    "lint:check": "yarn eslint",
+    "format:fix": "yarn prettier --write --list-different",
+    "format:check": "yarn prettier --check"
   },
   "keywords": [],
   "author": {
@@ -64,30 +69,38 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
-    "vue": "^2.6.10"
+    "fs-jetpack": "^2.2.2",
+    "moment": "^2.24.0",
+    "uuid": "^3.3.3",
+    "vue": "^2.6.10",
+    "vue-svg-gauge": "hellocomet/vue-svg-gauge"
   },
   "devDependencies": {
     "@electron-forge/cli": "6.0.0-beta.44",
     "@electron-forge/maker-squirrel": "6.0.0-beta.44",
-    "@electron-forge/publisher-github": "6.0.0-beta.44",
     "@electron-forge/plugin-webpack": "6.0.0-beta.44",
+    "@electron-forge/publisher-github": "6.0.0-beta.44",
     "@fortawesome/fontawesome-free": "^5.10.2",
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
     "css-loader": "^3.2.0",
     "cssnano": "^4.1.10",
     "electron": "6.0.5",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-vue": "^5.2.3",
     "file-loader": "^4.2.0",
-    "fs-jetpack": "^2.2.2",
-    "moment": "^2.24.0",
     "node-loader": "^0.6.0",
     "postcss": "^7.0.17",
     "postcss-loader": "^3.0.0",
+    "prettier": "^1.18.2",
     "style-loader": "^1.0.0",
     "tailwindcss": "^1.1.2",
-    "uuid": "^3.3.3",
     "vue-loader": "^15.7.1",
-    "vue-svg-gauge": "hellocomet/vue-svg-gauge",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.39.3"
+  },
+  "engines": {
+    "node": ">=8.3.0"
   }
 }

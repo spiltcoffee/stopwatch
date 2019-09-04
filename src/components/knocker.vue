@@ -15,7 +15,7 @@
       :inner-radius="0"
       easing="Linear.None"
       :transition-duration="duration"
-    ></vue-svg-gauge>
+    />
     <div
       class="absolute inset-0 flex justify-center items-center text-white"
       @click="knock"
@@ -37,6 +37,15 @@ export default {
       hovering: false
     };
   },
+  computed: {
+    duration() {
+      if (this.timeout) {
+        return 4000;
+      } else {
+        return 100;
+      }
+    }
+  },
   methods: {
     knock() {
       if (this.value) {
@@ -51,15 +60,6 @@ export default {
       clearTimeout(this.timeout);
       this.timeout = null;
       this.value = true;
-    }
-  },
-  computed: {
-    duration() {
-      if (this.timeout) {
-        return 4000;
-      } else {
-        return 100;
-      }
     }
   }
 };

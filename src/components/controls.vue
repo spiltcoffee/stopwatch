@@ -4,8 +4,8 @@
       v-if="!playing"
       class="m-2 w-6 h-6 rounded text-white text-center shadow-md transition"
       :class="playable ? 'bg-green-700 hover:bg-green-600 active:bg-green-500 hover:shadow-lg' : 'bg-gray-300'"
-      @click="$emit('play')"
       :disabled="!playable"
+      @click="$emit('play')"
     >
       <i class="fas fa-play opacity-75" />
     </button>
@@ -19,8 +19,8 @@
     <button
       class="m-2 w-6 h-6 rounded text-white text-center shadow-md transition"
       :class="stoppable ? 'bg-red-700 hover:bg-red-600 active:bg-red-500 hover:shadow-lg' : 'bg-gray-300'"
-      @click="$emit('stop')"
       :disabled="!stoppable"
+      @click="$emit('stop')"
     >
       <i class="fas fa-stop opacity-75" />
     </button>

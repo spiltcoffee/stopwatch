@@ -1,6 +1,6 @@
 <template>
   <div class="relative drag-none">
-    <div class="z-0 absolute inset-0 m-1 bg-white rounded-full clip-padding"></div>
+    <div class="z-0 absolute inset-0 m-1 bg-white rounded-full clip-padding" />
     <vue-svg-gauge
       :start-angle="0"
       :end-angle="360"
@@ -18,12 +18,19 @@
     >
       <div class="w-full h-full flex justify-center items-center">
         <div class="flex flex-col justify-center items-center drag-none">
-          <display :value="value" :playing="playing" :disable-transition="disableTransition"></display>
+          <display
+            :value="value"
+            :playing="playing"
+            :disable-transition="disableTransition"
+          />
 
           <div
             class="hover:opacity-100 opacity-50 transition flex flex-col justify-center items-center"
           >
-            <adder @add="add" @remove="remove"></adder>
+            <adder
+              @add="add"
+              @remove="remove"
+            />
             <controls
               :playing="playing"
               :playable="playable"
@@ -31,20 +38,28 @@
               @play="play"
               @pause="pause"
               @stop="stop"
-            ></controls>
+            />
           </div>
         </div>
-        <knocker refs="knocker"></knocker>
+        <knocker refs="knocker" />
       </div>
     </vue-svg-gauge>
-    <settings class="z-10" v-if="showSettings" @apply="applySettings" ref="settings"></settings>
-    <toolbar @settings="showSettings" @minimize="minimize" @close="close"></toolbar>
+    <settings
+      v-if="showSettings"
+      ref="settings"
+      class="z-10"
+      @apply="applySettings"
+    />
+    <toolbar
+      @settings="showSettings"
+      @minimize="minimize"
+      @close="close"
+    />
   </div>
 </template>
 
 <script>
 const { ipcRenderer } = require("electron");
-import moment from "moment";
 const INCREMENT = 60;
 
 export default {
@@ -59,11 +74,22 @@ export default {
       disableTransition: false
     };
   },
+  computed: {
+    playing() {
+      return !!this.interval;
+    },
+    playable() {
+      return !this.interval && this.value > 0;
+    },
+    stoppable() {
+      return !this.interval && this.value < this.currentMax;
+    }
+  },
   created() {
     this.load();
   },
   methods: {
-    play(value) {
+    play() {
       if (this.value > 0) {
         this.interval = setInterval(() => {
           if (this.value > 0) {
@@ -73,7 +99,7 @@ export default {
           if (this.value <= 0) {
             this.pause();
             this.logSession("normal");
-            if (autoKnock) {
+            if (this.autoKnock) {
               this.$refs.knocker.knock(true);
             }
           }
@@ -109,7 +135,7 @@ export default {
         this.logSession("removed-time");
       }
       if (this.currentMax > this.max) {
-        this.currentMax -= time;
+        this.currentMax -= INCREMENT;
         if (this.currentMax < this.max) {
           this.currentMax = this.max;
         }
@@ -145,17 +171,6 @@ export default {
         ...settings
       });
       this.load();
-    }
-  },
-  computed: {
-    playing() {
-      return !!this.interval;
-    },
-    playable() {
-      return !this.interval && this.value > 0;
-    },
-    stoppable() {
-      return !this.interval && this.value < this.currentMax;
     }
   }
 };
