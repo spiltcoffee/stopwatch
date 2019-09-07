@@ -9,12 +9,12 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "eslint": "eslint --ignore-path .gitignore \"**/*.{js,vue}\"",
-    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,json,yml,md,html,vue}\"",
-    "lint:fix": "yarn eslint --fix",
-    "lint:check": "yarn eslint",
-    "format:fix": "yarn prettier --write --list-different",
-    "format:check": "yarn prettier --check"
+    "lint": "eslint --ignore-path .gitignore \"**/*.{js,vue}\"",
+    "lint:fix": "yarn lint --fix",
+    "lint:check": "yarn lint",
+    "format": "prettier --ignore-path .gitignore \"**/*.{js,json,ts,yml,md,html,vue}\"",
+    "format:fix": "yarn format --write --list-different",
+    "format:check": "yarn format --check"
   },
   "keywords": [],
   "author": {
