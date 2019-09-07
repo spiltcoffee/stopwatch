@@ -1,5 +1,7 @@
 # VR Stopwatch
 
+![screenshot](./screenshot.png)
+
 Stopwatch I made for use with managing Virtual Reality sessions. Probably useful in other scenarios.
 
 **Windows only**
