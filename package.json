@@ -73,7 +73,7 @@
     "moment": "^2.24.0",
     "uuid": "^3.3.3",
     "vue": "^2.6.10",
-    "vue-svg-gauge": "hellocomet/vue-svg-gauge"
+    "vue-svg-gauge": "^1.2.1"
   },
   "devDependencies": {
     "@electron-forge/cli": "6.0.0-beta.44",
