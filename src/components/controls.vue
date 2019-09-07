@@ -6,7 +6,7 @@
       :class="
         playable
           ? 'bg-green-700 hover:bg-green-600 active:bg-green-500 hover:shadow-lg'
-          : 'bg-gray-300'
+          : 'bg-gray-300 cursor-default'
       "
       :disabled="!playable"
       @click="$emit('play')"
@@ -25,7 +25,7 @@
       :class="
         stoppable
           ? 'bg-red-700 hover:bg-red-600 active:bg-red-500 hover:shadow-lg'
-          : 'bg-gray-300'
+          : 'bg-gray-300 cursor-default'
       "
       :disabled="!stoppable"
       @click="$emit('stop')"
