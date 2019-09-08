@@ -1,11 +1,12 @@
 const { app } = require("electron");
 const jetpack = require("fs-jetpack");
+const flags = require("./flags");
 
 const defaultConfig = {
   max: 900,
   autoKnock: true,
   alwaysOnTop: true,
-  openAtLogin: PRODUCTION,
+  openAtLogin: flags.PRODUCTION,
   diameter: 400
 };
 

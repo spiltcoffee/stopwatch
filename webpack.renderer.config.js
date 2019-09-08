@@ -1,5 +1,3 @@
 const base = require("./webpack.base.config");
 
-module.exports = {
-  ...base("../")
-};
+module.exports = base({ base: "../" });

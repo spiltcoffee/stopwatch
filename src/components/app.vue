@@ -50,12 +50,18 @@
       class="z-10"
       @apply="applySettings"
     />
-    <toolbar @settings="showSettings" @minimize="minimize" @close="close" />
+    <toolbar
+      v-if="showToolbar"
+      @settings="showSettings"
+      @minimize="minimize"
+      @close="close"
+    />
   </div>
 </template>
 
 <script>
 const { ipcRenderer } = require("electron");
+const flags = require("../utils/flags");
 const INCREMENT = 60;
 
 export default {
@@ -67,7 +73,8 @@ export default {
       currentMax: 0,
       value: 0,
       interval: null,
-      disableTransition: false
+      disableTransition: false,
+      showToolbar: !flags.WEB
     };
   },
   computed: {
