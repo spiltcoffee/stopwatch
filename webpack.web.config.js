@@ -1,10 +1,17 @@
 const path = require("path");
 const merge = require("webpack-merge");
-const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const base = require("./webpack.base.config");
 
-module.exports = merge(base({ relocate: false }), {
+const baseOptions = {
+  relocate: false,
+  flags: {
+    WEB: true
+  }
+};
+
+module.exports = merge(base(baseOptions), {
+  node: false,
   entry: "./src/renderer.js",
 
   output: {
@@ -18,10 +25,6 @@ module.exports = merge(base({ relocate: false }), {
   },
 
   plugins: [
-    new webpack.DefinePlugin({
-      "flags.WEB": true
-    }),
-
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "src/index.html")
     })

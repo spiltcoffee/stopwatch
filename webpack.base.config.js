@@ -1,16 +1,22 @@
 const webpack = require("webpack");
 const { VueLoaderPlugin } = require("vue-loader");
+const merge = require("webpack-merge");
 
 module.exports = function(options) {
-  options = {
-    ...{
+  options = merge(
+    {
       base: "",
-      relocate: true
+      relocate: true,
+      flags: {
+        PRODUCTION: process.env.NODE_ENV === "production",
+        WEB: false
+      }
     },
-    ...(options || {})
-  };
+    options
+  );
 
   return {
+    mode: "none",
     module: {
       rules: [
         {
@@ -59,8 +65,9 @@ module.exports = function(options) {
 
     plugins: [
       new webpack.DefinePlugin({
-        "flags.PRODUCTION": process.env.NODE_ENV === "production"
+        FLAGS: options.flags
       }),
+
       new VueLoaderPlugin()
     ]
   };

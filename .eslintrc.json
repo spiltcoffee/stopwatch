@@ -7,7 +7,7 @@
   ],
   "globals": {
     "MAIN_WINDOW_WEBPACK_ENTRY": "readonly",
-    "PRODUCTION": "readonly"
+    "FLAGS": "readonly"
   },
   "rules": {
     "node/no-unsupported-features/es-syntax": [

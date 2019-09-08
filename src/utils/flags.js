@@ -1,4 +1,1 @@
-module.exports = {
-  PRODUCTION: true,
-  WEB: false
-};
+module.exports = FLAGS;

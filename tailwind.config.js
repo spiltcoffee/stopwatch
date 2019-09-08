@@ -6,6 +6,9 @@ module.exports = {
       },
       margin: {
         min: "1px"
+      },
+      width: {
+        contain: "100vmin"
       }
     }
   },

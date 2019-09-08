@@ -1,5 +1,5 @@
 <template>
-  <div class="relative drag-none">
+  <div class="relative drag-none w-contain">
     <div class="z-0 absolute inset-0 m-1 bg-white rounded-full clip-padding" />
     <vue-svg-gauge
       :start-angle="0"
@@ -61,7 +61,7 @@
 
 <script>
 const { ipcRenderer } = require("electron");
-const flags = require("../utils/flags");
+const { WEB } = require("../utils/flags");
 const INCREMENT = 60;
 
 export default {
@@ -74,7 +74,7 @@ export default {
       value: 0,
       interval: null,
       disableTransition: false,
-      showToolbar: !flags.WEB
+      showToolbar: !WEB
     };
   },
   computed: {
