@@ -85,7 +85,7 @@ export default {
       return !this.interval && this.value > 0;
     },
     stoppable() {
-      return !this.interval && this.value < this.currentMax;
+      return !this.interval && this.value != this.max;
     }
   },
   created() {
