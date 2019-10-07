@@ -35,12 +35,14 @@ const createWindow = () => {
     }
   });
 
-  mainWindow.setAppDetails({
-    appId: APP_ID,
-    appIconPath: icon,
-    relaunchCommand: app.getPath("exe"),
-    relaunchDisplayName: "VR Stopwatch"
-  });
+  if (process.platform === "win32") {
+    mainWindow.setAppDetails({
+      appId: APP_ID,
+      appIconPath: icon,
+      relaunchCommand: app.getPath("exe"),
+      relaunchDisplayName: "VR Stopwatch"
+    });
+  }
 
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
 

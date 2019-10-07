@@ -14,7 +14,7 @@
       :separator-step="0"
       :inner-radius="0"
       easing="Linear.None"
-      :transition-duration="duration"
+      :transition-duration="displayDuration"
     />
     <div
       class="absolute inset-0 flex justify-center items-center text-white"
@@ -28,6 +28,8 @@
 </template>
 
 <script>
+const knockSound = new Audio(require("../knock.wav"));
+
 export default {
   name: "Knocker",
   data() {
@@ -38,28 +40,40 @@ export default {
     };
   },
   computed: {
-    duration() {
+    knockDuration() {
+      return knockSound.duration
+        ? Math.round(knockSound.duration * 1000)
+        : 4000;
+    },
+    displayDuration() {
       if (this.timeout) {
-        return 4000;
+        return this.knockDuration;
       } else {
-        return 100;
+        return 0;
       }
     }
   },
   methods: {
     knock() {
-      if (this.value) {
+      if (!this.value) {
+        this.endKnock();
+      }
+
+      this.$nextTick(() => {
         this.timeout = setTimeout(() => {
           this.endKnock();
-        }, 4000);
+        }, this.knockDuration);
         this.value = false;
+        knockSound.play();
         this.$emit("knock");
-      }
+      });
     },
     endKnock() {
       clearTimeout(this.timeout);
       this.timeout = null;
       this.value = true;
+      knockSound.pause();
+      knockSound.currentTime = 0;
     }
   }
 };

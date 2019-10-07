@@ -41,7 +41,7 @@
             />
           </div>
         </div>
-        <knocker refs="knocker" />
+        <knocker ref="knocker" />
       </div>
     </vue-svg-gauge>
     <settings
@@ -106,7 +106,7 @@ export default {
             this.pause();
             this.logSession("normal");
             if (this.autoKnock) {
-              this.$refs.knocker.knock(true);
+              this.$refs.knocker.knock();
             }
           }
         }, 1000);
