@@ -44,7 +44,7 @@ module.exports = function(options) {
           use: ["style-loader", "css-loader", "postcss-loader"]
         },
         {
-          test: /\.(png|jpe?g|gif|svg|ico|eot|woff2?|ttf|otf)$/,
+          test: /\.(png|jpe?g|gif|svg|ico|eot|woff2?|ttf|otf|wav|mp3|ogg)$/,
           use: {
             loader: "file-loader",
             options: {
