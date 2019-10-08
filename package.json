@@ -71,6 +71,7 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
+    "ffi": "^2.3.0",
     "fs-jetpack": "^2.2.2",
     "moment": "^2.24.0",
     "uuid": "^3.3.3",
