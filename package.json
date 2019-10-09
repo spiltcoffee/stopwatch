@@ -1,7 +1,7 @@
 {
   "name": "vr-stopwatch",
   "productName": "VR Stopwatch",
-  "version": "1.0.0",
+  "version": "1.0.1-ps",
   "description": "Timer designed specifically for helping run VR sessions",
   "main": ".webpack/main",
   "scripts": {
