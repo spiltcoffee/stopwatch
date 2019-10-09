@@ -7,7 +7,8 @@ const defaultConfig = {
   autoKnock: true,
   alwaysOnTop: true,
   openAtLogin: PRODUCTION,
-  diameter: 400
+  diameter: 400,
+  steamVRKnock: false
 };
 
 class Settings {

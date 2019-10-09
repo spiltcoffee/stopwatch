@@ -4,9 +4,7 @@
     class="absolute m-5 inset-0 bg-white rounded-full flex justify-center items-center text-gray-900"
   >
     <div class="drag-none flex flex-col">
-      <div class="font-bold text-center">
-        Settings
-      </div>
+      <div class="font-bold text-center">Settings</div>
       <label class="flex flex-col py-1">
         <div class="text-xs">Default Timer (seconds)</div>
         <input
@@ -45,6 +43,17 @@
           "
         />
         Auto Knock
+      </button>
+      <button
+        class="p-1 bg-white text-left"
+        @click="steamVRKnock = !steamVRKnock"
+      >
+        <i
+          :class="
+            steamVRKnock ? 'fa fa-check-square text-blue-600' : 'far fa-square'
+          "
+        />
+        Steam VR Knock
       </button>
       <div class="flex">
         <button
@@ -104,6 +113,14 @@ export default {
       },
       set(autoKnock) {
         this.settings.autoKnock = autoKnock;
+      }
+    },
+    steamVRKnock: {
+      get() {
+        return this.settings.steamVRKnock;
+      },
+      set(steamVRKnock) {
+        this.settings.steamVRKnock = steamVRKnock;
       }
     }
   },
