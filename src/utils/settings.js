@@ -19,7 +19,6 @@ class Settings {
 
   load() {
     if (this.config === null) {
-      console.log("loaded called");
       if (this.jetpack.exists("settings.json")) {
         this.config = {
           ...defaultConfig,

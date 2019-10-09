@@ -112,7 +112,8 @@ ipcMain.on("finished", (_, session) => {
 });
 
 ipcMain.on("knock", () => {
-  if (settings().steamVRKnock) {
+  const { steamVRKnock } = settings().load();
+  if (steamVRKnock) {
     execa.commandSync(
       `powershell -c "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.SendKeys]::SendWait('{F1}');"`,
       { shell: true }
