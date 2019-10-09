@@ -18,13 +18,16 @@ class Settings {
 
   load() {
     if (this.config === null) {
+      console.log("loaded called");
       if (this.jetpack.exists("settings.json")) {
         this.config = {
           ...defaultConfig,
           ...this.jetpack.read("settings.json", "json")
         };
       } else {
-        this.config = defaultConfig;
+        this.config = {
+          ...defaultConfig
+        };
       }
     }
     return { ...this.config };

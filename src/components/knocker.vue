@@ -28,6 +28,7 @@
 </template>
 
 <script>
+const { ipcRenderer } = require("electron");
 const knockSound = new Audio(require("../knock.wav"));
 
 export default {
@@ -65,6 +66,7 @@ export default {
         }, this.knockDuration);
         this.value = false;
         knockSound.play();
+        ipcRenderer.send("knock");
         this.$emit("knock");
       });
     },

@@ -1,11 +1,12 @@
 const path = require("path");
-
+const execa = require("execa");
 const squirrel = require("electron-squirrel-startup");
 const { app, BrowserWindow, ipcMain } = require("electron");
 
 const settings = require("./utils/settings");
 const logger = require("./utils/logger");
 const bounds = require("./utils/bounds");
+const findSteamVR = require("./utils/findSteamVr");
 
 const icon = path.resolve(__dirname, require("./favicon.ico"));
 const APP_ID = "SpiltCoffee.VRStopwatch";
@@ -109,4 +110,16 @@ ipcMain.on("finished", (_, session) => {
     mainWindow.flashFrame(true);
   }
   logger().session(session);
+});
+
+ipcMain.on("knock", () => {
+  findSteamVR.then(found => {
+    if (found) {
+      console.log("found, knocking");
+      execa.commandSync(
+        `powershell -c "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.SendKeys]::SendWait('{F1}');"`,
+        { shell: true }
+      );
+    }
+  });
 });
