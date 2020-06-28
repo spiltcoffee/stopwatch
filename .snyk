@@ -26,3 +26,7 @@ patch:
         patched: '2020-06-28T07:37:15.165Z'
     - webpack-dev-server > http-proxy-middleware > lodash:
         patched: '2020-06-28T07:37:15.165Z'
+    - electron > @electron/get > global-tunnel-ng > lodash:
+        patched: '2020-06-28T09:30:01.122Z'
+    - webpack-dev-server > portfinder > async > lodash:
+        patched: '2020-06-28T09:30:01.122Z'
