@@ -16,7 +16,9 @@
     "lint:check": "yarn lint",
     "format": "prettier --ignore-path .gitignore \"**/*.{js,json,ts,yml,md,html,vue}\"",
     "format:fix": "yarn format --write --list-different",
-    "format:check": "yarn format --check"
+    "format:check": "yarn format --check",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "keywords": [],
   "author": {
@@ -75,7 +77,8 @@
     "moment": "^2.24.0",
     "uuid": "^3.3.3",
     "vue": "^2.6.10",
-    "vue-svg-gauge": "^1.2.1"
+    "vue-svg-gauge": "^1.2.1",
+    "snyk": "^1.349.0"
   },
   "devDependencies": {
     "@electron-forge/cli": "6.0.0-beta.44",
@@ -86,7 +89,7 @@
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
     "css-loader": "^3.2.0",
     "cssnano": "^4.1.10",
-    "electron": "6.0.5",
+    "electron": "8.3.1",
     "eslint": "^6.3.0",
     "eslint-config-prettier": "^6.2.0",
     "eslint-plugin-node": "^9.2.0",
@@ -105,7 +108,7 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8",
-    "webpack-dev-server": "^3.8.0",
+    "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.2"
   },
   "lint-staged": {
@@ -126,5 +129,6 @@
   },
   "engines": {
     "node": ">=8.3.0"
-  }
+  },
+  "snyk": true
 }
