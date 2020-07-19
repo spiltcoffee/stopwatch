@@ -91,7 +91,7 @@
     "cssnano": "^4.1.10",
     "electron": "8.4.0",
     "eslint": "^6.3.0",
-    "eslint-config-prettier": "^6.2.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-node": "^9.2.0",
     "eslint-plugin-vue": "^5.2.3",
     "file-loader": "^4.2.0",
