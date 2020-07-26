@@ -87,7 +87,7 @@
     "@electron-forge/publisher-github": "6.0.0-beta.44",
     "@fortawesome/fontawesome-free": "^5.10.2",
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
-    "css-loader": "^3.2.0",
+    "css-loader": "^3.6.0",
     "cssnano": "^4.1.10",
     "electron": "8.4.0",
     "eslint": "^6.3.0",
