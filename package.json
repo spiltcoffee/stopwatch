@@ -78,7 +78,7 @@
     "uuid": "^3.3.3",
     "vue": "^2.6.10",
     "vue-svg-gauge": "^1.2.1",
-    "snyk": "^1.360.0"
+    "snyk": "^1.425.4"
   },
   "devDependencies": {
     "@electron-forge/cli": "6.0.0-beta.44",
