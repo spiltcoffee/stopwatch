@@ -1,16 +1,16 @@
 const webpack = require("webpack");
 const { VueLoaderPlugin } = require("vue-loader");
-const merge = require("webpack-merge");
+const { merge } = require("webpack-merge");
 
-module.exports = function(options) {
+module.exports = function (options) {
   options = merge(
     {
       base: "",
       relocate: true,
       flags: {
         PRODUCTION: process.env.NODE_ENV === "production",
-        WEB: false
-      }
+        WEB: false,
+      },
     },
     options
   );
@@ -21,7 +21,7 @@ module.exports = function(options) {
       rules: [
         {
           test: /\.node$/,
-          use: "node-loader"
+          use: "node-loader",
         },
         options.relocate
           ? {
@@ -30,18 +30,18 @@ module.exports = function(options) {
               use: {
                 loader: "@marshallofsound/webpack-asset-relocator-loader",
                 options: {
-                  outputAssetBase: "native_modules"
-                }
-              }
+                  outputAssetBase: "native_modules",
+                },
+              },
             }
           : {},
         {
           test: /\.vue$/,
-          use: "vue-loader"
+          use: "vue-loader",
         },
         {
           test: /\.css$/,
-          use: ["style-loader", "css-loader", "postcss-loader"]
+          use: ["style-loader", "css-loader", "postcss-loader"],
         },
         {
           test: /\.(png|jpe?g|gif|svg|ico|eot|woff2?|ttf|otf|wav|mp3|ogg)$/,
@@ -49,26 +49,26 @@ module.exports = function(options) {
             loader: "file-loader",
             options: {
               name: "[contenthash].[ext]",
-              publicPath: options.base
-            }
-          }
-        }
-      ]
+              publicPath: options.base,
+            },
+          },
+        },
+      ],
     },
 
     resolve: {
       extensions: [".vue", ".js"],
       alias: {
-        vue: "vue/dist/vue.esm.js"
-      }
+        vue: "vue/dist/vue.esm.js",
+      },
     },
 
     plugins: [
       new webpack.DefinePlugin({
-        FLAGS: options.flags
+        FLAGS: options.flags,
       }),
 
-      new VueLoaderPlugin()
-    ]
+      new VueLoaderPlugin(),
+    ],
   };
 };

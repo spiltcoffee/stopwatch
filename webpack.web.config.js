@@ -1,13 +1,13 @@
 const path = require("path");
-const merge = require("webpack-merge");
+const { merge } = require("webpack-merge");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const base = require("./webpack.base.config");
 
 const baseOptions = {
   relocate: false,
   flags: {
-    WEB: true
-  }
+    WEB: true,
+  },
 };
 
 module.exports = merge(base(baseOptions), {
@@ -15,18 +15,18 @@ module.exports = merge(base(baseOptions), {
   entry: "./src/renderer.js",
 
   output: {
-    path: path.join(__dirname, "out/web")
+    path: path.join(__dirname, "out/web"),
   },
 
   resolve: {
     alias: {
-      electron$: path.join(__dirname, "src/utils/electron-mock")
-    }
+      electron$: path.join(__dirname, "src/utils/electron-mock"),
+    },
   },
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src/index.html")
-    })
-  ]
+      template: path.join(__dirname, "src/index.html"),
+    }),
+  ],
 });
