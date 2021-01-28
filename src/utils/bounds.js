@@ -1,4 +1,4 @@
-module.exports = function(diameter) {
+module.exports = function (diameter) {
   const { screen } = require("electron");
   const { workArea } = screen.getPrimaryDisplay();
   const x = workArea.width + workArea.x - diameter;

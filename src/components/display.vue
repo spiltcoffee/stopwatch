@@ -11,7 +11,7 @@
         class="text-4xl bg-white"
         :class="[
           value >= 30 ? 'opacity-0 hover:opacity-75' : 'text-red-700',
-          disableTransition || 'transition'
+          disableTransition || 'transition',
         ]"
       >
         {{ time }}
@@ -28,18 +28,15 @@ export default {
   props: {
     value: {
       type: Number,
-      default: 0
+      default: 0,
     },
     playing: Boolean,
-    disableTransition: Boolean
+    disableTransition: Boolean,
   },
   computed: {
     time() {
-      return moment()
-        .minutes(0)
-        .seconds(this.value)
-        .format("mm:ss");
-    }
-  }
+      return moment().minutes(0).seconds(this.value).format("mm:ss");
+    },
+  },
 };
 </script>

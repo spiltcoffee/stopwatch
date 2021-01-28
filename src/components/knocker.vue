@@ -36,7 +36,7 @@ export default {
     return {
       value: true,
       timeout: null,
-      hovering: false
+      hovering: false,
     };
   },
   computed: {
@@ -51,7 +51,7 @@ export default {
       } else {
         return 0;
       }
-    }
+    },
   },
   methods: {
     knock() {
@@ -74,7 +74,7 @@ export default {
       this.value = true;
       knockSound.pause();
       knockSound.currentTime = 0;
-    }
-  }
+    },
+  },
 };
 </script>

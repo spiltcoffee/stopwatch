@@ -7,7 +7,7 @@ const defaultConfig = {
   autoKnock: true,
   alwaysOnTop: true,
   openAtLogin: PRODUCTION,
-  diameter: 400
+  diameter: 400,
 };
 
 class Settings {
@@ -21,7 +21,7 @@ class Settings {
       if (this.jetpack.exists("settings.json")) {
         this.config = {
           ...defaultConfig,
-          ...this.jetpack.read("settings.json", "json")
+          ...this.jetpack.read("settings.json", "json"),
         };
       } else {
         this.config = defaultConfig;
@@ -44,7 +44,7 @@ class Settings {
       }, {});
 
     this.jetpack.file("settings.json", {
-      content: settingsToSave
+      content: settingsToSave,
     });
   }
 }

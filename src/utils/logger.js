@@ -12,7 +12,7 @@ class Logger {
     session = {
       ...session,
       instance: instance().get(),
-      timestamp: moment().toISOString()
+      timestamp: moment().toISOString(),
     };
     this.jetpack.append("sessions.json.log", `${JSON.stringify(session)}\n`);
   }

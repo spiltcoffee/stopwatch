@@ -31,8 +31,8 @@ const createWindow = () => {
     maximizable: false,
     fullscreenable: false,
     webPreferences: {
-      nodeIntegration: true
-    }
+      nodeIntegration: true,
+    },
   });
 
   if (process.platform === "win32") {
@@ -40,7 +40,7 @@ const createWindow = () => {
       appId: APP_ID,
       appIconPath: icon,
       relaunchCommand: app.getPath("exe"),
-      relaunchDisplayName: "VR Stopwatch"
+      relaunchDisplayName: "VR Stopwatch",
     });
   }
 
@@ -83,7 +83,7 @@ ipcMain.on("close", () => {
   mainWindow.close();
 });
 
-ipcMain.on("load-settings", event => {
+ipcMain.on("load-settings", (event) => {
   event.returnValue = settings().load();
 });
 

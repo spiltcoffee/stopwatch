@@ -6,5 +6,5 @@ Vue.use(VueSvgGauge);
 Vue.use(Components);
 
 new Vue({
-  el: "#app"
+  el: "#app",
 });

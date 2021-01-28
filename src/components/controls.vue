@@ -41,7 +41,7 @@ export default {
   props: {
     playing: Boolean,
     playable: Boolean,
-    stoppable: Boolean
-  }
+    stoppable: Boolean,
+  },
 };
 </script>

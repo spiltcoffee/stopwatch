@@ -4,10 +4,10 @@ module.exports = {
     sendSync(eventType) {
       if (eventType === "load-settings") {
         return {
-          max: 900
+          max: 900,
         };
       }
       return {};
-    }
-  }
+    },
+  },
 };
