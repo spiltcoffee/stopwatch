@@ -1,6 +1,6 @@
 const { app } = require("electron");
 const jetpack = require("fs-jetpack");
-const uuid = require("uuid/v4");
+const { v4: uuid } = require("uuid");
 
 class Instance {
   constructor(dir) {

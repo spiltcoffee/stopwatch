@@ -4,9 +4,7 @@
     class="absolute m-5 inset-0 bg-white rounded-full flex justify-center items-center text-gray-900"
   >
     <div class="drag-none flex flex-col">
-      <div class="font-bold text-center">
-        Settings
-      </div>
+      <div class="font-bold text-center">Settings</div>
       <label class="flex flex-col py-1">
         <div class="text-xs">Default Timer (seconds)</div>
         <input
@@ -70,7 +68,7 @@ export default {
   data() {
     return {
       showing: false,
-      settings: null
+      settings: null,
     };
   },
   computed: {
@@ -80,7 +78,7 @@ export default {
       },
       set(max) {
         this.settings.max = max;
-      }
+      },
     },
     alwaysOnTop: {
       get() {
@@ -88,7 +86,7 @@ export default {
       },
       set(alwaysOnTop) {
         this.settings.alwaysOnTop = alwaysOnTop;
-      }
+      },
     },
     openAtLogin: {
       get() {
@@ -96,7 +94,7 @@ export default {
       },
       set(openAtLogin) {
         this.settings.openAtLogin = openAtLogin;
-      }
+      },
     },
     autoKnock: {
       get() {
@@ -104,8 +102,8 @@ export default {
       },
       set(autoKnock) {
         this.settings.autoKnock = autoKnock;
-      }
-    }
+      },
+    },
   },
   methods: {
     show(currentSettings) {
@@ -119,7 +117,7 @@ export default {
     hide() {
       this.showing = false;
       this.settings = null;
-    }
-  }
+    },
+  },
 };
 </script>

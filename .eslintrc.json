@@ -1,4 +1,7 @@
 {
+  "parserOptions": {
+    "ecmaVersion": 9
+  },
   "extends": [
     "eslint:recommended",
     "plugin:node/recommended",

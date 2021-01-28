@@ -1,10 +1,10 @@
-import App from "./app";
-import Adder from "./adder";
-import Controls from "./controls";
-import Display from "./display";
-import Knocker from "./knocker";
-import Settings from "./settings";
-import Toolbar from "./toolbar";
+import App from "./app.vue";
+import Adder from "./adder.vue";
+import Controls from "./controls.vue";
+import Display from "./display.vue";
+import Knocker from "./knocker.vue";
+import Settings from "./settings.vue";
+import Toolbar from "./toolbar.vue";
 
 export default {
   install(Vue) {
@@ -15,5 +15,5 @@ export default {
     Vue.component(Knocker.name, Knocker);
     Vue.component(Settings.name, Settings);
     Vue.component(Toolbar.name, Toolbar);
-  }
+  },
 };

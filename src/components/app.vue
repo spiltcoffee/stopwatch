@@ -16,7 +16,7 @@
       class="gauge relative z-10 drag"
       :class="[
         value >= 30 ? 'text-pax-aus' : 'text-red-700',
-        disableTransition || 'transition'
+        disableTransition || 'transition',
       ]"
     >
       <div class="w-full h-full flex justify-center items-center">
@@ -74,7 +74,7 @@ export default {
       value: 0,
       interval: null,
       disableTransition: false,
-      showToolbar: !WEB
+      showToolbar: !WEB,
     };
   },
   computed: {
@@ -89,7 +89,7 @@ export default {
         !this.interval &&
         (this.currentMax !== this.max || this.value !== this.max)
       );
-    }
+    },
   },
   created() {
     this.load();
@@ -164,7 +164,7 @@ export default {
       ipcRenderer.send("finished", {
         type,
         value: this.value,
-        max: this.currentMax
+        max: this.currentMax,
       });
     },
     showSettings() {
@@ -174,11 +174,11 @@ export default {
     applySettings(settings) {
       ipcRenderer.send("save-settings", {
         ...ipcRenderer.sendSync("load-settings"),
-        ...settings
+        ...settings,
       });
       this.load();
-    }
-  }
+    },
+  },
 };
 </script>
 
