@@ -18,7 +18,8 @@
     "format:fix": "yarn format --write --list-different",
     "format:check": "yarn format --check",
     "snyk-protect": "snyk protect",
-    "prepare": "yarn run snyk-protect"
+    "prepare": "yarn run snyk-protect",
+    "postinstall": "yarn husky install"
   },
   "keywords": [],
   "author": {
@@ -119,11 +120,6 @@
       "eslint --ignore-path .gitignore",
       "prettier --ignore-path .gitignore --write"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "engines": {
     "node": ">=8.3.0"
