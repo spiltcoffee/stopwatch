@@ -28,7 +28,8 @@
 </template>
 
 <script>
-const knockSound = new Audio(require("../knock.wav"));
+import knockWav from "../knock.wav";
+const knockSound = new Audio(knockWav);
 
 export default {
   name: "Knocker",
