@@ -59,13 +59,17 @@ module.exports = function (options) {
     resolve: {
       extensions: [".vue", ".js"],
       alias: {
-        vue: "vue/dist/vue.esm.js",
+        vue$: "vue/dist/vue.esm.js",
       },
     },
 
     plugins: [
       new webpack.DefinePlugin({
         FLAGS: options.flags,
+      }),
+
+      new webpack.ProvidePlugin({
+        process: "process/browser",
       }),
 
       new VueLoaderPlugin(),
