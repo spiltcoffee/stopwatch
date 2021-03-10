@@ -96,7 +96,7 @@
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-vue": "^7.5.0",
+    "eslint-plugin-vue": "^7.6.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.0.0",
     "husky": "^5.0.9",
