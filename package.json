@@ -87,7 +87,7 @@
     "@electron-forge/maker-squirrel": "6.0.0-beta.54",
     "@electron-forge/plugin-webpack": "6.0.0-beta.54",
     "@electron-forge/publisher-github": "6.0.0-beta.54",
-    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
     "autoprefixer": "^10.3.0",
     "css-loader": "^5.2.7",
