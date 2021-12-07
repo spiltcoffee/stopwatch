@@ -11,14 +11,8 @@
     "publish": "electron-forge publish",
     "web": "webpack --config webpack.web.config.js --progress",
     "web:dev": "webpack-dev-server --config webpack.web.config.js --progress --mode development",
-    "lint": "eslint --ignore-path .gitignore \"**/*.{js,vue}\"",
-    "lint:fix": "yarn lint --fix",
-    "lint:check": "yarn lint",
-    "format": "prettier --ignore-path .gitignore \"**/*.{js,json,ts,yml,md,html,vue}\"",
-    "format:fix": "yarn format --write --list-different",
-    "format:check": "yarn format --check",
-    "snyk-protect": "snyk protect",
-    "prepare": "yarn run snyk-protect",
+    "lint": "eslint --ignore-path .gitignore \"**/*.{js,vue}\" --fix",
+    "format": "prettier --ignore-path .gitignore \"**/*.{js,json,ts,yml,md,html,vue}\" --write --list-different",
     "postinstall": "yarn husky install"
   },
   "keywords": [],
@@ -77,7 +71,6 @@
     "fs-jetpack": "^4.2.0",
     "moment": "^2.29.1",
     "process": "^0.11.10",
-    "snyk": "^1.727.0",
     "uuid": "^8.3.2",
     "vue": "^2.6.13",
     "vue-svg-gauge": "^1.2.1"
@@ -115,16 +108,15 @@
     "webpack-merge": "^5.8.0"
   },
   "lint-staged": {
-    "*.{json,yml,md,html,css,vue}": [
+    "*.{json,yml,md,html,css}": [
       "prettier --ignore-path .gitignore --write"
     ],
-    "*.js": [
+    "*.{js,vue}": [
       "eslint --ignore-path .gitignore",
       "prettier --ignore-path .gitignore --write"
     ]
   },
   "engines": {
     "node": ">=8.3.0"
-  },
-  "snyk": true
+  }
 }
