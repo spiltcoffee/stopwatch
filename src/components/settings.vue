@@ -1,7 +1,17 @@
 <template>
   <div
     v-if="showing"
-    class="absolute m-5 inset-0 bg-white rounded-full flex justify-center items-center text-gray-900"
+    class="
+      absolute
+      m-5
+      inset-0
+      bg-white
+      rounded-full
+      flex
+      justify-center
+      items-center
+      text-gray-900
+    "
   >
     <div class="drag-none flex flex-col">
       <div class="font-bold text-center">Settings</div>
@@ -46,13 +56,38 @@
       </button>
       <div class="flex">
         <button
-          class="flex-1 block mr-1 hover:bg-gray-100 active:bg-gray-200 p-1 font-bold rounded hover:shadow-md transition"
+          class="
+            flex-1
+            block
+            mr-1
+            hover:bg-gray-100
+            active:bg-gray-200
+            p-1
+            font-bold
+            rounded
+            hover:shadow-md
+            transition
+          "
           @click="hide"
         >
           Cancel
         </button>
         <button
-          class="flex-1 block ml-1 bg-blue-700 hover:bg-blue-600 active:bg-blue-500 p-1 text-white font-bold rounded shadow-md hover:shadow-lg transition"
+          class="
+            flex-1
+            block
+            ml-1
+            bg-blue-700
+            hover:bg-blue-600
+            active:bg-blue-500
+            p-1
+            text-white
+            font-bold
+            rounded
+            shadow-md
+            hover:shadow-lg
+            transition
+          "
           @click="applySettings"
         >
           Apply

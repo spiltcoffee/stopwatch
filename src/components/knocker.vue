@@ -1,6 +1,25 @@
 <template>
   <button
-    class="absolute w-8 h-8 top-0 left-0 mt-min ml-min rounded-full shadow-md hover:shadow-lg drag-none text-blue-700 hover:text-blue-600 active:text-blue-500 transition flex justify-center items-center"
+    class="
+      absolute
+      w-8
+      h-8
+      top-0
+      left-0
+      mt-min
+      ml-min
+      rounded-full
+      shadow-md
+      hover:shadow-lg
+      drag-none
+      text-blue-700
+      hover:text-blue-600
+      active:text-blue-500
+      transition
+      flex
+      justify-center
+      items-center
+    "
   >
     <vue-svg-gauge
       :start-angle="0"
