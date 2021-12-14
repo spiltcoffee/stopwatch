@@ -28,14 +28,7 @@
           />
 
           <div
-            class="
-              hover:opacity-100
-              opacity-50
-              transition
-              flex flex-col
-              justify-center
-              items-center
-            "
+            class="hover:opacity-100 opacity-50 transition flex flex-col justify-center items-center"
           >
             <adder @add="add" @remove="remove" />
             <controls
