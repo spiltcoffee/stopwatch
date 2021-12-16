@@ -92,7 +92,7 @@
     "eslint-plugin-vue": "^7.19.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
-    "husky": "^5.2.0",
+    "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
     "node-loader": "^2.0.0",
     "postcss": "^8.4.5",
