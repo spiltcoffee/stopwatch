@@ -21,7 +21,7 @@
     >
       <div class="w-full h-full flex justify-center items-center">
         <div class="flex flex-col justify-center items-center drag-none">
-          <display
+          <time-display
             :value="value"
             :playing="playing"
             :disable-transition="disableTransition"
@@ -30,8 +30,8 @@
           <div
             class="hover:opacity-100 opacity-50 transition flex flex-col justify-center items-center"
           >
-            <adder @add="add" @remove="remove" />
-            <controls
+            <value-control @add="add" @remove="remove" />
+            <time-control
               :playing="playing"
               :playable="playable"
               :stoppable="stoppable"
@@ -41,16 +41,16 @@
             />
           </div>
         </div>
-        <knocker ref="knocker" />
+        <knock-control ref="knockControl" />
       </div>
     </vue-svg-gauge>
-    <settings
+    <stopwatch-settings
       v-if="showSettings"
-      ref="settings"
+      ref="stopwatchSettings"
       class="z-10"
       @apply="applySettings"
     />
-    <toolbar
+    <stopwatch-toolbar
       v-if="showToolbar"
       @settings="showSettings"
       @minimize="minimize"
@@ -106,7 +106,7 @@ export default {
             this.pause();
             this.logSession("normal");
             if (this.autoKnock) {
-              this.$refs.knocker.knock();
+              this.$refs.knockControl.knock();
             }
           }
         }, 1000);
@@ -169,7 +169,7 @@ export default {
     },
     showSettings() {
       const settings = ipcRenderer.sendSync("load-settings");
-      this.$refs.settings.show(settings);
+      this.$refs.stopwatchSettings.show(settings);
     },
     applySettings(settings) {
       ipcRenderer.send("save-settings", {
