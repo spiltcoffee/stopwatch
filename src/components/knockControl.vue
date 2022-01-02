@@ -32,7 +32,7 @@ import knockWav from "../knock.wav";
 const knockSound = new Audio(knockWav);
 
 export default {
-  name: "Knocker",
+  name: "KnockControl",
   data() {
     return {
       value: true,

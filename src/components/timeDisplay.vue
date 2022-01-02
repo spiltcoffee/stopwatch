@@ -24,7 +24,7 @@
 import moment from "moment";
 
 export default {
-  name: "Display",
+  name: "TimeDisplay",
   props: {
     value: {
       type: Number,

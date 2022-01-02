@@ -1,19 +1,19 @@
 import App from "./app.vue";
-import Adder from "./adder.vue";
-import Controls from "./controls.vue";
-import Display from "./display.vue";
-import Knocker from "./knocker.vue";
-import Settings from "./settings.vue";
-import Toolbar from "./toolbar.vue";
+import KnockControl from "./knockControl.vue";
+import StopwatchSettings from "./stopwatchSettings.vue";
+import StopwatchToolbar from "./stopwatchToolbar.vue";
+import TimeControl from "./timeControl.vue";
+import TimeDisplay from "./timeDisplay.vue";
+import ValueControl from "./valueControl.vue";
 
 export default {
   install(Vue) {
     Vue.component(App.name, App);
-    Vue.component(Adder.name, Adder);
-    Vue.component(Controls.name, Controls);
-    Vue.component(Display.name, Display);
-    Vue.component(Knocker.name, Knocker);
-    Vue.component(Settings.name, Settings);
-    Vue.component(Toolbar.name, Toolbar);
+    Vue.component(KnockControl.name, KnockControl);
+    Vue.component(StopwatchSettings.name, StopwatchSettings);
+    Vue.component(StopwatchToolbar.name, StopwatchToolbar);
+    Vue.component(TimeControl.name, TimeControl);
+    Vue.component(TimeDisplay.name, TimeDisplay);
+    Vue.component(ValueControl.name, ValueControl);
   },
 };

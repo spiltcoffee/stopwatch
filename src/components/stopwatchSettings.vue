@@ -64,7 +64,7 @@
 
 <script>
 export default {
-  name: "Settings",
+  name: "StopwatchSettings",
   data() {
     return {
       showing: false,

@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: "Controls",
+  name: "TimeControl",
   props: {
     playing: Boolean,
     playable: Boolean,
