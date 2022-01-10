@@ -39,19 +39,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/async-ora@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/async-ora@npm:6.0.0-beta.61"
-  dependencies:
-    colors: ^1.4.0
-    debug: ^4.3.1
-    log-symbols: ^4.0.0
-    ora: ^5.0.0
-    pretty-ms: ^7.0.0
-  checksum: 871124ebe746496470b7e0ccbbe6e40aa380b8995838443c8065076393cc6ef69606fb6237c7741c60b7db358b656f15f8edecff332e8f4b7cd50677c43819a8
-  languageName: node
-  linkType: hard
-
 "@electron-forge/async-ora@npm:6.0.0-beta.63":
   version: 6.0.0-beta.63
   resolution: "@electron-forge/async-ora@npm:6.0.0-beta.63"
@@ -211,17 +198,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/maker-base@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/maker-base@npm:6.0.0-beta.61"
-  dependencies:
-    "@electron-forge/shared-types": 6.0.0-beta.61
-    fs-extra: ^10.0.0
-    which: ^2.0.2
-  checksum: 60962ae832bc7741f112610d2e74e5873df8ff32a7d1d6fcfc1fd3b2112960a7a53f0470ce1881acd96f0d0139f2c795b2f85009b83eb8e9ab83524be7dd342b
-  languageName: node
-  linkType: hard
-
 "@electron-forge/maker-base@npm:6.0.0-beta.63":
   version: 6.0.0-beta.63
   resolution: "@electron-forge/maker-base@npm:6.0.0-beta.63"
@@ -233,18 +209,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/maker-squirrel@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/maker-squirrel@npm:6.0.0-beta.61"
+"@electron-forge/maker-squirrel@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/maker-squirrel@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/maker-base": 6.0.0-beta.61
-    "@electron-forge/shared-types": 6.0.0-beta.61
+    "@electron-forge/maker-base": 6.0.0-beta.63
+    "@electron-forge/shared-types": 6.0.0-beta.63
     electron-winstaller: ^5.0.0
     fs-extra: ^10.0.0
   dependenciesMeta:
     electron-winstaller:
       optional: true
-  checksum: da7d6f315386c925a582f535cf5a335af5e8787e9ea5536b2d97d2d9d5497e1f09a2bcfbe4b9e8332d7e185baebac54426724d6714023c74483bc03e919073c9
+  checksum: ceec23f761f715ce208d1e19928f016941a692b532f10a3cd7fb67bb3fe4ce132577396764f70a53905f931622042e77035ef1023815af9f2555a34a6f9c994b
   languageName: node
   linkType: hard
 
@@ -302,18 +278,6 @@ __metadata:
     fs-extra: ^10.0.0
     mime-types: ^2.1.25
   checksum: 0a43b6c43b386f43f39c600e44eaafed03147c262edfd908135a2d5f98db2a48d8a689a72ecf4a66a32645730e0528cea7f6a3e5191969600c2a872b8cae0d7e
-  languageName: node
-  linkType: hard
-
-"@electron-forge/shared-types@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/shared-types@npm:6.0.0-beta.61"
-  dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.61
-    electron-packager: ^15.4.0
-    electron-rebuild: ^3.2.2
-    ora: ^5.0.0
-  checksum: 4e9a8c61e1951c0f7b4b016ab4388646ca592a668d09f3ac11f721a3b0367eafd614502b51e6be281be7c6e18275ea5ec9edcccb03fd566949aa621a99b7ca0c
   languageName: node
   linkType: hard
 
@@ -2222,13 +2186,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colors@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "colors@npm:1.4.0"
-  checksum: 98aa2c2418ad87dedf25d781be69dc5fc5908e279d9d30c34d8b702e586a0474605b3a189511482b9d5ed0d20c867515d22749537f7bc546256c6014f3ebdcec
-  languageName: node
-  linkType: hard
-
 "combined-stream@npm:^1.0.6, combined-stream@npm:~1.0.6":
   version: 1.0.8
   resolution: "combined-stream@npm:1.0.8"
@@ -3023,7 +2980,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-rebuild@npm:^3.2.2, electron-rebuild@npm:^3.2.6":
+"electron-rebuild@npm:^3.2.6":
   version: 3.2.6
   resolution: "electron-rebuild@npm:3.2.6"
   dependencies:
@@ -8940,7 +8897,7 @@ __metadata:
   resolution: "vr-stopwatch@workspace:."
   dependencies:
     "@electron-forge/cli": 6.0.0-beta.63
-    "@electron-forge/maker-squirrel": 6.0.0-beta.61
+    "@electron-forge/maker-squirrel": 6.0.0-beta.63
     "@electron-forge/plugin-webpack": 6.0.0-beta.63
     "@electron-forge/publisher-github": 6.0.0-beta.63
     "@fortawesome/fontawesome-free": ^5.15.4
