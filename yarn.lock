@@ -65,15 +65,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/cli@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/cli@npm:6.0.0-beta.61"
+"@electron-forge/cli@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/cli@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.61
-    "@electron-forge/core": 6.0.0-beta.61
-    "@electron-forge/shared-types": 6.0.0-beta.61
+    "@electron-forge/async-ora": 6.0.0-beta.63
+    "@electron-forge/core": 6.0.0-beta.63
+    "@electron-forge/shared-types": 6.0.0-beta.63
     "@electron/get": ^1.9.0
-    colors: ^1.4.0
+    chalk: ^4.0.0
     commander: ^4.1.1
     debug: ^4.3.1
     fs-extra: ^10.0.0
@@ -83,35 +83,35 @@ __metadata:
     electron-forge: dist/electron-forge.js
     electron-forge-vscode-nix: script/vscode.sh
     electron-forge-vscode-win: script/vscode.cmd
-  checksum: 1d56cad043a259703b9c33ff21905f9a2218357b2397e9b7f20c4e61c58d8dfd85069b4ef84f5b64537ce7bd66711d9709d0a9b0e1033f221088dd740c5d1d0c
+  checksum: da726b12c02d32725b42a0c0596a94524eb754c91dd05f3802ecd8744050f140b5a9ba9ecd097a4a8365afc73b2429574becb12f578d68fe37d7d060497e506b
   languageName: node
   linkType: hard
 
-"@electron-forge/core@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/core@npm:6.0.0-beta.61"
+"@electron-forge/core@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/core@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.61
-    "@electron-forge/installer-base": 6.0.0-beta.61
-    "@electron-forge/installer-deb": 6.0.0-beta.61
-    "@electron-forge/installer-dmg": 6.0.0-beta.61
-    "@electron-forge/installer-exe": 6.0.0-beta.61
-    "@electron-forge/installer-rpm": 6.0.0-beta.61
-    "@electron-forge/installer-zip": 6.0.0-beta.61
-    "@electron-forge/maker-base": 6.0.0-beta.61
-    "@electron-forge/plugin-base": 6.0.0-beta.61
-    "@electron-forge/publisher-base": 6.0.0-beta.61
-    "@electron-forge/shared-types": 6.0.0-beta.61
-    "@electron-forge/template-base": 6.0.0-beta.61
-    "@electron-forge/template-typescript": 6.0.0-beta.61
-    "@electron-forge/template-typescript-webpack": 6.0.0-beta.61
-    "@electron-forge/template-webpack": 6.0.0-beta.61
+    "@electron-forge/async-ora": 6.0.0-beta.63
+    "@electron-forge/installer-base": 6.0.0-beta.63
+    "@electron-forge/installer-deb": 6.0.0-beta.63
+    "@electron-forge/installer-dmg": 6.0.0-beta.63
+    "@electron-forge/installer-exe": 6.0.0-beta.63
+    "@electron-forge/installer-rpm": 6.0.0-beta.63
+    "@electron-forge/installer-zip": 6.0.0-beta.63
+    "@electron-forge/maker-base": 6.0.0-beta.63
+    "@electron-forge/plugin-base": 6.0.0-beta.63
+    "@electron-forge/publisher-base": 6.0.0-beta.63
+    "@electron-forge/shared-types": 6.0.0-beta.63
+    "@electron-forge/template-base": 6.0.0-beta.63
+    "@electron-forge/template-typescript": 6.0.0-beta.63
+    "@electron-forge/template-typescript-webpack": 6.0.0-beta.63
+    "@electron-forge/template-webpack": 6.0.0-beta.63
     "@electron/get": ^1.9.0
     "@malept/cross-spawn-promise": ^2.0.0
-    colors: ^1.4.0
+    chalk: ^4.0.0
     debug: ^4.3.1
     electron-packager: ^15.4.0
-    electron-rebuild: ^3.2.2
+    electron-rebuild: ^3.2.6
     fast-glob: ^3.2.7
     find-up: ^5.0.0
     fs-extra: ^10.0.0
@@ -125,89 +125,89 @@ __metadata:
     sudo-prompt: ^9.1.1
     username: ^5.1.0
     yarn-or-npm: ^3.0.1
-  checksum: 6dd6d02059d9ed948e745df8deb03ebdc813cca117b685f2b37e033a8fa57b54bb439b60b01aece02c3dad9cc294568904ccc94ee01d720cd5053c8a378f95bf
+  checksum: dd36ea25a406062e8dcc0e3eca3ea1dfe5d825a85164ef83a75190042fe6d08e9185364cb570507f82aea2ad939ed4307c4fba775c2543f53d81ead3c73c920a
   languageName: node
   linkType: hard
 
-"@electron-forge/installer-base@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/installer-base@npm:6.0.0-beta.61"
+"@electron-forge/installer-base@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/installer-base@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.61
-  checksum: 46624ea1f770ee9d1315756546eade3f8c416fca14b3ce8835255b949b8dd1e0f38cd525da1ff4fe027bca093730c67840822f37cd7ba4a4484cfda42d45fe4e
+    "@electron-forge/async-ora": 6.0.0-beta.63
+  checksum: 307af472f058b06518647f093360c88afbe9220a9eef19613cb2880c8cdf0ea2336026c1df681aa84f3fbeb16ad2af508a9f484f9ee602916f1c76e8565f96c8
   languageName: node
   linkType: hard
 
-"@electron-forge/installer-darwin@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/installer-darwin@npm:6.0.0-beta.61"
+"@electron-forge/installer-darwin@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/installer-darwin@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.61
-    "@electron-forge/installer-base": 6.0.0-beta.61
+    "@electron-forge/async-ora": 6.0.0-beta.63
+    "@electron-forge/installer-base": 6.0.0-beta.63
     fs-extra: ^10.0.0
     sudo-prompt: ^9.1.1
-  checksum: f4ba973ec1776a991cb2a8d395e747596e9bf75f56217fa1c4d58ed873bece0c136754063b8a341d18eb51e9ef4b9a3b7bb107616a90502a7e323a2e37f87b8f
+  checksum: e99130b6646464a5c36823d89be11ccd0398f758a6f9448e106905e32c86867de46c51b47059c985d1317e9c54bdc37e35de242f522c6a8d54cfa59bccbef6e7
   languageName: node
   linkType: hard
 
-"@electron-forge/installer-deb@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/installer-deb@npm:6.0.0-beta.61"
+"@electron-forge/installer-deb@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/installer-deb@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/installer-linux": 6.0.0-beta.61
-  checksum: 03873b7d894ad127f0bd841bd521bc5ee1874b82264b70d246e7dc29648ad0701f4e20c1091077df90f3156f28b789a37971e0da8e33fab4c2d13bfbdcc41567
+    "@electron-forge/installer-linux": 6.0.0-beta.63
+  checksum: 6b93df6b3b874e149c5ea7a4b09850fb356655205bb40d44c01e7e96f2dca63bf4b9b95c449a380d20b1012c82f5cc23e153c1d020d1260e7b8a0c1506367bc2
   languageName: node
   linkType: hard
 
-"@electron-forge/installer-dmg@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/installer-dmg@npm:6.0.0-beta.61"
+"@electron-forge/installer-dmg@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/installer-dmg@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/installer-darwin": 6.0.0-beta.61
+    "@electron-forge/installer-darwin": 6.0.0-beta.63
     "@malept/cross-spawn-promise": ^2.0.0
     debug: ^4.3.1
     fs-extra: ^10.0.0
-  checksum: cd228b286eceb70f3783d203ad7e9216d34f3ccc80ad468530e7a3030f4630914fbc4c9e8a29dcc69859362873c6c3a08f344bf79efd0772961d5043b9e1bf2b
+  checksum: 3d27cb52c7491b5425f2e4e6d9586a9c2418f87ef1277daa7e0ad510ac35db4e4e879c1e7416d44327a53cce143b27ad5e9873797e3f549b570b7fa2965481c0
   languageName: node
   linkType: hard
 
-"@electron-forge/installer-exe@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/installer-exe@npm:6.0.0-beta.61"
+"@electron-forge/installer-exe@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/installer-exe@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/installer-base": 6.0.0-beta.61
+    "@electron-forge/installer-base": 6.0.0-beta.63
     open: ^8.1.0
-  checksum: d48ca878b72811960b6170184dc29a8b894fb9e0b9fa34cd3d8fc48c1b9abe93c9d4df92d1704f596a804a54b1ba9350de0452f8c308fd5e6c8a92588b6f6dd3
+  checksum: 17ef5cd1555d7af5bc4569a57c653e3bc94508b40829d1d0a21705211000f82fcba2936e694985818185754fe36a21c9aeb5139588bc10d314fc5a6cb9ad166a
   languageName: node
   linkType: hard
 
-"@electron-forge/installer-linux@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/installer-linux@npm:6.0.0-beta.61"
+"@electron-forge/installer-linux@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/installer-linux@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/installer-base": 6.0.0-beta.61
+    "@electron-forge/installer-base": 6.0.0-beta.63
     sudo-prompt: ^9.1.1
-  checksum: 3915e8d0e100113ab3e2cb014a3db4a63203c500de7027dae75e3a5f76bf39b315d14190b3c02f37678075bac5a1a36c925fcfb1910c5f3f30ae8d1f1b182231
+  checksum: eee960bad74bd44258be0a7524c709f684d4be00661d3524360ff1808c315f86c5d7d3171ae0a47a5d5566a149117092987df6c6cfaaee3149a94022300f8398
   languageName: node
   linkType: hard
 
-"@electron-forge/installer-rpm@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/installer-rpm@npm:6.0.0-beta.61"
+"@electron-forge/installer-rpm@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/installer-rpm@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/installer-linux": 6.0.0-beta.61
-  checksum: 79e67e51bcda31f04ac66cbd002bd548021049b0b3f10264fd84dde3c68a31ca5b471032ba1bf64828cfeeb08a9f52ed808a2519c65172ea8573c51254468eb7
+    "@electron-forge/installer-linux": 6.0.0-beta.63
+  checksum: 0f93f2a21983443067d9b6e4ad3798fe3f5c90cf95b54fdc8f20ea4643ec9b3be91ee983fbc7203c03abdba2d9c6dda1f24260069aa0d1c3afd18258fa85649f
   languageName: node
   linkType: hard
 
-"@electron-forge/installer-zip@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/installer-zip@npm:6.0.0-beta.61"
+"@electron-forge/installer-zip@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/installer-zip@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/installer-darwin": 6.0.0-beta.61
+    "@electron-forge/installer-darwin": 6.0.0-beta.63
     "@malept/cross-spawn-promise": ^2.0.0
     fs-extra: ^10.0.0
-  checksum: a31a54af7aebe3c17767ee46474ddcf302d7b15c64f0698e8f6df473ed90971f454bb4556e561efc75a1b77f076503c6311e8b7175dabcaeb6cc353c969533d4
+  checksum: 416d2bf54c4cbf5585c113db4e247173e077e85d446fbb2e11e0df49d58c22c618bd008fbf5808470760b7e6ab7e7471e81e9be4cfbb997c1b7d80049b8965bd
   languageName: node
   linkType: hard
 
@@ -219,6 +219,17 @@ __metadata:
     fs-extra: ^10.0.0
     which: ^2.0.2
   checksum: 60962ae832bc7741f112610d2e74e5873df8ff32a7d1d6fcfc1fd3b2112960a7a53f0470ce1881acd96f0d0139f2c795b2f85009b83eb8e9ab83524be7dd342b
+  languageName: node
+  linkType: hard
+
+"@electron-forge/maker-base@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/maker-base@npm:6.0.0-beta.63"
+  dependencies:
+    "@electron-forge/shared-types": 6.0.0-beta.63
+    fs-extra: ^10.0.0
+    which: ^2.0.2
+  checksum: 8ef839dbe3cf0d7f7e5e76fe62fb2439d3b1cbcc671ce506c8ac291af4894c2641b3b53dae93eb73097312037a8321ae68baa278da23ad48a6c27ded2e229585
   languageName: node
   linkType: hard
 
@@ -246,6 +257,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron-forge/plugin-base@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/plugin-base@npm:6.0.0-beta.63"
+  dependencies:
+    "@electron-forge/shared-types": 6.0.0-beta.63
+  checksum: 622261e79fbfe54b06a1ef44e0797bcacffe1a219c0fffa1e1eb4ca806b93bc09c7d24627e3e9a84c484fc1fb72a5d03b86554a9953b05b952c72db4d663d130
+  languageName: node
+  linkType: hard
+
 "@electron-forge/plugin-webpack@npm:6.0.0-beta.61":
   version: 6.0.0-beta.61
   resolution: "@electron-forge/plugin-webpack@npm:6.0.0-beta.61"
@@ -262,15 +282,6 @@ __metadata:
     webpack-dev-server: ^4.0.0
     webpack-merge: ^5.7.3
   checksum: b3551353e4ef568af9e5eac3b497575a92bce52b5e17e48e1ed8fcfeee18b6fd62791e3a72c2630e979e2708fdbb4418da05179209aa54e6fa8ab79f2877f21e
-  languageName: node
-  linkType: hard
-
-"@electron-forge/publisher-base@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/publisher-base@npm:6.0.0-beta.61"
-  dependencies:
-    "@electron-forge/shared-types": 6.0.0-beta.61
-  checksum: 9f11d4e840f65a563bdadb09b32dff0e0b38096df92507c0cee1f3012d077580c8b86d795b829ad30a75fbd396cd1bb8a6cf87f34eee872723235d1f8b6e1d56
   languageName: node
   linkType: hard
 
@@ -325,53 +336,53 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/template-base@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/template-base@npm:6.0.0-beta.61"
+"@electron-forge/template-base@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/template-base@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.61
-    "@electron-forge/shared-types": 6.0.0-beta.61
+    "@electron-forge/async-ora": 6.0.0-beta.63
+    "@electron-forge/shared-types": 6.0.0-beta.63
     "@malept/cross-spawn-promise": ^2.0.0
     debug: ^4.3.1
     fs-extra: ^10.0.0
     username: ^5.1.0
-  checksum: 5f326b17247a77dacf47fc09d1cb138e042b1b1184de0f5291d1f3c60e2027151a4794aefd314a86d584f7c933f5c65c68f629bab1763b207ac50b139379cb4c
+  checksum: d1a8ba33499b12dc1e306d0040fdd846892d50b7a07339e38c2277f72476adfde0ac5be1ff4b02cf2b8f4e1d6ee69ef3fd38fe97f78006ac9cfdb0bb895d3bd6
   languageName: node
   linkType: hard
 
-"@electron-forge/template-typescript-webpack@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/template-typescript-webpack@npm:6.0.0-beta.61"
+"@electron-forge/template-typescript-webpack@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/template-typescript-webpack@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.61
-    "@electron-forge/shared-types": 6.0.0-beta.61
-    "@electron-forge/template-base": 6.0.0-beta.61
+    "@electron-forge/async-ora": 6.0.0-beta.63
+    "@electron-forge/shared-types": 6.0.0-beta.63
+    "@electron-forge/template-base": 6.0.0-beta.63
     fs-extra: ^10.0.0
-  checksum: f0bb5d87aaed1a3b0055343782540881ff4d86d419856eeb242fba8ca0c4cf4c3c9e509b2f3b2e2ad771eaacc39d796be4370da016c0f36cd4ab3f124a4ae1f0
+  checksum: fe84c24e0ef3c9bcccfa8ce849672ef82e98d24c40ec953d8bcb08cac8feac364bb0ac15e8908958e00e7275d711cce855f4d65b4b8cff5ec5829b5b40fdd17e
   languageName: node
   linkType: hard
 
-"@electron-forge/template-typescript@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/template-typescript@npm:6.0.0-beta.61"
+"@electron-forge/template-typescript@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/template-typescript@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.61
-    "@electron-forge/shared-types": 6.0.0-beta.61
-    "@electron-forge/template-base": 6.0.0-beta.61
+    "@electron-forge/async-ora": 6.0.0-beta.63
+    "@electron-forge/shared-types": 6.0.0-beta.63
+    "@electron-forge/template-base": 6.0.0-beta.63
     fs-extra: ^10.0.0
-  checksum: 771255504c455e06f3ad3df8f49e389574cf51edb45998c13ee917c06b89da006155f6cfbb03301cb554447279732fadad4e6fb8bdbe742f690dd8f240895a0f
+  checksum: 7640d143a7c9cfbad9b52e90471fd5e1fbe22730273139ad9afcdcce38a24be5a3b0bf41be9dda6f4c6ac5c60559e0cf2fd8bb350803d4321a40d564a93998af
   languageName: node
   linkType: hard
 
-"@electron-forge/template-webpack@npm:6.0.0-beta.61":
-  version: 6.0.0-beta.61
-  resolution: "@electron-forge/template-webpack@npm:6.0.0-beta.61"
+"@electron-forge/template-webpack@npm:6.0.0-beta.63":
+  version: 6.0.0-beta.63
+  resolution: "@electron-forge/template-webpack@npm:6.0.0-beta.63"
   dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.61
-    "@electron-forge/shared-types": 6.0.0-beta.61
-    "@electron-forge/template-base": 6.0.0-beta.61
+    "@electron-forge/async-ora": 6.0.0-beta.63
+    "@electron-forge/shared-types": 6.0.0-beta.63
+    "@electron-forge/template-base": 6.0.0-beta.63
     fs-extra: ^10.0.0
-  checksum: 80facd4ec715357606d72ea0cd5957e59712ebc301bb3f86fa9e9cc93fea9e556a3ef1d54d38b9ee02a6fcb10939a82d142fbb8a3581d942b862979ef64f7e9e
+  checksum: c388535a6acef396dc7b0df943b30b983ec891abcf98f8e93a9ac0389d0e86ef0e2b722f330cb2822aed77d5eb4b88f1b7791b091d1008494d11354d5052e10e
   languageName: node
   linkType: hard
 
@@ -8935,7 +8946,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vr-stopwatch@workspace:."
   dependencies:
-    "@electron-forge/cli": 6.0.0-beta.61
+    "@electron-forge/cli": 6.0.0-beta.63
     "@electron-forge/maker-squirrel": 6.0.0-beta.61
     "@electron-forge/plugin-webpack": 6.0.0-beta.61
     "@electron-forge/publisher-github": 6.0.0-beta.63
