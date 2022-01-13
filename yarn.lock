@@ -3899,13 +3899,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-jetpack@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "fs-jetpack@npm:4.3.0"
+"fs-jetpack@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "fs-jetpack@npm:4.3.1"
   dependencies:
     minimatch: ^3.0.2
     rimraf: ^2.6.3
-  checksum: 7441f1517c4c5cc90141abde55421a1e1d3308eb840a2a104b801de95801baeb5fe268fe229cd82d75cb507ca41eb4602e31fc858d64abf87057d7842145cbff
+  checksum: ffe90946ec250c6042569faa2ec7753594779ca0e8a72eea0b76b82574542c50d580974f54c5d6885f44f5719ece173be778cf82dc50ad90f43dab043f4061c9
   languageName: node
   linkType: hard
 
@@ -8925,7 +8925,7 @@ __metadata:
     eslint-plugin-node: ^11.1.0
     eslint-plugin-vue: ^8.2.0
     file-loader: ^6.2.0
-    fs-jetpack: ^4.3.0
+    fs-jetpack: ^4.3.1
     html-webpack-plugin: ^5.5.0
     husky: ^7.0.4
     lint-staged: ^12.1.7
