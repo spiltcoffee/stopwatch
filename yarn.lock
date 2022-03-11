@@ -2554,9 +2554,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssnano-preset-default@npm:^5.2.1":
-  version: 5.2.1
-  resolution: "cssnano-preset-default@npm:5.2.1"
+"cssnano-preset-default@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "cssnano-preset-default@npm:5.2.2"
   dependencies:
     css-declaration-sorter: ^6.0.3
     cssnano-utils: ^3.1.0
@@ -2565,13 +2565,13 @@ __metadata:
     postcss-convert-values: ^5.1.0
     postcss-discard-comments: ^5.1.1
     postcss-discard-duplicates: ^5.1.0
-    postcss-discard-empty: ^5.1.0
+    postcss-discard-empty: ^5.1.1
     postcss-discard-overridden: ^5.1.0
     postcss-merge-longhand: ^5.1.0
     postcss-merge-rules: ^5.1.0
     postcss-minify-font-values: ^5.1.0
     postcss-minify-gradients: ^5.1.0
-    postcss-minify-params: ^5.1.0
+    postcss-minify-params: ^5.1.1
     postcss-minify-selectors: ^5.2.0
     postcss-normalize-charset: ^5.1.0
     postcss-normalize-display-values: ^5.1.0
@@ -2581,7 +2581,7 @@ __metadata:
     postcss-normalize-timing-functions: ^5.1.0
     postcss-normalize-unicode: ^5.1.0
     postcss-normalize-url: ^5.1.0
-    postcss-normalize-whitespace: ^5.1.0
+    postcss-normalize-whitespace: ^5.1.1
     postcss-ordered-values: ^5.1.0
     postcss-reduce-initial: ^5.1.0
     postcss-reduce-transforms: ^5.1.0
@@ -2589,7 +2589,7 @@ __metadata:
     postcss-unique-selectors: ^5.1.1
   peerDependencies:
     postcss: ^8.2.15
-  checksum: 085ddf9c87297f74844851339c4fd10d178be65c87723a8e8240ea359d08a05344f9fff2f7e26e5fa13cd39cc3ba5dac3f70e4ea602bebe3f61a47d5567c2c29
+  checksum: 97d92df198b44ab5a0a2e9ae4da5fc43503ac09a6c91e1d0cf8042c1d1b03d1ce2a491d4b1bf92d88afcc1d4d5e653b6be2f6df3b161ac8db0b8f81148abedd8
   languageName: node
   linkType: hard
 
@@ -2602,16 +2602,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssnano@npm:^5.1.1":
-  version: 5.1.1
-  resolution: "cssnano@npm:5.1.1"
+"cssnano@npm:^5.1.2":
+  version: 5.1.2
+  resolution: "cssnano@npm:5.1.2"
   dependencies:
-    cssnano-preset-default: ^5.2.1
+    cssnano-preset-default: ^5.2.2
     lilconfig: ^2.0.3
     yaml: ^1.10.2
   peerDependencies:
     postcss: ^8.2.15
-  checksum: 8b2bfa7ca2a88eb858bd06378dbc0ef71e0eac70db30fbe3d3ce359fe34dbaa880bf3d3a16cd46df32a80e5aafaf1f849dd548b9ecbe9c8631a3823dbd52f919
+  checksum: 2b9058288a6ec5a196b43de9b139bae9ba0156c06362582281e3c539e2309dfa982d43b3873e043b3652e5d2628282528cd2a27ba54c74f77936789c000d4b60
   languageName: node
   linkType: hard
 
@@ -6778,12 +6778,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-discard-empty@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "postcss-discard-empty@npm:5.1.0"
+"postcss-discard-empty@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "postcss-discard-empty@npm:5.1.1"
   peerDependencies:
     postcss: ^8.2.15
-  checksum: 1af8ab3fe4b8341e013cf9d1a78fe8dc8cd55e23d042f2b0941fa0d41ba58019859136d263cf3cdb2ceb4389654d7c964de532f76b17b617bbb866aab054efb1
+  checksum: 970adb12fae5c214c0768236ad9a821552626e77dedbf24a8213d19cc2c4a531a757cd3b8cdd3fc22fb1742471b8692a1db5efe436a71236dec12b1318ee8ff4
   languageName: node
   linkType: hard
 
@@ -6887,16 +6887,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-minify-params@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "postcss-minify-params@npm:5.1.0"
+"postcss-minify-params@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "postcss-minify-params@npm:5.1.1"
   dependencies:
     browserslist: ^4.16.6
     cssnano-utils: ^3.1.0
     postcss-value-parser: ^4.2.0
   peerDependencies:
     postcss: ^8.2.15
-  checksum: bf0ff9cfca6dbcd7d03e3b3dee6584da6d09587981c0514d17496c2ca5a71355fc2ce6f194f1c991e3ad19cc5830ecd78791b0728e69bf76f347569d8b2cd66d
+  checksum: 5b584683c993a514b17fed2e21d5860f20cf5b260c45352581c1075a17a31717538a5f7960e44b4f80800c7eea8a9f72b90c6431773172e17f1104d507caa738
   languageName: node
   linkType: hard
 
@@ -7054,14 +7054,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-normalize-whitespace@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "postcss-normalize-whitespace@npm:5.1.0"
+"postcss-normalize-whitespace@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "postcss-normalize-whitespace@npm:5.1.1"
   dependencies:
     postcss-value-parser: ^4.2.0
   peerDependencies:
     postcss: ^8.2.15
-  checksum: e74392354bcb89964b8522bf6891770e49e1bc7bf032100ac80a2418a469942a5109a39da41af4b588215a311c70d52955c984ea083248e69bca76a64f160d5a
+  checksum: 12d8fb6d1c1cba208cc08c1830959b7d7ad447c3f5581873f7e185f99a9a4230c43d3af21ca12c818e4690a5085a95b01635b762ad4a7bef69d642609b4c0e19
   languageName: node
   linkType: hard
 
@@ -8947,7 +8947,7 @@ __metadata:
     "@marshallofsound/webpack-asset-relocator-loader": ^0.5.0
     autoprefixer: ^10.4.2
     css-loader: ^6.7.1
-    cssnano: ^5.1.1
+    cssnano: ^5.1.2
     electron: 17.1.2
     electron-squirrel-startup: ^1.0.0
     eslint: ^8.10.0
