@@ -2524,9 +2524,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssnano-preset-default@npm:^5.2.8":
-  version: 5.2.8
-  resolution: "cssnano-preset-default@npm:5.2.8"
+"cssnano-preset-default@npm:^5.2.9":
+  version: 5.2.9
+  resolution: "cssnano-preset-default@npm:5.2.9"
   dependencies:
     css-declaration-sorter: ^6.2.2
     cssnano-utils: ^3.1.0
@@ -2537,7 +2537,7 @@ __metadata:
     postcss-discard-duplicates: ^5.1.0
     postcss-discard-empty: ^5.1.1
     postcss-discard-overridden: ^5.1.0
-    postcss-merge-longhand: ^5.1.4
+    postcss-merge-longhand: ^5.1.5
     postcss-merge-rules: ^5.1.1
     postcss-minify-font-values: ^5.1.0
     postcss-minify-gradients: ^5.1.1
@@ -2559,7 +2559,7 @@ __metadata:
     postcss-unique-selectors: ^5.1.1
   peerDependencies:
     postcss: ^8.2.15
-  checksum: 3a95a4d9d3b9ee970df17132a939c2c0a22bc52854bbad6a06ebb682b2c4840716b0c7323ea39fb345eef53e5ee64be9ee4e7477cbc4ac63ba901cf2beed427d
+  checksum: a93ecc41274456f2e482700df795d1e431142987d94ff54b3d0b49fe02f092945aa5eaf90d9f65f135ebea2b8c22efe71b944e489c8ef1a397a8257571bd6477
   languageName: node
   linkType: hard
 
@@ -2572,16 +2572,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssnano@npm:^5.1.8":
-  version: 5.1.8
-  resolution: "cssnano@npm:5.1.8"
+"cssnano@npm:^5.1.9":
+  version: 5.1.9
+  resolution: "cssnano@npm:5.1.9"
   dependencies:
-    cssnano-preset-default: ^5.2.8
+    cssnano-preset-default: ^5.2.9
     lilconfig: ^2.0.3
     yaml: ^1.10.2
   peerDependencies:
     postcss: ^8.2.15
-  checksum: 8ff769094400447a5ecf708e1a10050daf450bcf08d9c778806bbc7b942d68e0fac7a8c3b41dbb820620dab7f0395838e74b1c1fe1dbca57fd8cf00f0d1f8555
+  checksum: 25932e83187bfffbe6116d4d5fef20f6bfa9fbd1cdc1145173bc757579740a4ae6b9d40ca67bdf7b644ff2c65784a1a168e1a3e08208120ab6c822056b356b95
   languageName: node
   linkType: hard
 
@@ -6625,15 +6625,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-merge-longhand@npm:^5.1.4":
-  version: 5.1.4
-  resolution: "postcss-merge-longhand@npm:5.1.4"
+"postcss-merge-longhand@npm:^5.1.5":
+  version: 5.1.5
+  resolution: "postcss-merge-longhand@npm:5.1.5"
   dependencies:
     postcss-value-parser: ^4.2.0
     stylehacks: ^5.1.0
   peerDependencies:
     postcss: ^8.2.15
-  checksum: 3245531aebcd0d2fe6982e142c088ae96ed5242885349e6160e68fc007cdc10d8b0f3e57d7987e3ba07fc9f7d0f6f278972fecaa517c0fa8594bdeaed82393f0
+  checksum: 1d51e3d6a10f799473e46009ea69ce53c4a82eb2861fd58e6eab17bde3022a3350f440a1d2237a4fa65dde49fa5173f2ffae7781cf4f4e9c5cd15d0d88c7c3d7
   languageName: node
   linkType: hard
 
@@ -8710,7 +8710,7 @@ __metadata:
     "@marshallofsound/webpack-asset-relocator-loader": ^0.5.0
     autoprefixer: ^10.4.7
     css-loader: ^6.7.1
-    cssnano: ^5.1.8
+    cssnano: ^5.1.9
     electron: 18.2.4
     electron-squirrel-startup: ^1.0.0
     eslint: ^8.15.0
