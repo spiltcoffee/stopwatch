@@ -375,9 +375,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron/get@npm:^1.13.0, @electron/get@npm:^1.6.0, @electron/get@npm:^1.9.0":
-  version: 1.13.1
-  resolution: "@electron/get@npm:1.13.1"
+"@electron/get@npm:^1.14.1, @electron/get@npm:^1.6.0, @electron/get@npm:^1.9.0":
+  version: 1.14.1
+  resolution: "@electron/get@npm:1.14.1"
   dependencies:
     debug: ^4.1.1
     env-paths: ^2.2.0
@@ -393,7 +393,7 @@ __metadata:
       optional: true
     global-tunnel-ng:
       optional: true
-  checksum: ea9863b73e8aedefb19cfe9b849c585b8bda29e11b90189b115680da4e9ab0167405efe63e5d141da2d13cde24eacacfde62f730f2730d047e58819fe69352f8
+  checksum: 21fec5e82bbee8f9fa183b46e05675b137c3130c7999d3b2b34a0047d1a06ec3c76347b9bbdb9911ba9b2123697804e360a15dda9db614c0226d5d4dcc4d6d15
   languageName: node
   linkType: hard
 
@@ -3049,16 +3049,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron@npm:18.2.4":
-  version: 18.2.4
-  resolution: "electron@npm:18.2.4"
+"electron@npm:19.0.0":
+  version: 19.0.0
+  resolution: "electron@npm:19.0.0"
   dependencies:
-    "@electron/get": ^1.13.0
+    "@electron/get": ^1.14.1
     "@types/node": ^16.11.26
     extract-zip: ^1.0.3
   bin:
     electron: cli.js
-  checksum: 07c5696988b61aaa465fd44981a7956a4e7c2d71828471f105d6f5700f96e8e47d6c0800d0b710b29edcc3f9a1aae89bdc44ce3c909229e1cbae9fc424a2a772
+  checksum: e72a56fa347593802ad76aa1f34c533f114dacf2d4dcd20a74505402ce6011df3188865123f9f15aa17ab84d3c3a22cd957e87c3c94459705cf37ea27a4717c3
   languageName: node
   linkType: hard
 
@@ -8711,7 +8711,7 @@ __metadata:
     autoprefixer: ^10.4.7
     css-loader: ^6.7.1
     cssnano: ^5.1.9
-    electron: 18.2.4
+    electron: 19.0.0
     electron-squirrel-startup: ^1.0.0
     eslint: ^8.16.0
     eslint-config-prettier: ^8.5.0
