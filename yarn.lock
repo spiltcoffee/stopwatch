@@ -379,18 +379,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/maker-squirrel@npm:6.0.0-beta.64":
-  version: 6.0.0-beta.64
-  resolution: "@electron-forge/maker-squirrel@npm:6.0.0-beta.64"
+"@electron-forge/maker-squirrel@npm:6.0.0-beta.65":
+  version: 6.0.0-beta.65
+  resolution: "@electron-forge/maker-squirrel@npm:6.0.0-beta.65"
   dependencies:
-    "@electron-forge/maker-base": 6.0.0-beta.64
-    "@electron-forge/shared-types": 6.0.0-beta.64
+    "@electron-forge/maker-base": 6.0.0-beta.65
+    "@electron-forge/shared-types": 6.0.0-beta.65
     electron-winstaller: ^5.0.0
     fs-extra: ^10.0.0
   dependenciesMeta:
     electron-winstaller:
       optional: true
-  checksum: a0290c0036a24d8561ca6adbea715d6015ed5f8055efb792217698afe09e772191b000e0f29527681583c95f662de50f69786b5a6f8d154179828fe36da996e9
+  checksum: 45e983f7da6c3922cd2cd4811499b496607a6bd5f7a1cb6126c1bc335b64e9ee52b2f1c4e9acb8c59df11786d37fe724775c6e12f2164d223ac4fe0bff7baf0c
   languageName: node
   linkType: hard
 
@@ -9033,7 +9033,7 @@ __metadata:
   resolution: "vr-stopwatch@workspace:."
   dependencies:
     "@electron-forge/cli": 6.0.0-beta.65
-    "@electron-forge/maker-squirrel": 6.0.0-beta.64
+    "@electron-forge/maker-squirrel": 6.0.0-beta.65
     "@electron-forge/plugin-webpack": 6.0.0-beta.64
     "@electron-forge/publisher-github": 6.0.0-beta.64
     "@fortawesome/fontawesome-free": ^6.1.1
