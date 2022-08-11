@@ -2926,16 +2926,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron@npm:20.0.1":
-  version: 20.0.1
-  resolution: "electron@npm:20.0.1"
+"electron@npm:20.0.2":
+  version: 20.0.2
+  resolution: "electron@npm:20.0.2"
   dependencies:
     "@electron/get": ^1.14.1
     "@types/node": ^16.11.26
     extract-zip: ^2.0.1
   bin:
     electron: cli.js
-  checksum: 1ae66fdd7d9bb03bc8eaead814c429ccc20427cfc430ab70cd55c24e3f948c2aab7713de3478894ce15e5436bc4c5353b538062420b493f17bc62a626b836abe
+  checksum: 68a37306b64413a918a6d310fe48234ecb14b0b5f7ad97ccc25ebd4e14baaef3783c9a4b3e72350343d83dcf6f02baeb89ffda594dfa311024e9d56292f24464
   languageName: node
   linkType: hard
 
@@ -8132,7 +8132,7 @@ __metadata:
     autoprefixer: ^10.4.8
     css-loader: ^6.7.1
     cssnano: ^5.1.12
-    electron: 20.0.1
+    electron: 20.0.2
     electron-squirrel-startup: ^1.0.0
     eslint: ^8.21.0
     eslint-config-prettier: ^8.5.0
