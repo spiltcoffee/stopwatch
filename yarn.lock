@@ -8264,7 +8264,7 @@ __metadata:
     vue: ^3.2.40
     vue-loader: ^17.0.0
     vue-svg-gauge: ^1.2.1
-    vue-template-compiler: ^2.7.12
+    vue-template-compiler: ^2.7.13
     webpack: ^5.74.0
     webpack-cli: ^4.10.0
     webpack-dev-server: ^4.11.1
@@ -8311,13 +8311,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-template-compiler@npm:^2.7.12":
-  version: 2.7.12
-  resolution: "vue-template-compiler@npm:2.7.12"
+"vue-template-compiler@npm:^2.7.13":
+  version: 2.7.13
+  resolution: "vue-template-compiler@npm:2.7.13"
   dependencies:
     de-indent: ^1.0.2
     he: ^1.2.0
-  checksum: 82c1b3f9f55e97d0a9ee3e945acf8f7702a4c15186c2aefee6efa450ad6a1aff56194b6e903c3808c253462ec9f6b43096ae5d4f34574d3a323271e4f60f30c1
+  checksum: d16d5416326dbe048559301e13e34437ecd52e9e80eef865c107e548ea48786f73539991aa361d213caeacc5420ee5a9c2d462da7aca9bc6fd439df83019ac19
   languageName: node
   linkType: hard
 
