@@ -71,6 +71,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron-forge/async-ora@npm:6.0.0-beta.68":
+  version: 6.0.0-beta.68
+  resolution: "@electron-forge/async-ora@npm:6.0.0-beta.68"
+  dependencies:
+    chalk: ^4.0.0
+    debug: ^4.3.1
+    log-symbols: ^4.0.0
+    ora: ^5.0.0
+    pretty-ms: ^7.0.0
+  checksum: 40d5042244789a91f6712141abfb0f9a4990daa08f0d0f22a98c7509c1343d906c3fc5467ff883d390f6713f820f99cc262f29499f62a314444f3f9fbef0efbe
+  languageName: node
+  linkType: hard
+
 "@electron-forge/cli@npm:6.0.0-beta.67":
   version: 6.0.0-beta.67
   resolution: "@electron-forge/cli@npm:6.0.0-beta.67"
@@ -230,18 +243,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/maker-squirrel@npm:6.0.0-beta.67":
-  version: 6.0.0-beta.67
-  resolution: "@electron-forge/maker-squirrel@npm:6.0.0-beta.67"
+"@electron-forge/maker-base@npm:6.0.0-beta.68":
+  version: 6.0.0-beta.68
+  resolution: "@electron-forge/maker-base@npm:6.0.0-beta.68"
   dependencies:
-    "@electron-forge/maker-base": 6.0.0-beta.67
-    "@electron-forge/shared-types": 6.0.0-beta.67
+    "@electron-forge/shared-types": 6.0.0-beta.68
+    fs-extra: ^10.0.0
+    which: ^2.0.2
+  checksum: 82c6a345cc05a0ff6b9c209b5482048528f9da514163f66bf89d7343d0c9698dcbacbf057f6b74578d5c739c0cedf53a6437e4574ead6bb4a4d50674096d5b43
+  languageName: node
+  linkType: hard
+
+"@electron-forge/maker-squirrel@npm:6.0.0-beta.68":
+  version: 6.0.0-beta.68
+  resolution: "@electron-forge/maker-squirrel@npm:6.0.0-beta.68"
+  dependencies:
+    "@electron-forge/maker-base": 6.0.0-beta.68
+    "@electron-forge/shared-types": 6.0.0-beta.68
     electron-winstaller: ^5.0.0
     fs-extra: ^10.0.0
   dependenciesMeta:
     electron-winstaller:
       optional: true
-  checksum: b2c3b9af914c3527b789db6b205fc27782b6bebf52e91083d22d42c35e3ceec849cc43bf14d88823c07302a21df4489e8d77c3ed393b0faea4dbc91847f7ed37
+  checksum: 74a2985bc4da6b6ec5cde0cb183f3ed27e85298ba862004222e4561a50870a3ebef3554d91b545fd6125a06c6ae0f2725736956e206fb939afce7ef18b92ba65
   languageName: node
   linkType: hard
 
@@ -314,6 +338,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron-forge/shared-types@npm:6.0.0-beta.68":
+  version: 6.0.0-beta.68
+  resolution: "@electron-forge/shared-types@npm:6.0.0-beta.68"
+  dependencies:
+    "@electron-forge/async-ora": 6.0.0-beta.68
+    electron-packager: ^17.0.0
+    electron-rebuild: ^3.2.6
+    ora: ^5.0.0
+  checksum: 77d95d0180d405dcc5d5972d31b5596506e901bf496227b95d4db36ce13b6e09cf28d8efb3d4eae0488db7866c88d739c1e37ac77f2cdabaf76d997c26585770
+  languageName: node
+  linkType: hard
+
 "@electron-forge/template-base@npm:6.0.0-beta.67":
   version: 6.0.0-beta.67
   resolution: "@electron-forge/template-base@npm:6.0.0-beta.67"
@@ -377,6 +413,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron/asar@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "@electron/asar@npm:3.2.1"
+  dependencies:
+    "@types/glob": ^7.1.1
+    chromium-pickle-js: ^0.2.0
+    commander: ^5.0.0
+    glob: ^7.1.6
+    minimatch: ^3.0.4
+  dependenciesMeta:
+    "@types/glob":
+      optional: true
+  bin:
+    asar: bin/asar.js
+  checksum: 7a9eb690a51853d7da8269211341906eb906e392bd06a7ac8d994b519dd7fdaf155ad08cf60e76693c87c4979f5bfbd828dd49d5df4d235de319c7811474adda
+  languageName: node
+  linkType: hard
+
 "@electron/get@npm:^1.14.1":
   version: 1.14.1
   resolution: "@electron/get@npm:1.14.1"
@@ -421,6 +475,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron/osx-sign@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@electron/osx-sign@npm:1.0.1"
+  dependencies:
+    compare-version: ^0.1.2
+    debug: ^4.3.4
+    fs-extra: ^10.0.0
+    isbinaryfile: ^4.0.8
+    minimist: ^1.2.6
+    plist: ^3.0.5
+  bin:
+    electron-osx-flat: bin/electron-osx-flat.js
+    electron-osx-sign: bin/electron-osx-sign.js
+  checksum: eb9d2e759ec0123cbdcd6053e94c091aac6233360a1af34953c665ee02c5ddf70b9a7d0314445334a97d5cf0807571534878cfcbd0011d2d7f23a15aa64f2317
+  languageName: node
+  linkType: hard
+
 "@electron/universal@npm:^1.2.1":
   version: 1.3.1
   resolution: "@electron/universal@npm:1.3.1"
@@ -433,6 +504,21 @@ __metadata:
     minimatch: ^3.0.4
     plist: ^3.0.4
   checksum: a5a58930980cca4c04268858367a1f437515424c37913dd096b7cac8037452acb8adbdf0cb1a057a37a62d7423f3e9e0bb7a2a78c2ff7618058122800420d047
+  languageName: node
+  linkType: hard
+
+"@electron/universal@npm:^1.3.2":
+  version: 1.3.3
+  resolution: "@electron/universal@npm:1.3.3"
+  dependencies:
+    "@electron/asar": ^3.2.1
+    "@malept/cross-spawn-promise": ^1.1.0
+    debug: ^4.3.1
+    dir-compare: ^2.4.0
+    fs-extra: ^9.0.1
+    minimatch: ^3.0.4
+    plist: ^3.0.4
+  checksum: e68221dda6cc0e0c6a686c8fc28132a73c0008b8d4ac165966feb30b2c161cb08587389e4f8cb84078292c830bad7940219a64e155a07ca0730401878f5023ab
   languageName: node
   linkType: hard
 
@@ -2941,6 +3027,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"electron-packager@npm:^17.0.0":
+  version: 17.0.0
+  resolution: "electron-packager@npm:17.0.0"
+  dependencies:
+    "@electron/asar": ^3.2.1
+    "@electron/get": ^2.0.0
+    "@electron/osx-sign": ^1.0.1
+    "@electron/universal": ^1.3.2
+    cross-spawn-windows-exe: ^1.2.0
+    debug: ^4.0.1
+    electron-notarize: ^1.1.1
+    extract-zip: ^2.0.0
+    filenamify: ^4.1.0
+    fs-extra: ^10.1.0
+    galactus: ^0.2.1
+    get-package-info: ^1.0.0
+    junk: ^3.1.0
+    parse-author: ^2.0.0
+    plist: ^3.0.0
+    rcedit: ^3.0.1
+    resolve: ^1.1.6
+    semver: ^7.1.3
+    yargs-parser: ^21.1.1
+  bin:
+    electron-packager: bin/electron-packager.js
+  checksum: 30b6dd7fd8a44992b0f54728c9e60625b74016a8d63bbeb069d319ada561cbb25070de74a097a5e49c4e7a5ed6b3891a1af96c30447e13323d248a0c308d18cc
+  languageName: node
+  linkType: hard
+
 "electron-rebuild@npm:^3.2.6":
   version: 3.2.6
   resolution: "electron-rebuild@npm:3.2.6"
@@ -4731,6 +4846,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"isbinaryfile@npm:^4.0.8":
+  version: 4.0.10
+  resolution: "isbinaryfile@npm:4.0.10"
+  checksum: a6b28db7e23ac7a77d3707567cac81356ea18bd602a4f21f424f862a31d0e7ab4f250759c98a559ece35ffe4d99f0d339f1ab884ffa9795172f632ab8f88e686
+  languageName: node
+  linkType: hard
+
 "isexe@npm:^2.0.0":
   version: 2.0.0
   resolution: "isexe@npm:2.0.0"
@@ -6230,7 +6352,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plist@npm:^3.0.0, plist@npm:^3.0.1, plist@npm:^3.0.4":
+"plist@npm:^3.0.0, plist@npm:^3.0.1, plist@npm:^3.0.4, plist@npm:^3.0.5":
   version: 3.0.6
   resolution: "plist@npm:3.0.6"
   dependencies:
@@ -8205,7 +8327,7 @@ __metadata:
   resolution: "vr-stopwatch@workspace:."
   dependencies:
     "@electron-forge/cli": 6.0.0-beta.67
-    "@electron-forge/maker-squirrel": 6.0.0-beta.67
+    "@electron-forge/maker-squirrel": 6.0.0-beta.68
     "@electron-forge/plugin-webpack": 6.0.0-beta.67
     "@electron-forge/publisher-github": 6.0.0-beta.67
     "@fortawesome/fontawesome-free": ^6.2.0
