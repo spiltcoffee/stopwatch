@@ -84,7 +84,7 @@
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
     "autoprefixer": "^10.4.13",
     "css-loader": "^6.7.1",
-    "cssnano": "^5.1.13",
+    "cssnano": "^5.1.14",
     "electron": "21.2.0",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
