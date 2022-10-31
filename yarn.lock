@@ -278,13 +278,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/publisher-github@npm:6.0.0-beta.69":
-  version: 6.0.0-beta.69
-  resolution: "@electron-forge/publisher-github@npm:6.0.0-beta.69"
+"@electron-forge/publisher-github@npm:6.0.0-beta.70":
+  version: 6.0.0-beta.70
+  resolution: "@electron-forge/publisher-github@npm:6.0.0-beta.70"
   dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.69
-    "@electron-forge/publisher-base": 6.0.0-beta.69
-    "@electron-forge/shared-types": 6.0.0-beta.69
+    "@electron-forge/async-ora": 6.0.0-beta.70
+    "@electron-forge/publisher-base": 6.0.0-beta.70
+    "@electron-forge/shared-types": 6.0.0-beta.70
     "@octokit/core": ^3.2.4
     "@octokit/plugin-retry": ^3.0.9
     "@octokit/rest": ^18.0.11
@@ -292,7 +292,7 @@ __metadata:
     debug: ^4.3.1
     fs-extra: ^10.0.0
     mime-types: ^2.1.25
-  checksum: eea5e710b0561d28f3fc0f203b59dca94cb699254124f405927ca2cb3169cbc85157e40d88547b1947e4f229e5277c15dea2370cff8bfad8d459a1c14a38a9b6
+  checksum: c8d072a0b2e1531c4ac92da6c08dcc3c40b10a708ef7357a72db1991d6c41e1b233ca9cc5a3fdc54ce8b7ba7c633b0851b7ac9d07446906ad677794043b31ef9
   languageName: node
   linkType: hard
 
@@ -8229,7 +8229,7 @@ __metadata:
     "@electron-forge/cli": 6.0.0-beta.69
     "@electron-forge/maker-squirrel": 6.0.0-beta.69
     "@electron-forge/plugin-webpack": 6.0.0-beta.70
-    "@electron-forge/publisher-github": 6.0.0-beta.69
+    "@electron-forge/publisher-github": 6.0.0-beta.70
     "@fortawesome/fontawesome-free": ^6.2.0
     "@marshallofsound/webpack-asset-relocator-loader": ^0.5.0
     autoprefixer: ^10.4.13
