@@ -167,17 +167,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/maker-base@npm:6.0.0-beta.70":
-  version: 6.0.0-beta.70
-  resolution: "@electron-forge/maker-base@npm:6.0.0-beta.70"
-  dependencies:
-    "@electron-forge/shared-types": 6.0.0-beta.70
-    fs-extra: ^10.0.0
-    which: ^2.0.2
-  checksum: a3f7d146c949dc01aa7e61c1fb80f80efcd34635ed6587b17d66b743af2a1ce05a3b2167b9a7fc44146640ff70ed467d1e4f36e1b6230da62b595eefccec24a0
-  languageName: node
-  linkType: hard
-
 "@electron-forge/maker-base@npm:6.0.0-beta.74":
   version: 6.0.0-beta.74
   resolution: "@electron-forge/maker-base@npm:6.0.0-beta.74"
@@ -189,18 +178,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/maker-squirrel@npm:6.0.0-beta.70":
-  version: 6.0.0-beta.70
-  resolution: "@electron-forge/maker-squirrel@npm:6.0.0-beta.70"
+"@electron-forge/maker-squirrel@npm:6.0.0-beta.74":
+  version: 6.0.0-beta.74
+  resolution: "@electron-forge/maker-squirrel@npm:6.0.0-beta.74"
   dependencies:
-    "@electron-forge/maker-base": 6.0.0-beta.70
-    "@electron-forge/shared-types": 6.0.0-beta.70
+    "@electron-forge/maker-base": 6.0.0-beta.74
+    "@electron-forge/shared-types": 6.0.0-beta.74
     electron-winstaller: ^5.0.0
     fs-extra: ^10.0.0
   dependenciesMeta:
     electron-winstaller:
       optional: true
-  checksum: 974cc9f410b6748eafbcc5dcd593e37d02f9196f1c0a8739de21a6b61d106bdcf854d0820cccd070826fcff1052e7e0d1b4df6dd695e933cf5ad372244f6cf02
+  checksum: af48c31a8e72b7867903a1b40ee7b0a288ae3ff3683259e70ee098d9d70bfbda1962a18fb2bcce77ce726e6e3849781be16ac511eea2ba26f0f968837897885a
   languageName: node
   linkType: hard
 
@@ -8408,7 +8397,7 @@ __metadata:
   resolution: "vr-stopwatch@workspace:."
   dependencies:
     "@electron-forge/cli": 6.0.0-beta.74
-    "@electron-forge/maker-squirrel": 6.0.0-beta.70
+    "@electron-forge/maker-squirrel": 6.0.0-beta.74
     "@electron-forge/plugin-webpack": 6.0.0-beta.74
     "@electron-forge/publisher-github": 6.0.0-beta.70
     "@fortawesome/fontawesome-free": ^6.2.0
