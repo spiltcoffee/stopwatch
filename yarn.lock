@@ -234,15 +234,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/publisher-base@npm:6.0.0-beta.70":
-  version: 6.0.0-beta.70
-  resolution: "@electron-forge/publisher-base@npm:6.0.0-beta.70"
-  dependencies:
-    "@electron-forge/shared-types": 6.0.0-beta.70
-  checksum: 8353c088ed62b33ca91fe283e7d83603b61fd5c8628d96f764c4a1e46bf7aec4fa62c73035b5035d475031f7b2b298e2edbd6590637e4fd0d17daba3300e577d
-  languageName: node
-  linkType: hard
-
 "@electron-forge/publisher-base@npm:6.0.0-beta.74":
   version: 6.0.0-beta.74
   resolution: "@electron-forge/publisher-base@npm:6.0.0-beta.74"
@@ -252,13 +243,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/publisher-github@npm:6.0.0-beta.70":
-  version: 6.0.0-beta.70
-  resolution: "@electron-forge/publisher-github@npm:6.0.0-beta.70"
+"@electron-forge/publisher-github@npm:6.0.0-beta.74":
+  version: 6.0.0-beta.74
+  resolution: "@electron-forge/publisher-github@npm:6.0.0-beta.74"
   dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.70
-    "@electron-forge/publisher-base": 6.0.0-beta.70
-    "@electron-forge/shared-types": 6.0.0-beta.70
+    "@electron-forge/async-ora": 6.0.0-beta.74
+    "@electron-forge/publisher-base": 6.0.0-beta.74
+    "@electron-forge/shared-types": 6.0.0-beta.74
     "@octokit/core": ^3.2.4
     "@octokit/plugin-retry": ^3.0.9
     "@octokit/rest": ^18.0.11
@@ -266,7 +257,7 @@ __metadata:
     debug: ^4.3.1
     fs-extra: ^10.0.0
     mime-types: ^2.1.25
-  checksum: c8d072a0b2e1531c4ac92da6c08dcc3c40b10a708ef7357a72db1991d6c41e1b233ca9cc5a3fdc54ce8b7ba7c633b0851b7ac9d07446906ad677794043b31ef9
+  checksum: 0b481728987c4fa6c26295ea60d35f289a6e22a56ab01371472f9eed9d620eedb9b8516b34b3c13c4cb6a7a1e7295199bf6804faca18769b061f6bd8c20f89fc
   languageName: node
   linkType: hard
 
@@ -8410,7 +8401,7 @@ __metadata:
     "@electron-forge/cli": 6.0.0-beta.74
     "@electron-forge/maker-squirrel": 6.0.0-beta.70
     "@electron-forge/plugin-webpack": 6.0.0-beta.74
-    "@electron-forge/publisher-github": 6.0.0-beta.70
+    "@electron-forge/publisher-github": 6.0.0-beta.74
     "@fortawesome/fontawesome-free": ^6.2.0
     "@marshallofsound/webpack-asset-relocator-loader": ^0.5.0
     autoprefixer: ^10.4.13
