@@ -2961,36 +2961,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-packager@npm:^17.1.0":
-  version: 17.1.0
-  resolution: "electron-packager@npm:17.1.0"
-  dependencies:
-    "@electron/asar": ^3.2.1
-    "@electron/get": ^2.0.0
-    "@electron/notarize": ^1.2.3
-    "@electron/osx-sign": ^1.0.1
-    "@electron/universal": ^1.3.2
-    cross-spawn-windows-exe: ^1.2.0
-    debug: ^4.0.1
-    extract-zip: ^2.0.0
-    filenamify: ^4.1.0
-    fs-extra: ^10.1.0
-    galactus: ^0.2.1
-    get-package-info: ^1.0.0
-    junk: ^3.1.0
-    parse-author: ^2.0.0
-    plist: ^3.0.0
-    rcedit: ^3.0.1
-    resolve: ^1.1.6
-    semver: ^7.1.3
-    yargs-parser: ^21.1.1
-  bin:
-    electron-packager: bin/electron-packager.js
-  checksum: ed259f218465686e339f8c96f204a19873de7ed25b0e2742f7e2b1bee1422ff88561436b7efc72c1bec54dd6ac7c533b224d1d427217738af40e17125760ec08
-  languageName: node
-  linkType: hard
-
-"electron-packager@npm:^17.1.1":
+"electron-packager@npm:^17.1.0, electron-packager@npm:^17.1.1":
   version: 17.1.1
   resolution: "electron-packager@npm:17.1.1"
   dependencies:
