@@ -58,6 +58,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron-forge/async-ora@npm:6.0.0":
+  version: 6.0.0
+  resolution: "@electron-forge/async-ora@npm:6.0.0"
+  dependencies:
+    chalk: ^4.0.0
+    debug: ^4.3.1
+    log-symbols: ^4.0.0
+    ora: ^5.0.0
+    pretty-ms: ^7.0.0
+  checksum: 20ce3917ac2147d720cc694199285a88587f4322877a5442c6edc33a62d11121b9df337cf68c679828749c40a330271402b9588143a6c39846089ceb38a0009b
+  languageName: node
+  linkType: hard
+
 "@electron-forge/async-ora@npm:6.0.0-beta.74":
   version: 6.0.0-beta.74
   resolution: "@electron-forge/async-ora@npm:6.0.0-beta.74"
@@ -167,6 +180,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron-forge/maker-base@npm:6.0.0":
+  version: 6.0.0
+  resolution: "@electron-forge/maker-base@npm:6.0.0"
+  dependencies:
+    "@electron-forge/shared-types": 6.0.0
+    fs-extra: ^10.0.0
+    which: ^2.0.2
+  checksum: 99155e678130057dd6e5c52237bb1fcc254e7d3dc05aeef1364441759d8ee152885589997d05d2631f8e2cecefc1e7bd656c675f4149355ff92bdbc3a6b4fb1a
+  languageName: node
+  linkType: hard
+
 "@electron-forge/maker-base@npm:6.0.0-beta.74":
   version: 6.0.0-beta.74
   resolution: "@electron-forge/maker-base@npm:6.0.0-beta.74"
@@ -178,18 +202,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/maker-squirrel@npm:6.0.0-beta.74":
-  version: 6.0.0-beta.74
-  resolution: "@electron-forge/maker-squirrel@npm:6.0.0-beta.74"
+"@electron-forge/maker-squirrel@npm:6.0.0":
+  version: 6.0.0
+  resolution: "@electron-forge/maker-squirrel@npm:6.0.0"
   dependencies:
-    "@electron-forge/maker-base": 6.0.0-beta.74
-    "@electron-forge/shared-types": 6.0.0-beta.74
+    "@electron-forge/maker-base": 6.0.0
+    "@electron-forge/shared-types": 6.0.0
     electron-winstaller: ^5.0.0
     fs-extra: ^10.0.0
   dependenciesMeta:
     electron-winstaller:
       optional: true
-  checksum: af48c31a8e72b7867903a1b40ee7b0a288ae3ff3683259e70ee098d9d70bfbda1962a18fb2bcce77ce726e6e3849781be16ac511eea2ba26f0f968837897885a
+  checksum: 9eb239665bfe2ce561bcacaddc4284f0e2834d53e4233c2ffa96ff6f4ed4042ac8490026526e15d35b1ef5db58a3a2cf40ff1964234640b917c6bd433299f949
   languageName: node
   linkType: hard
 
@@ -256,6 +280,19 @@ __metadata:
     fs-extra: ^10.0.0
     mime-types: ^2.1.25
   checksum: 4e85349656707cdf8cf7c8039e627654e331f36f473571224187dac20ad3c218bd04625fe23b7afa2ecac41b28811fcd7b39a4989e2ec5ef1f5c58ccb035aa8e
+  languageName: node
+  linkType: hard
+
+"@electron-forge/shared-types@npm:6.0.0":
+  version: 6.0.0
+  resolution: "@electron-forge/shared-types@npm:6.0.0"
+  dependencies:
+    "@electron-forge/async-ora": 6.0.0
+    "@electron/rebuild": ^3.2.10
+    electron-packager: ^17.1.1
+    listr2: ^5.0.3
+    ora: ^5.0.0
+  checksum: cf8747bbbd3fc9ca9f702aca6c071008a524287c3372502761c783b94bc9073c5861cb96af0f7a19bf5093df95e85dbff2bdb2e7a5ba292c84b0c298c0205340
   languageName: node
   linkType: hard
 
@@ -8365,7 +8402,7 @@ __metadata:
   resolution: "vr-stopwatch@workspace:."
   dependencies:
     "@electron-forge/cli": 6.0.0-beta.74
-    "@electron-forge/maker-squirrel": 6.0.0-beta.74
+    "@electron-forge/maker-squirrel": 6.0.0
     "@electron-forge/plugin-webpack": 6.0.0-beta.74
     "@electron-forge/publisher-github": 6.0.0-beta.75
     "@fortawesome/fontawesome-free": ^6.2.0
