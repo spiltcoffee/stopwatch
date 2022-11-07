@@ -120,6 +120,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron-forge/core-utils@npm:6.0.0":
+  version: 6.0.0
+  resolution: "@electron-forge/core-utils@npm:6.0.0"
+  dependencies:
+    "@electron-forge/async-ora": 6.0.0
+    "@electron-forge/shared-types": 6.0.0
+    "@electron/rebuild": ^3.2.10
+    "@malept/cross-spawn-promise": ^2.0.0
+    chalk: ^4.0.0
+    debug: ^4.3.1
+    find-up: ^5.0.0
+    fs-extra: ^10.0.0
+    log-symbols: ^4.0.0
+    semver: ^7.2.1
+    yarn-or-npm: ^3.0.1
+  checksum: b1aa173c88e335d474f1c3f4a50a83dc4ce3b3abaacc823acf8df75cb381a49ed0c947a7e598392ad0d01f5e7e7a2b909e0ae21db5aab843696822069a0984bc
+  languageName: node
+  linkType: hard
+
 "@electron-forge/core-utils@npm:6.0.0-beta.74":
   version: 6.0.0-beta.74
   resolution: "@electron-forge/core-utils@npm:6.0.0-beta.74"
@@ -217,6 +236,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron-forge/plugin-base@npm:6.0.0":
+  version: 6.0.0
+  resolution: "@electron-forge/plugin-base@npm:6.0.0"
+  dependencies:
+    "@electron-forge/shared-types": 6.0.0
+  checksum: 38f3d3760868e1aa7bf44c0084e951d45adc30c77988d63ef2d5adedcb11e74ef1e33f0906bef43fe806d200d417a5d79fbd01abbaff4ef852b7fe32313d00a0
+  languageName: node
+  linkType: hard
+
 "@electron-forge/plugin-base@npm:6.0.0-beta.74":
   version: 6.0.0-beta.74
   resolution: "@electron-forge/plugin-base@npm:6.0.0-beta.74"
@@ -226,15 +254,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/plugin-webpack@npm:6.0.0-beta.74":
-  version: 6.0.0-beta.74
-  resolution: "@electron-forge/plugin-webpack@npm:6.0.0-beta.74"
+"@electron-forge/plugin-webpack@npm:6.0.0":
+  version: 6.0.0
+  resolution: "@electron-forge/plugin-webpack@npm:6.0.0"
   dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.74
-    "@electron-forge/core-utils": 6.0.0-beta.74
-    "@electron-forge/plugin-base": 6.0.0-beta.74
-    "@electron-forge/shared-types": 6.0.0-beta.74
-    "@electron-forge/web-multi-logger": 6.0.0-beta.74
+    "@electron-forge/async-ora": 6.0.0
+    "@electron-forge/core-utils": 6.0.0
+    "@electron-forge/plugin-base": 6.0.0
+    "@electron-forge/shared-types": 6.0.0
+    "@electron-forge/web-multi-logger": 6.0.0
     chalk: ^4.0.0
     debug: ^4.3.1
     fs-extra: ^10.0.0
@@ -243,7 +271,7 @@ __metadata:
     webpack: ^5.69.1
     webpack-dev-server: ^4.0.0
     webpack-merge: ^5.7.3
-  checksum: 472a6f7541ac34764e165c16e70e915b5aa0539bcd0949d8e4505ce079a5720a50a636262292ca2a31053d64bdb4a381f8aaf5f28c49fd9274bb32e0f15011a9
+  checksum: fd90f040cbae90828e5b50c4ff2d07bb783520ef09d041754aa0adff09eeaf29be585b2a432db0467e0894e899da0ac296bedd072d8607c0b78a2b340ce6c799
   languageName: node
   linkType: hard
 
@@ -360,16 +388,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/web-multi-logger@npm:6.0.0-beta.74":
-  version: 6.0.0-beta.74
-  resolution: "@electron-forge/web-multi-logger@npm:6.0.0-beta.74"
+"@electron-forge/web-multi-logger@npm:6.0.0":
+  version: 6.0.0
+  resolution: "@electron-forge/web-multi-logger@npm:6.0.0"
   dependencies:
     express: ^4.17.1
     express-ws: ^5.0.2
     xterm: ^4.9.0
     xterm-addon-fit: ^0.5.0
     xterm-addon-search: ^0.8.0
-  checksum: e4d4ab82c0db94fe78537144b440b0990ba46412874473779e6ef8ddd5463e0825ac09f0aa89c6c2c3807b35c38dbee2bf628b043f7f2521ed800f8681e0a5b5
+  checksum: 655c270ebe82a3b0ae72a80303d155dc0d767839bc714132403a109e8abdcb0f2df3a33d3835e8d165d2e11fef53b91cb3dc0c5621edffe94f8d80c35518e744
   languageName: node
   linkType: hard
 
@@ -8403,7 +8431,7 @@ __metadata:
   dependencies:
     "@electron-forge/cli": 6.0.0-beta.74
     "@electron-forge/maker-squirrel": 6.0.0
-    "@electron-forge/plugin-webpack": 6.0.0-beta.74
+    "@electron-forge/plugin-webpack": 6.0.0
     "@electron-forge/publisher-github": 6.0.0-beta.75
     "@fortawesome/fontawesome-free": ^6.2.0
     "@marshallofsound/webpack-asset-relocator-loader": ^0.5.0
