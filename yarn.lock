@@ -71,19 +71,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/async-ora@npm:6.0.0-beta.75":
-  version: 6.0.0-beta.75
-  resolution: "@electron-forge/async-ora@npm:6.0.0-beta.75"
-  dependencies:
-    chalk: ^4.0.0
-    debug: ^4.3.1
-    log-symbols: ^4.0.0
-    ora: ^5.0.0
-    pretty-ms: ^7.0.0
-  checksum: 44d7d3fb3e6c137ff5996328ffe20be7e46d65d525dc154ce61859d536710a8b5342dde1f1e6a093024a1fa1ca6e818591019e690e79030586ac5efcc3f0b0f9
-  languageName: node
-  linkType: hard
-
 "@electron-forge/cli@npm:6.0.0":
   version: 6.0.0
   resolution: "@electron-forge/cli@npm:6.0.0"
@@ -232,22 +219,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/publisher-base@npm:6.0.0-beta.75":
-  version: 6.0.0-beta.75
-  resolution: "@electron-forge/publisher-base@npm:6.0.0-beta.75"
+"@electron-forge/publisher-base@npm:^6.0.4":
+  version: 6.0.4
+  resolution: "@electron-forge/publisher-base@npm:6.0.4"
   dependencies:
-    "@electron-forge/shared-types": 6.0.0-beta.75
-  checksum: 33ec904d3ac5b84bd5ae317c9bf262062754506bee51e428aa57507d2d3ed32bbe4e1cedb909dbffff9428ae43d637b3c03d705b1eb5754e49f624f08177d457
+    "@electron-forge/shared-types": ^6.0.4
+  checksum: 3eb353563e6f56eed7ecc69e58604afc0924c77399e5da814f0f778b5a1b7e40ae835d1be40e30b0ad1b26ea8915b8d7002accbbd04f688bb20a92f8a22d9983
   languageName: node
   linkType: hard
 
-"@electron-forge/publisher-github@npm:6.0.0-beta.75":
-  version: 6.0.0-beta.75
-  resolution: "@electron-forge/publisher-github@npm:6.0.0-beta.75"
+"@electron-forge/publisher-github@npm:6.0.4":
+  version: 6.0.4
+  resolution: "@electron-forge/publisher-github@npm:6.0.4"
   dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.75
-    "@electron-forge/publisher-base": 6.0.0-beta.75
-    "@electron-forge/shared-types": 6.0.0-beta.75
+    "@electron-forge/publisher-base": ^6.0.4
+    "@electron-forge/shared-types": ^6.0.4
     "@octokit/core": ^3.2.4
     "@octokit/plugin-retry": ^3.0.9
     "@octokit/rest": ^18.0.11
@@ -255,7 +241,7 @@ __metadata:
     debug: ^4.3.1
     fs-extra: ^10.0.0
     mime-types: ^2.1.25
-  checksum: 4e85349656707cdf8cf7c8039e627654e331f36f473571224187dac20ad3c218bd04625fe23b7afa2ecac41b28811fcd7b39a4989e2ec5ef1f5c58ccb035aa8e
+  checksum: b90215a2ddc6673db747d1055de8db6e86b079d64b5f5eacb85d1b9ab347be931fc84f3c87db9864ff984cb5cfec45ccdf97a0b18488cba26c96011f43135f6a
   languageName: node
   linkType: hard
 
@@ -272,16 +258,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/shared-types@npm:6.0.0-beta.75":
-  version: 6.0.0-beta.75
-  resolution: "@electron-forge/shared-types@npm:6.0.0-beta.75"
+"@electron-forge/shared-types@npm:^6.0.4":
+  version: 6.0.4
+  resolution: "@electron-forge/shared-types@npm:6.0.4"
   dependencies:
-    "@electron-forge/async-ora": 6.0.0-beta.75
     "@electron/rebuild": ^3.2.10
     electron-packager: ^17.1.1
     listr2: ^5.0.3
-    ora: ^5.0.0
-  checksum: 0a6009b29fb7132244f74226d1326bf15725ddadb4ed7a3d71f47c6a886fe56b23a7bdd213ec3efcb5c067c0ae2269b83c3e665c29e7182ebf5b97c1ebd7c64d
+  checksum: 76b3666fd5b21d1d197d7034dce89b699ae790f7e9f3be0ea387d18f80fd490df69694035e69b9242481babe64622d171fb74e8a9af3e0a555f7918d1a91df27
   languageName: node
   linkType: hard
 
@@ -8175,7 +8159,7 @@ __metadata:
     "@electron-forge/cli": 6.0.0
     "@electron-forge/maker-squirrel": 6.0.0
     "@electron-forge/plugin-webpack": 6.0.0
-    "@electron-forge/publisher-github": 6.0.0-beta.75
+    "@electron-forge/publisher-github": 6.0.4
     "@fortawesome/fontawesome-free": ^6.2.1
     "@marshallofsound/webpack-asset-relocator-loader": ^0.5.0
     autoprefixer: ^10.4.13
