@@ -7,7 +7,7 @@ const settings = require("./utils/settings");
 const logger = require("./utils/logger");
 const bounds = require("./utils/bounds");
 
-const icon = path.resolve(__dirname, require("./favicon.ico"));
+const icon = path.resolve(__dirname, require("./favicon.ico").default);
 const APP_ID = "SpiltCoffee.VRStopwatch";
 
 let mainWindow;

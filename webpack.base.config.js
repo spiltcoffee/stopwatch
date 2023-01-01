@@ -2,7 +2,7 @@ const webpack = require("webpack");
 const { VueLoaderPlugin } = require("vue-loader");
 const { merge } = require("webpack-merge");
 
-module.exports = function (options) {
+module.exports = function (options = {}) {
   options = merge(
     {
       base: "",
@@ -44,11 +44,11 @@ module.exports = function (options) {
           use: ["style-loader", "css-loader", "postcss-loader"],
         },
         {
-          test: /\.(png|jpe?g|gif|svg|ico|eot|woff2?|ttf|otf|wav|mp3|ogg)$/,
+          test: /\.(png|jpe?g|gif|svg|ico|wav|mp3|ogg)$/,
           use: {
             loader: "file-loader",
             options: {
-              name: "[contenthash].[ext]",
+              name: "[sha512:hash:6].[ext]",
               publicPath: options.base,
             },
           },

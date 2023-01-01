@@ -1,4 +1,5 @@
 module.exports = {
+  content: ["./src/**/*.{js,vue}"],
   theme: {
     extend: {
       colors: {
@@ -11,10 +12,5 @@ module.exports = {
         contain: "100vmin",
       },
     },
-  },
-  variants: {
-    textColor: ["hover", "focus", "active"],
-    backgroundColor: ["hover", "focus", "active"],
-    boxShadow: ["hover", "focus", "active"],
   },
 };
