@@ -85,7 +85,7 @@
     "autoprefixer": "^10.4.13",
     "css-loader": "^6.7.3",
     "cssnano": "^5.1.14",
-    "electron": "22.1.0",
+    "electron": "22.2.0",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-node": "^11.1.0",
