@@ -72,7 +72,7 @@
     "moment": "^2.29.4",
     "process": "^0.11.10",
     "uuid": "^9.0.0",
-    "vue": "^3.2.45",
+    "vue": "^3.2.47",
     "vue-svg-gauge": "^1.2.1"
   },
   "devDependencies": {
