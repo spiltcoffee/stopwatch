@@ -200,15 +200,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/publisher-base@npm:^6.0.4":
-  version: 6.0.4
-  resolution: "@electron-forge/publisher-base@npm:6.0.4"
-  dependencies:
-    "@electron-forge/shared-types": ^6.0.4
-  checksum: 3eb353563e6f56eed7ecc69e58604afc0924c77399e5da814f0f778b5a1b7e40ae835d1be40e30b0ad1b26ea8915b8d7002accbbd04f688bb20a92f8a22d9983
-  languageName: node
-  linkType: hard
-
 "@electron-forge/publisher-github@npm:6.0.5":
   version: 6.0.5
   resolution: "@electron-forge/publisher-github@npm:6.0.5"
@@ -234,17 +225,6 @@ __metadata:
     electron-packager: ^17.1.1
     listr2: ^5.0.3
   checksum: 123773cb5f5b9f35f0f088f0ff0edcfc3b48a7a65bbea57f3b622c9680bb3e3e93c95afb620237299642aae1cee14d5b4b2ba3fe46cbe69f0da43977590ed651
-  languageName: node
-  linkType: hard
-
-"@electron-forge/shared-types@npm:^6.0.4":
-  version: 6.0.4
-  resolution: "@electron-forge/shared-types@npm:6.0.4"
-  dependencies:
-    "@electron/rebuild": ^3.2.10
-    electron-packager: ^17.1.1
-    listr2: ^5.0.3
-  checksum: 76b3666fd5b21d1d197d7034dce89b699ae790f7e9f3be0ea387d18f80fd490df69694035e69b9242481babe64622d171fb74e8a9af3e0a555f7918d1a91df27
   languageName: node
   linkType: hard
 
@@ -6503,12 +6483,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.8.3":
-  version: 2.8.3
-  resolution: "prettier@npm:2.8.3"
+"prettier@npm:^2.8.4":
+  version: 2.8.4
+  resolution: "prettier@npm:2.8.4"
   bin:
     prettier: bin-prettier.js
-  checksum: 92f2ceb522d454370e02082aa74ad27388672f7cee8975028b59517c069fe643bdc73e322675c8faf2ff173d7a626d1a6389f26b474000308e793aa25fff46e5
+  checksum: c173064bf3df57b6d93d19aa98753b9b9dd7657212e33b41ada8e2e9f9884066bb9ca0b4005b89b3ab137efffdf8fbe0b462785aba20364798ff4303aadda57e
   languageName: node
   linkType: hard
 
@@ -8028,7 +8008,7 @@ __metadata:
     node-loader: ^2.0.0
     postcss: ^8.4.21
     postcss-loader: ^7.0.2
-    prettier: ^2.8.3
+    prettier: ^2.8.4
     process: ^0.11.10
     style-loader: ^3.3.1
     tailwindcss: ^3.2.4
