@@ -200,15 +200,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/publisher-base@npm:^6.0.4":
-  version: 6.0.4
-  resolution: "@electron-forge/publisher-base@npm:6.0.4"
-  dependencies:
-    "@electron-forge/shared-types": ^6.0.4
-  checksum: 3eb353563e6f56eed7ecc69e58604afc0924c77399e5da814f0f778b5a1b7e40ae835d1be40e30b0ad1b26ea8915b8d7002accbbd04f688bb20a92f8a22d9983
-  languageName: node
-  linkType: hard
-
 "@electron-forge/publisher-github@npm:6.0.5":
   version: 6.0.5
   resolution: "@electron-forge/publisher-github@npm:6.0.5"
@@ -234,17 +225,6 @@ __metadata:
     electron-packager: ^17.1.1
     listr2: ^5.0.3
   checksum: 123773cb5f5b9f35f0f088f0ff0edcfc3b48a7a65bbea57f3b622c9680bb3e3e93c95afb620237299642aae1cee14d5b4b2ba3fe46cbe69f0da43977590ed651
-  languageName: node
-  linkType: hard
-
-"@electron-forge/shared-types@npm:^6.0.4":
-  version: 6.0.4
-  resolution: "@electron-forge/shared-types@npm:6.0.4"
-  dependencies:
-    "@electron/rebuild": ^3.2.10
-    electron-packager: ^17.1.1
-    listr2: ^5.0.3
-  checksum: 76b3666fd5b21d1d197d7034dce89b699ae790f7e9f3be0ea387d18f80fd490df69694035e69b9242481babe64622d171fb74e8a9af3e0a555f7918d1a91df27
   languageName: node
   linkType: hard
 
@@ -419,10 +399,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/fontawesome-free@npm:^6.2.1":
-  version: 6.2.1
-  resolution: "@fortawesome/fontawesome-free@npm:6.2.1"
-  checksum: c77b7c8b0965e5c17f4ca45667885b6273e26af97a9e83db343fc756c159b5acd35cf420e73e1b916af1d275179290ccfb1900af48631749e30f36464f339bd3
+"@fortawesome/fontawesome-free@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "@fortawesome/fontawesome-free@npm:6.3.0"
+  checksum: 5c62c2a836079e84b86cea1ab9934f7118ded2b93799a0439b947d5fa821d2df9707dc5f1a6e1e2c85dafb78ad3167597310a526a6ad41ae17aa340f989eec3d
   languageName: node
   linkType: hard
 
@@ -8008,7 +7988,7 @@ __metadata:
     "@electron-forge/maker-squirrel": 6.0.5
     "@electron-forge/plugin-webpack": 6.0.5
     "@electron-forge/publisher-github": 6.0.5
-    "@fortawesome/fontawesome-free": ^6.2.1
+    "@fortawesome/fontawesome-free": ^6.3.0
     "@marshallofsound/webpack-asset-relocator-loader": ^0.5.0
     autoprefixer: ^10.4.13
     css-loader: ^6.7.3
