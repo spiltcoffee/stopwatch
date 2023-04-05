@@ -200,12 +200,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/publisher-github@npm:6.1.0":
-  version: 6.1.0
-  resolution: "@electron-forge/publisher-github@npm:6.1.0"
+"@electron-forge/publisher-base@npm:6.1.1":
+  version: 6.1.1
+  resolution: "@electron-forge/publisher-base@npm:6.1.1"
   dependencies:
-    "@electron-forge/publisher-base": 6.1.0
-    "@electron-forge/shared-types": 6.1.0
+    "@electron-forge/shared-types": 6.1.1
+  checksum: 6527552485315da39cd82b569d0f1976d289d291ffdfc64ed0981428c100d6d0b3d9a562677bdd1b3e9016135b2d38af8bf35beef6162fb0b7b530147600f54e
+  languageName: node
+  linkType: hard
+
+"@electron-forge/publisher-github@npm:6.1.1":
+  version: 6.1.1
+  resolution: "@electron-forge/publisher-github@npm:6.1.1"
+  dependencies:
+    "@electron-forge/publisher-base": 6.1.1
+    "@electron-forge/shared-types": 6.1.1
     "@octokit/core": ^3.2.4
     "@octokit/plugin-retry": ^3.0.9
     "@octokit/rest": ^18.0.11
@@ -213,7 +222,7 @@ __metadata:
     debug: ^4.3.1
     fs-extra: ^10.0.0
     mime-types: ^2.1.25
-  checksum: 247b475bdcb5c21a74ca116805f789d1a325d3a3623f14465d54e348d893d10bf8e408b54d973eabd22d67e513b5681762299b3f8316241e3da9f6a13c90045e
+  checksum: b00a3e09b0af3c5c7a30c36e416a0400002623afeb117485bccddaca646a1c8d0f02f76d493c87fd1e8d5f2b275577fe1a9f7cc709975b0552ccf4df482585f0
   languageName: node
   linkType: hard
 
@@ -225,6 +234,17 @@ __metadata:
     electron-packager: ^17.1.1
     listr2: ^5.0.3
   checksum: 76d4e3e0bc3ba8da63796f5adea38575582f16a28ed303ee5d483e3daf1c317cad9ed26ed77ca77705a96f2b8ac5387a14d3ccde2fb1e73645e313d7aed91af0
+  languageName: node
+  linkType: hard
+
+"@electron-forge/shared-types@npm:6.1.1":
+  version: 6.1.1
+  resolution: "@electron-forge/shared-types@npm:6.1.1"
+  dependencies:
+    "@electron/rebuild": ^3.2.10
+    electron-packager: ^17.1.1
+    listr2: ^5.0.3
+  checksum: 20fc8ca61616f928dfc0647dff210a6889617977af207bbd052722cb26e5d4bdef61bcd131354a5d356bddfd83f5b73ec41dbb2e547efb751c4d687bb9d66b55
   languageName: node
   linkType: hard
 
@@ -8279,7 +8299,7 @@ __metadata:
     "@electron-forge/cli": 6.1.0
     "@electron-forge/maker-squirrel": 6.1.0
     "@electron-forge/plugin-webpack": 6.1.0
-    "@electron-forge/publisher-github": 6.1.0
+    "@electron-forge/publisher-github": 6.1.1
     "@fortawesome/fontawesome-free": ^6.4.0
     "@marshallofsound/webpack-asset-relocator-loader": ^0.5.0
     autoprefixer: ^10.4.14
