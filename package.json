@@ -86,7 +86,7 @@
     "css-loader": "^6.7.3",
     "cssnano": "^6.0.1",
     "electron": "24.2.0",
-    "eslint": "^8.39.0",
+    "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-vue": "^9.11.1",
