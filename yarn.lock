@@ -8688,7 +8688,7 @@ __metadata:
     tailwindcss: ^3.3.2
     uuid: ^9.0.0
     vue: ^3.3.4
-    vue-loader: ^17.1.2
+    vue-loader: ^17.2.1
     vue-svg-gauge: ^1.2.1
     vue-template-compiler: ^2.7.14
     webpack: ^5.84.1
@@ -8715,9 +8715,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-loader@npm:^17.1.2":
-  version: 17.1.2
-  resolution: "vue-loader@npm:17.1.2"
+"vue-loader@npm:^17.2.1":
+  version: 17.2.1
+  resolution: "vue-loader@npm:17.2.1"
   dependencies:
     chalk: ^4.1.0
     hash-sum: ^2.0.0
@@ -8729,7 +8729,7 @@ __metadata:
       optional: true
     vue:
       optional: true
-  checksum: d176e5b9257a64c27fc52803201b340c5ac1f3b1cc9c9cbd31699e63aa8eab16118cbe1f85689fa8046ec202c3e4d5570ed7b25018315df48e36dea0803338e7
+  checksum: 3cf01b109b54fb2aded7f9db5e0a0485d2b797f85b650ab5097cb5bbd1e96048aefe5581ec387bf8c74387ca4b8ca1e3fdb1cf3b76b7a03362b54156ebee28ff
   languageName: node
   linkType: hard
 
