@@ -86,24 +86,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/core-utils@npm:6.1.1":
-  version: 6.1.1
-  resolution: "@electron-forge/core-utils@npm:6.1.1"
-  dependencies:
-    "@electron-forge/shared-types": 6.1.1
-    "@electron/rebuild": ^3.2.10
-    "@malept/cross-spawn-promise": ^2.0.0
-    chalk: ^4.0.0
-    debug: ^4.3.1
-    find-up: ^5.0.0
-    fs-extra: ^10.0.0
-    log-symbols: ^4.0.0
-    semver: ^7.2.1
-    yarn-or-npm: ^3.0.1
-  checksum: a4eb05441884210a84cf7c63ada1f76ae009999af876e3070d8c9051f1dca2c9a0e398eab72f54e6f91e608eb75b9d02b21954b0e392ffefe5b1a18753a7f94b
-  languageName: node
-  linkType: hard
-
 "@electron-forge/core-utils@npm:6.2.1":
   version: 6.2.1
   resolution: "@electron-forge/core-utils@npm:6.2.1"
@@ -189,15 +171,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/plugin-base@npm:6.1.1":
-  version: 6.1.1
-  resolution: "@electron-forge/plugin-base@npm:6.1.1"
-  dependencies:
-    "@electron-forge/shared-types": 6.1.1
-  checksum: d076a8dc63317ffcb961fd2b64af8f6f7c9d8cfe38f0578171a98c7fdd7c386160367a0078cb54e3eba685254b34747d4b9cd8b45c261759c0ecf9259c00e245
-  languageName: node
-  linkType: hard
-
 "@electron-forge/plugin-base@npm:6.2.1":
   version: 6.2.1
   resolution: "@electron-forge/plugin-base@npm:6.2.1"
@@ -207,14 +180,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/plugin-webpack@npm:6.1.1":
-  version: 6.1.1
-  resolution: "@electron-forge/plugin-webpack@npm:6.1.1"
+"@electron-forge/plugin-webpack@npm:6.2.1":
+  version: 6.2.1
+  resolution: "@electron-forge/plugin-webpack@npm:6.2.1"
   dependencies:
-    "@electron-forge/core-utils": 6.1.1
-    "@electron-forge/plugin-base": 6.1.1
-    "@electron-forge/shared-types": 6.1.1
-    "@electron-forge/web-multi-logger": 6.1.1
+    "@electron-forge/core-utils": 6.2.1
+    "@electron-forge/plugin-base": 6.2.1
+    "@electron-forge/shared-types": 6.2.1
+    "@electron-forge/web-multi-logger": 6.2.1
     chalk: ^4.0.0
     debug: ^4.3.1
     fs-extra: ^10.0.0
@@ -222,7 +195,7 @@ __metadata:
     webpack: ^5.69.1
     webpack-dev-server: ^4.0.0
     webpack-merge: ^5.7.3
-  checksum: f241120a07299818751372587dce8bca42865c00e511ec9f6bfe8a4c15a90b2b73144204973be3ee7133582b8ff2518440594e13bec6ace9d464dedf64c86a02
+  checksum: e9415f0f807d2eae1310486865f97a91e2a8e365c98cd1be8a6dc7c2d8cb89cb5e714889471baa3067eb865e22895ce950d089b3cc1a2dd0b0c9d3179b73a559
   languageName: node
   linkType: hard
 
@@ -249,17 +222,6 @@ __metadata:
     fs-extra: ^10.0.0
     mime-types: ^2.1.25
   checksum: 053e17f956aaadf216227b3c53507e476d05cd1558ff7a9d572d7c248966cae5a377ce4ab426aa6dfaf575b7e2e9b691106bf35363fe1a579739f0b56025adec
-  languageName: node
-  linkType: hard
-
-"@electron-forge/shared-types@npm:6.1.1":
-  version: 6.1.1
-  resolution: "@electron-forge/shared-types@npm:6.1.1"
-  dependencies:
-    "@electron/rebuild": ^3.2.10
-    electron-packager: ^17.1.1
-    listr2: ^5.0.3
-  checksum: 20fc8ca61616f928dfc0647dff210a6889617977af207bbd052722cb26e5d4bdef61bcd131354a5d356bddfd83f5b73ec41dbb2e547efb751c4d687bb9d66b55
   languageName: node
   linkType: hard
 
@@ -320,16 +282,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/web-multi-logger@npm:6.1.1":
-  version: 6.1.1
-  resolution: "@electron-forge/web-multi-logger@npm:6.1.1"
+"@electron-forge/web-multi-logger@npm:6.2.1":
+  version: 6.2.1
+  resolution: "@electron-forge/web-multi-logger@npm:6.2.1"
   dependencies:
     express: ^4.17.1
     express-ws: ^5.0.2
     xterm: ^4.9.0
     xterm-addon-fit: ^0.5.0
     xterm-addon-search: ^0.8.0
-  checksum: 70378c1c3c542426556cdc3c1e29257c5e42bc41cefe3dd1566271664c93f7a38c10ba4af7c24e877e030eda9c646953bf2c81178f8d58c68ac3b189288f6f04
+  checksum: 81d952c96d06e8773254769f7f5caf41ec35f6e7fd1d8ee76dfa133023fa5e12602582c9d7a8441daafe3011eba25d32bad671d8a21285c48997dbd2487ab287
   languageName: node
   linkType: hard
 
@@ -8699,7 +8661,7 @@ __metadata:
   dependencies:
     "@electron-forge/cli": 6.2.1
     "@electron-forge/maker-squirrel": 6.2.1
-    "@electron-forge/plugin-webpack": 6.1.1
+    "@electron-forge/plugin-webpack": 6.2.1
     "@electron-forge/publisher-github": 6.2.1
     "@fortawesome/fontawesome-free": ^6.4.0
     "@marshallofsound/webpack-asset-relocator-loader": ^0.5.0
