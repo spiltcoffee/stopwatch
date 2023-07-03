@@ -1,19 +1,23 @@
-const path = require("path");
+import path from "path";
 
-const squirrel = require("electron-squirrel-startup");
-const { app, BrowserWindow, ipcMain } = require("electron");
+import squirrel from "electron-squirrel-startup";
+import { app, BrowserWindow, ipcMain } from "electron";
 
-const settings = require("./utils/settings");
-const logger = require("./utils/logger");
-const bounds = require("./utils/bounds");
+import settings from "./utils/settings";
+import logger from "./utils/logger";
+import bounds from "./utils/bounds";
 
 const icon = path.resolve(__dirname, require("./favicon.ico").default);
 const APP_ID = "SpiltCoffee.VRStopwatch";
 
-let mainWindow;
+let mainWindow: BrowserWindow;
 
 if (squirrel || !app.requestSingleInstanceLock()) {
   app.quit();
+}
+
+declare global {
+  const MAIN_WINDOW_WEBPACK_ENTRY: string;
 }
 
 const createWindow = () => {
@@ -32,6 +36,7 @@ const createWindow = () => {
     fullscreenable: false,
     webPreferences: {
       nodeIntegration: true,
+      contextIsolation: false,
     },
   });
 

@@ -27,12 +27,18 @@
   </button>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from "vue";
 import knockWav from "../knock.wav";
 const knockSound = new Audio(knockWav);
+import VueSvgGauge from "../vue-svg-gauge/VueSvgGauge.vue";
 
-export default {
+export default defineComponent({
   name: "KnockControl",
+  components: {
+    VueSvgGauge,
+  },
+  emits: ["knock"],
   data() {
     return {
       value: true,
@@ -77,5 +83,5 @@ export default {
       knockSound.currentTime = 0;
     },
   },
-};
+});
 </script>

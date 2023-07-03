@@ -1,36 +1,46 @@
 {
+  "root": true,
+  "parser": "vue-eslint-parser",
   "parserOptions": {
+    "parser": "@typescript-eslint/parser",
     "ecmaVersion": 9
   },
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:node/recommended",
-    "plugin:vue/recommended",
+    "plugin:vue/vue3-recommended",
     "prettier"
   ],
+
+  "settings": {
+    "node": {
+      "allowModules": ["electron"],
+      "tryExtensions": [".ts", ".js", ".json", ".node"]
+    }
+  },
+
   "globals": {
     "MAIN_WINDOW_WEBPACK_ENTRY": "readonly",
     "FLAGS": "readonly"
   },
+
   "rules": {
     "node/no-unsupported-features/es-syntax": [
       "error",
       {
         "ignores": ["modules"]
       }
-    ],
-    "node/no-unpublished-require": [
-      "error",
-      {
-        "allowModules": ["electron"]
-      }
     ]
   },
+
   "overrides": [
     {
-      "files": ["webpack.*.config.js"],
+      "files": ["webpack.*.config.{ts,js}"],
       "rules": {
-        "node/no-unpublished-require": "off"
+        "node/no-unpublished-require": "off",
+        "node/no-unpublished-import": "off"
       }
     }
   ]

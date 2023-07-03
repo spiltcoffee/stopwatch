@@ -23,8 +23,11 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
   name: "StopwatchToolbar",
-};
+  emits: ["settings", "minimize", "close"],
+});
 </script>

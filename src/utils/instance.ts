@@ -1,9 +1,12 @@
-const { app } = require("electron");
-const jetpack = require("fs-jetpack");
-const { v4: uuid } = require("uuid");
+import { app } from "electron";
+import jetpack from "fs-jetpack";
+import { v4 as uuid } from "uuid";
 
 class Instance {
-  constructor(dir) {
+  private jetpack: ReturnType<typeof jetpack.cwd>;
+  private instance: string;
+
+  constructor(dir: string) {
     this.jetpack = jetpack.cwd(dir);
     this.instance = null;
   }
@@ -20,10 +23,10 @@ class Instance {
   }
 }
 
-let instance;
-module.exports = () => {
+let instance: Instance;
+export default function getInstance() {
   if (!instance) {
     instance = new Instance(app.getPath("userData"));
   }
   return instance;
-};
+}

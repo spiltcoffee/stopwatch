@@ -35,13 +35,16 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
   name: "TimeControl",
   props: {
     playing: Boolean,
     playable: Boolean,
     stoppable: Boolean,
   },
-};
+  emits: ["play", "pause", "stop"],
+});
 </script>
