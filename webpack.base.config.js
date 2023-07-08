@@ -12,7 +12,7 @@ module.exports = function (options = {}) {
         WEB: false,
       },
     },
-    options
+    options,
   );
 
   return {
