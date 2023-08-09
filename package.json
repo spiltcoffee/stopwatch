@@ -76,7 +76,7 @@
     "vue-svg-gauge": "^1.2.1"
   },
   "devDependencies": {
-    "@electron-forge/cli": "6.2.1",
+    "@electron-forge/cli": "6.3.0",
     "@electron-forge/maker-squirrel": "6.2.1",
     "@electron-forge/plugin-webpack": "6.2.1",
     "@electron-forge/publisher-github": "6.2.1",
