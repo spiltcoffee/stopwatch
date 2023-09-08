@@ -243,12 +243,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/publisher-github@npm:6.4.1":
-  version: 6.4.1
-  resolution: "@electron-forge/publisher-github@npm:6.4.1"
+"@electron-forge/publisher-base@npm:6.4.2":
+  version: 6.4.2
+  resolution: "@electron-forge/publisher-base@npm:6.4.2"
   dependencies:
-    "@electron-forge/publisher-base": 6.4.1
-    "@electron-forge/shared-types": 6.4.1
+    "@electron-forge/shared-types": 6.4.2
+  checksum: 7a4ac73aeabbd92b5e8494e8c17ed08c66a56fc08f8e6976192641328d49bc185d87178dd9a9fae584841c39ba7e4d269bbc482cc525263c24133547f099eab8
+  languageName: node
+  linkType: hard
+
+"@electron-forge/publisher-github@npm:6.4.2":
+  version: 6.4.2
+  resolution: "@electron-forge/publisher-github@npm:6.4.2"
+  dependencies:
+    "@electron-forge/publisher-base": 6.4.2
+    "@electron-forge/shared-types": 6.4.2
     "@octokit/core": ^3.2.4
     "@octokit/plugin-retry": ^3.0.9
     "@octokit/rest": ^18.0.11
@@ -256,7 +265,7 @@ __metadata:
     debug: ^4.3.1
     fs-extra: ^10.0.0
     mime-types: ^2.1.25
-  checksum: 1f6cdff0d8a84cee00c524ad2d1b70c281782b64e0ed4e231ae18e72360940182a088fc4dee925f7e884570424240fc94e35b7764453736c651367fcd69fb89f
+  checksum: 195c0d1beb09cb1c41e5b1a2a4cf3640486e10ea5fb2d68e11d6100fcfd4a26c45e1300aebd1b78e331a22954836c95d29beeac87c3a8b615916d525d9c81635
   languageName: node
   linkType: hard
 
@@ -8417,7 +8426,7 @@ __metadata:
     "@electron-forge/cli": 6.4.1
     "@electron-forge/maker-squirrel": 6.4.1
     "@electron-forge/plugin-webpack": 6.4.2
-    "@electron-forge/publisher-github": 6.4.1
+    "@electron-forge/publisher-github": 6.4.2
     "@fortawesome/fontawesome-free": ^6.4.2
     "@marshallofsound/webpack-asset-relocator-loader": ^0.5.0
     autoprefixer: ^10.4.15
