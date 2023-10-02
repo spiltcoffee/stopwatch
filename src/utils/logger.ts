@@ -18,10 +18,24 @@ class Logger {
     };
     this.jetpack.append("sessions.json.log", `${JSON.stringify(session)}\n`);
   }
+
+  update(
+    type: "log" | "info" | "warn" | "error",
+    message: unknown,
+    ...args: unknown[]
+  ) {
+    const update = {
+      type,
+      message,
+      args,
+      timestamp: moment().toISOString(),
+    };
+    this.jetpack.append("update.json.log", `${JSON.stringify(update)}\n`);
+  }
 }
 
 let logger: Logger;
-export default function getLogger() {
+export default function getLogger(): Logger {
   if (!logger) {
     logger = new Logger(app.getPath("logs"));
   }

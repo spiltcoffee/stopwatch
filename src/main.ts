@@ -2,6 +2,7 @@ import path from "path";
 
 import squirrel from "electron-squirrel-startup";
 import { app, BrowserWindow, ipcMain } from "electron";
+import updateElectronApp from "update-electron-app";
 
 import settings from "./utils/settings";
 import logger from "./utils/logger";
@@ -19,6 +20,17 @@ if (squirrel || !app.requestSingleInstanceLock()) {
 declare global {
   const MAIN_WINDOW_WEBPACK_ENTRY: string;
 }
+
+updateElectronApp({
+  repo: "spiltcoffee/stopwatch",
+  updateInterval: "24 hours",
+  logger: {
+    log: (...args) => logger().update("log", ...args),
+    info: (...args) => logger().update("info", ...args),
+    warn: (...args) => logger().update("warn", ...args),
+    error: (...args) => logger().update("error", ...args),
+  },
+});
 
 const createWindow = () => {
   const { diameter, alwaysOnTop, openAtLogin } = settings().load();
