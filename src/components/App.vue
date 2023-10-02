@@ -59,13 +59,32 @@
   </div>
 </template>
 
-<script>
-const { ipcRenderer } = require("electron");
-const { WEB } = require("../utils/flags");
+<script lang="ts">
+import { ipcRenderer } from "electron";
+import { WEB } from "../utils/flags";
+import { SettingsInterface } from "../utils/settings";
+import { defineComponent } from "vue";
+import VueSvgGauge from "../vue-svg-gauge/VueSvgGauge.vue";
+import TimeDisplay from "./TimeDisplay.vue";
+import ValueControl from "./ValueControl.vue";
+import TimeControl from "./TimeControl.vue";
+import KnockControl from "./KnockControl.vue";
+import StopwatchSettings from "./StopwatchSettings.vue";
+import StopwatchToolbar from "./StopwatchToolbar.vue";
+
 const INCREMENT = 60;
 
-export default {
+export default defineComponent({
   name: "App",
+  components: {
+    VueSvgGauge,
+    TimeDisplay,
+    ValueControl,
+    TimeControl,
+    KnockControl,
+    StopwatchSettings,
+    StopwatchToolbar,
+  },
   data() {
     return {
       autoKnock: false,
@@ -106,7 +125,7 @@ export default {
             this.pause();
             this.logSession("normal");
             if (this.autoKnock) {
-              this.$refs.knockControl.knock();
+              (<typeof KnockControl>this.$refs.knockControl).knock();
             }
           }
         }, 1000);
@@ -159,8 +178,10 @@ export default {
       this.autoKnock = settings.autoKnock;
       this.stop();
     },
-    save() {},
-    logSession(type) {
+    save() {
+      // do nothing?? huh??
+    },
+    logSession(type: string) {
       ipcRenderer.send("finished", {
         type,
         value: this.value,
@@ -169,9 +190,9 @@ export default {
     },
     showSettings() {
       const settings = ipcRenderer.sendSync("load-settings");
-      this.$refs.stopwatchSettings.show(settings);
+      (<typeof StopwatchSettings>this.$refs.stopwatchSettings).show(settings);
     },
-    applySettings(settings) {
+    applySettings(settings: SettingsInterface) {
       ipcRenderer.send("save-settings", {
         ...ipcRenderer.sendSync("load-settings"),
         ...settings,
@@ -179,7 +200,7 @@ export default {
       this.load();
     },
   },
-};
+});
 </script>
 
 <style>

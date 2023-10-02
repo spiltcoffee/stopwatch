@@ -1,16 +1,23 @@
-const webpack = require("webpack");
-const { VueLoaderPlugin } = require("vue-loader");
-const { merge } = require("webpack-merge");
+import webpack, { type Configuration } from "webpack";
+import { VueLoaderPlugin } from "vue-loader";
+import { merge } from "webpack-merge";
 
-module.exports = function (options = {}) {
+const development = process.env.NODE_ENV !== "production";
+
+interface ExtraWebpackOptions {
+  base: string;
+  relocate: boolean;
+  flags: Record<Uppercase<string>, boolean>;
+}
+
+export default function (
+  options: Partial<ExtraWebpackOptions> = {},
+): Configuration {
   options = merge(
     {
       base: "",
       relocate: true,
-      flags: {
-        PRODUCTION: process.env.NODE_ENV === "production",
-        WEB: false,
-      },
+      flags: { PRODUCTION: !development, WEB: false },
     },
     options,
   );
@@ -20,7 +27,7 @@ module.exports = function (options = {}) {
     module: {
       rules: [
         {
-          test: /\.node$/,
+          test: /native_modules\/.+\.node$/,
           use: "node-loader",
         },
         options.relocate
@@ -28,7 +35,7 @@ module.exports = function (options = {}) {
               test: /\.(m?js|node)$/,
               parser: { amd: false },
               use: {
-                loader: "@marshallofsound/webpack-asset-relocator-loader",
+                loader: "@vercel/webpack-asset-relocator-loader",
                 options: {
                   outputAssetBase: "native_modules",
                 },
@@ -38,6 +45,17 @@ module.exports = function (options = {}) {
         {
           test: /\.vue$/,
           use: "vue-loader",
+        },
+        {
+          test: /\.ts$/,
+          use: [
+            {
+              loader: "ts-loader",
+              options: {
+                appendTsSuffixTo: [/\.vue$/],
+              },
+            },
+          ],
         },
         {
           test: /\.css$/,
@@ -57,22 +75,21 @@ module.exports = function (options = {}) {
     },
 
     resolve: {
-      extensions: [".vue", ".js"],
-      alias: {
-        vue$: "vue/dist/vue.esm.js",
-      },
+      extensions: [".vue", ".ts", ".js"],
     },
 
     plugins: [
       new webpack.DefinePlugin({
         FLAGS: options.flags,
+        __VUE_OPTIONS_API__: true,
+        __VUE_PROD_DEVTOOLS__: development,
       }),
 
-      new webpack.ProvidePlugin({
-        process: "process/browser",
-      }),
+      // new webpack.ProvidePlugin({
+      //   process: "process/browser"
+      // }),
 
       new VueLoaderPlugin(),
     ],
   };
-};
+}

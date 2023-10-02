@@ -20,10 +20,11 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import moment from "moment";
+import { defineComponent } from "vue";
 
-export default {
+export default defineComponent({
   name: "TimeDisplay",
   props: {
     value: {
@@ -38,5 +39,5 @@ export default {
       return moment().minutes(0).seconds(this.value).format("mm:ss");
     },
   },
-};
+});
 </script>

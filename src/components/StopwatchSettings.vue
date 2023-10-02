@@ -7,12 +7,7 @@
       <div class="font-bold text-center">Settings</div>
       <label class="flex flex-col py-1">
         <div class="text-xs">Default Timer (seconds)</div>
-        <input
-          v-model.number="max"
-          class="rounded border p-1"
-          type="text"
-          size="0"
-        />
+        <input v-model.number="max" class="rounded border p-1" type="text" />
       </label>
       <button
         class="p-1 bg-white text-left"
@@ -34,7 +29,7 @@
             openAtLogin ? 'fa fa-check-square text-blue-600' : 'far fa-square'
           "
         />
-        <span class="flex-1">Open At Login</span>
+        Open At Login
       </button>
       <button class="p-1 bg-white text-left" @click="autoKnock = !autoKnock">
         <i
@@ -62,9 +57,13 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from "vue";
+import { SettingsInterface } from "../utils/settings";
+
+export default defineComponent({
   name: "StopwatchSettings",
+  emits: ["apply"],
   data() {
     return {
       showing: false,
@@ -76,7 +75,7 @@ export default {
       get() {
         return this.settings.max;
       },
-      set(max) {
+      set(max: number) {
         this.settings.max = max;
       },
     },
@@ -84,7 +83,7 @@ export default {
       get() {
         return this.settings.alwaysOnTop;
       },
-      set(alwaysOnTop) {
+      set(alwaysOnTop: boolean) {
         this.settings.alwaysOnTop = alwaysOnTop;
       },
     },
@@ -92,7 +91,7 @@ export default {
       get() {
         return this.settings.openAtLogin;
       },
-      set(openAtLogin) {
+      set(openAtLogin: boolean) {
         this.settings.openAtLogin = openAtLogin;
       },
     },
@@ -100,13 +99,13 @@ export default {
       get() {
         return this.settings.autoKnock;
       },
-      set(autoKnock) {
+      set(autoKnock: boolean) {
         this.settings.autoKnock = autoKnock;
       },
     },
   },
   methods: {
-    show(currentSettings) {
+    show(currentSettings: SettingsInterface) {
       this.settings = { ...currentSettings };
       this.showing = true;
     },
@@ -119,5 +118,5 @@ export default {
       this.settings = null;
     },
   },
-};
+});
 </script>
