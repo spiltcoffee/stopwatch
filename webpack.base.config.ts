@@ -85,9 +85,9 @@ export default function (
         __VUE_PROD_DEVTOOLS__: development,
       }),
 
-      // new webpack.ProvidePlugin({
-      //   process: "process/browser"
-      // }),
+      new webpack.ProvidePlugin({
+        process: "process/browser",
+      }),
 
       new VueLoaderPlugin(),
     ],
