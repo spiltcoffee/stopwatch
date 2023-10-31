@@ -10094,7 +10094,7 @@ __metadata:
     uuid: ^9.0.1
     vue: ^3.3.7
     vue-eslint-parser: ^9.3.2
-    vue-loader: ^17.3.0
+    vue-loader: ^17.3.1
     vue-template-compiler: ^2.7.15
     webpack: ^5.89.0
     webpack-cli: ^5.1.4
@@ -10137,9 +10137,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-loader@npm:^17.3.0":
-  version: 17.3.0
-  resolution: "vue-loader@npm:17.3.0"
+"vue-loader@npm:^17.3.1":
+  version: 17.3.1
+  resolution: "vue-loader@npm:17.3.1"
   dependencies:
     chalk: ^4.1.0
     hash-sum: ^2.0.0
@@ -10151,7 +10151,7 @@ __metadata:
       optional: true
     vue:
       optional: true
-  checksum: 8e0744e2be90f857d843bfaefb035c2e07712f8c2c81a519826ee6f33875653972d6ec80993047a45b8c5313ba1dbd948faccdfc3308e2f8b7312683f4d78f05
+  checksum: cb4f4a25adf7066b9af91299647a5da9a5e1f9124d93ea3221a0784848bde25ff0243ab204c42dedb36012172869e3ebc68ab3ab1dcac622d125f21691c28970
   languageName: node
   linkType: hard
 
