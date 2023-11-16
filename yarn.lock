@@ -327,18 +327,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/maker-squirrel@npm:6.4.2":
-  version: 6.4.2
-  resolution: "@electron-forge/maker-squirrel@npm:6.4.2"
+"@electron-forge/maker-base@npm:7.0.0":
+  version: 7.0.0
+  resolution: "@electron-forge/maker-base@npm:7.0.0"
   dependencies:
-    "@electron-forge/maker-base": 6.4.2
-    "@electron-forge/shared-types": 6.4.2
+    "@electron-forge/shared-types": 7.0.0
+    fs-extra: ^10.0.0
+    which: ^2.0.2
+  checksum: 38c602aa3fb255e9995c90e9431a1de608f4efa8a7eb57e517e0b456452696d969d8c398926673847db38c4016bb9df07ee2ce89fa63158652d1a3c05a00c6cd
+  languageName: node
+  linkType: hard
+
+"@electron-forge/maker-squirrel@npm:7.0.0":
+  version: 7.0.0
+  resolution: "@electron-forge/maker-squirrel@npm:7.0.0"
+  dependencies:
+    "@electron-forge/maker-base": 7.0.0
+    "@electron-forge/shared-types": 7.0.0
     electron-winstaller: ^5.0.0
     fs-extra: ^10.0.0
   dependenciesMeta:
     electron-winstaller:
       optional: true
-  checksum: e4a16622bd749fbeeab66f7c494c66d3eacf06f369a19071a6d3588245249ebc4d0801a900aeadda2eefd485b1fc31a6055ec932c5c0e4b52787cc9ef0449105
+  checksum: 3c4e213be96b974f8c3edef94bfa665d9568692647a6c9a16094430f6f1c445298b9ab1eced70d05d1b0a194ecf7be7d2bebb56db02d1d96bfab1c98af99d4d6
   languageName: node
   linkType: hard
 
@@ -10187,7 +10198,7 @@ __metadata:
   resolution: "vr-stopwatch@workspace:."
   dependencies:
     "@electron-forge/cli": 6.4.2
-    "@electron-forge/maker-squirrel": 6.4.2
+    "@electron-forge/maker-squirrel": 7.0.0
     "@electron-forge/plugin-auto-unpack-natives": ^7.0.0
     "@electron-forge/plugin-electronegativity": ^7.0.0
     "@electron-forge/plugin-webpack": 7.0.0
