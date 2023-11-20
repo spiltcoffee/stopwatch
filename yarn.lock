@@ -355,14 +355,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/plugin-electronegativity@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@electron-forge/plugin-electronegativity@npm:7.0.0"
+"@electron-forge/plugin-base@npm:7.1.0":
+  version: 7.1.0
+  resolution: "@electron-forge/plugin-base@npm:7.1.0"
+  dependencies:
+    "@electron-forge/shared-types": 7.1.0
+  checksum: c686c5b3fc4a26873a7e6a67386e465831123cafb1b61463eaa58c093507ad55d162cc7eb1e4c4279ba08850aeaa7765dffb166a5b8e7c4b2e149c2aa976200d
+  languageName: node
+  linkType: hard
+
+"@electron-forge/plugin-electronegativity@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "@electron-forge/plugin-electronegativity@npm:7.1.0"
   dependencies:
     "@doyensec/electronegativity": ^1.9.1
-    "@electron-forge/plugin-base": 7.0.0
-    "@electron-forge/shared-types": 7.0.0
-  checksum: d54f8a7ff40502ec2ce1445b2c9645e6e3a6d944fa2e4191b277cf529e83c3ffc45d2fb13f9ebb80f19fca20d1a469345de45df84fa071eaf6e14338de99c8cc
+    "@electron-forge/plugin-base": 7.1.0
+    "@electron-forge/shared-types": 7.1.0
+  checksum: 8f371c147c7b2069149f596ad231846572d4afb6fbf17d377cdfc5ab6ca7321d057b621b921a299ed6a55827ab3466dfbbb843578dd55497c54cf416111e1738
   languageName: node
   linkType: hard
 
@@ -10127,7 +10136,7 @@ __metadata:
     "@electron-forge/cli": 7.0.0
     "@electron-forge/maker-squirrel": 7.1.0
     "@electron-forge/plugin-auto-unpack-natives": ^7.0.0
-    "@electron-forge/plugin-electronegativity": ^7.0.0
+    "@electron-forge/plugin-electronegativity": ^7.1.0
     "@electron-forge/plugin-webpack": 7.0.0
     "@electron-forge/publisher-github": 7.0.0
     "@fortawesome/fontawesome-free": ^6.4.2
