@@ -43,7 +43,7 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.1.0",
     "@electron-forge/plugin-electronegativity": "^7.2.0",
     "@electron-forge/plugin-webpack": "7.1.0",
-    "@electron-forge/publisher-github": "7.1.0",
+    "@electron-forge/publisher-github": "7.2.0",
     "@fortawesome/fontawesome-free": "^6.5.0",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1",
