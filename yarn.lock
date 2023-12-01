@@ -353,14 +353,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/plugin-electronegativity@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@electron-forge/plugin-electronegativity@npm:7.1.0"
+"@electron-forge/plugin-base@npm:7.2.0":
+  version: 7.2.0
+  resolution: "@electron-forge/plugin-base@npm:7.2.0"
+  dependencies:
+    "@electron-forge/shared-types": 7.2.0
+  checksum: e8cc39879def2c5ab24fbd87c7cec7bdcd8210f9aa8a0a4c6fec3989467369489d7ecc6fc996a349deb2b8dd886609e3ccb79252afa18331015481b86bd73410
+  languageName: node
+  linkType: hard
+
+"@electron-forge/plugin-electronegativity@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "@electron-forge/plugin-electronegativity@npm:7.2.0"
   dependencies:
     "@doyensec/electronegativity": ^1.9.1
-    "@electron-forge/plugin-base": 7.1.0
-    "@electron-forge/shared-types": 7.1.0
-  checksum: 8f371c147c7b2069149f596ad231846572d4afb6fbf17d377cdfc5ab6ca7321d057b621b921a299ed6a55827ab3466dfbbb843578dd55497c54cf416111e1738
+    "@electron-forge/plugin-base": 7.2.0
+    "@electron-forge/shared-types": 7.2.0
+  checksum: 499af4e010dd11e5831ad7c1599f899c404837da6a40eab98492f5f92b40b504235179418a1da63080557a36b23e50550b5e00d663eb22932e5c5e66409358e0
   languageName: node
   linkType: hard
 
@@ -418,6 +427,18 @@ __metadata:
     "@electron/rebuild": ^3.2.10
     listr2: ^5.0.3
   checksum: e196208737dfa15498590f6cfafd7990279a6d191d27f21b7537729aff5bebe09f6843a0022e250145863da5f0ffd47ed8c270ed0f54b3e1a955ebe468fe8816
+  languageName: node
+  linkType: hard
+
+"@electron-forge/shared-types@npm:7.2.0":
+  version: 7.2.0
+  resolution: "@electron-forge/shared-types@npm:7.2.0"
+  dependencies:
+    "@electron-forge/tracer": 7.2.0
+    "@electron/packager": ^18.0.0
+    "@electron/rebuild": ^3.2.10
+    listr2: ^5.0.3
+  checksum: 06fa2a89eec44d2ef9c35013d70d17ef8a6679efde41415a11343bdc16dc229b3bc87f365230929baa0a80e4c31cbe51cc3facabb223205e5b444c6a0812e8ea
   languageName: node
   linkType: hard
 
@@ -484,6 +505,15 @@ __metadata:
   dependencies:
     chrome-trace-event: ^1.0.3
   checksum: d537a2de2605a5704530d62f04c339f033d230d1afcf72e0e678db5743c684deae8614c11072bff75682a917b99818a9658f0508bbb59ea3fecfd09b7a3251cb
+  languageName: node
+  linkType: hard
+
+"@electron-forge/tracer@npm:7.2.0":
+  version: 7.2.0
+  resolution: "@electron-forge/tracer@npm:7.2.0"
+  dependencies:
+    chrome-trace-event: ^1.0.3
+  checksum: fed8ccbc823abe621eabfc3648a48d611944f90b9ed4ec7206447ff42539b74fb30fc66dbc938bbc9d577d26af7ac59beff275f67e57f61d1cce3d932a278c03
   languageName: node
   linkType: hard
 
@@ -10104,7 +10134,7 @@ __metadata:
     "@electron-forge/cli": 7.1.0
     "@electron-forge/maker-squirrel": 7.1.0
     "@electron-forge/plugin-auto-unpack-natives": ^7.1.0
-    "@electron-forge/plugin-electronegativity": ^7.1.0
+    "@electron-forge/plugin-electronegativity": ^7.2.0
     "@electron-forge/plugin-webpack": 7.1.0
     "@electron-forge/publisher-github": 7.1.0
     "@fortawesome/fontawesome-free": ^6.5.0
