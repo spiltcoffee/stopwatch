@@ -345,13 +345,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/plugin-auto-unpack-natives@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@electron-forge/plugin-auto-unpack-natives@npm:7.1.0"
+"@electron-forge/plugin-auto-unpack-natives@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "@electron-forge/plugin-auto-unpack-natives@npm:7.2.0"
   dependencies:
-    "@electron-forge/plugin-base": 7.1.0
-    "@electron-forge/shared-types": 7.1.0
-  checksum: fb5c1c04af4152e75cb356989307182ac2582ee9ad193b7e646a80e6be7b847e89b5e7b1322d1c4db6ef45080fe010203d60fa2fe0831bdea46ef3b5d51f7638
+    "@electron-forge/plugin-base": 7.2.0
+    "@electron-forge/shared-types": 7.2.0
+  checksum: bab7524638165b291129f7c82fb80a1e954ae80e0bd172b977e484aa1ece657a04150a7b69758f97bb2611d2c79254588ad9b652619ba91a2b6848fbdee8fff9
   languageName: node
   linkType: hard
 
@@ -10144,7 +10144,7 @@ __metadata:
   dependencies:
     "@electron-forge/cli": 7.1.0
     "@electron-forge/maker-squirrel": 7.2.0
-    "@electron-forge/plugin-auto-unpack-natives": ^7.1.0
+    "@electron-forge/plugin-auto-unpack-natives": ^7.2.0
     "@electron-forge/plugin-electronegativity": ^7.2.0
     "@electron-forge/plugin-webpack": 7.1.0
     "@electron-forge/publisher-github": 7.1.0
