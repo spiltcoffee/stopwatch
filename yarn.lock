@@ -319,18 +319,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/maker-squirrel@npm:7.1.0":
-  version: 7.1.0
-  resolution: "@electron-forge/maker-squirrel@npm:7.1.0"
+"@electron-forge/maker-base@npm:7.2.0":
+  version: 7.2.0
+  resolution: "@electron-forge/maker-base@npm:7.2.0"
   dependencies:
-    "@electron-forge/maker-base": 7.1.0
-    "@electron-forge/shared-types": 7.1.0
+    "@electron-forge/shared-types": 7.2.0
+    fs-extra: ^10.0.0
+    which: ^2.0.2
+  checksum: ad663c2734c5f9462abd32d277191225a2175c7157ac56afa2ea6932b49647feac16e44693f25968bee36e133713f155f8c9ba97b7ba67c49b291e2a6d13b4e0
+  languageName: node
+  linkType: hard
+
+"@electron-forge/maker-squirrel@npm:7.2.0":
+  version: 7.2.0
+  resolution: "@electron-forge/maker-squirrel@npm:7.2.0"
+  dependencies:
+    "@electron-forge/maker-base": 7.2.0
+    "@electron-forge/shared-types": 7.2.0
     electron-winstaller: ^5.0.0
     fs-extra: ^10.0.0
   dependenciesMeta:
     electron-winstaller:
       optional: true
-  checksum: 4c18e46e88211c6c78b0b66d465566d4db454fa2d3ce8e9f57593ac4f9d9de2d7ba321110964227d140504b9f913844b1a117edba7bd02d1838402fa70152d90
+  checksum: dab002810760041d9d57c29ed76ca17d4b36fae2c533e1abf89e3c3365da5b850e0cfce34d9a32a657f621836791f136120b8bd67eb3db63486c9e5a3e4ac502
   languageName: node
   linkType: hard
 
@@ -421,6 +432,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron-forge/shared-types@npm:7.2.0":
+  version: 7.2.0
+  resolution: "@electron-forge/shared-types@npm:7.2.0"
+  dependencies:
+    "@electron-forge/tracer": 7.2.0
+    "@electron/packager": ^18.0.0
+    "@electron/rebuild": ^3.2.10
+    listr2: ^5.0.3
+  checksum: 06fa2a89eec44d2ef9c35013d70d17ef8a6679efde41415a11343bdc16dc229b3bc87f365230929baa0a80e4c31cbe51cc3facabb223205e5b444c6a0812e8ea
+  languageName: node
+  linkType: hard
+
 "@electron-forge/template-base@npm:7.1.0":
   version: 7.1.0
   resolution: "@electron-forge/template-base@npm:7.1.0"
@@ -484,6 +507,15 @@ __metadata:
   dependencies:
     chrome-trace-event: ^1.0.3
   checksum: d537a2de2605a5704530d62f04c339f033d230d1afcf72e0e678db5743c684deae8614c11072bff75682a917b99818a9658f0508bbb59ea3fecfd09b7a3251cb
+  languageName: node
+  linkType: hard
+
+"@electron-forge/tracer@npm:7.2.0":
+  version: 7.2.0
+  resolution: "@electron-forge/tracer@npm:7.2.0"
+  dependencies:
+    chrome-trace-event: ^1.0.3
+  checksum: fed8ccbc823abe621eabfc3648a48d611944f90b9ed4ec7206447ff42539b74fb30fc66dbc938bbc9d577d26af7ac59beff275f67e57f61d1cce3d932a278c03
   languageName: node
   linkType: hard
 
@@ -10102,7 +10134,7 @@ __metadata:
   resolution: "vr-stopwatch@workspace:."
   dependencies:
     "@electron-forge/cli": 7.1.0
-    "@electron-forge/maker-squirrel": 7.1.0
+    "@electron-forge/maker-squirrel": 7.2.0
     "@electron-forge/plugin-auto-unpack-natives": ^7.1.0
     "@electron-forge/plugin-electronegativity": ^7.1.0
     "@electron-forge/plugin-webpack": 7.1.0
