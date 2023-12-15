@@ -50,7 +50,7 @@
     "@vercel/webpack-asset-relocator-loader": "1.7.3",
     "autoprefixer": "^10.4.16",
     "css-loader": "^6.8.1",
-    "cssnano": "^6.0.1",
+    "cssnano": "^6.0.2",
     "electron": "28.0.0",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
