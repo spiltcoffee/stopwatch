@@ -40,5 +40,5 @@ jobs:
         with:
           path: "out/web"
 
-      - uses: actions/deploy-pages@v3
+      - uses: actions/deploy-pages@v4
         id: deployment
