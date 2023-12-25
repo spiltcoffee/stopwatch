@@ -10210,7 +10210,7 @@ __metadata:
     vue: ^3.3.13
     vue-eslint-parser: ^9.3.2
     vue-loader: ^17.3.1
-    vue-template-compiler: ^2.7.15
+    vue-template-compiler: ^2.7.16
     webpack: ^5.89.0
     webpack-cli: ^5.1.4
     webpack-dev-server: ^4.15.1
@@ -10270,13 +10270,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-template-compiler@npm:^2.7.15":
-  version: 2.7.15
-  resolution: "vue-template-compiler@npm:2.7.15"
+"vue-template-compiler@npm:^2.7.16":
+  version: 2.7.16
+  resolution: "vue-template-compiler@npm:2.7.16"
   dependencies:
     de-indent: ^1.0.2
     he: ^1.2.0
-  checksum: 79a0c70babf5f85caa05df82aae1e135a491a86a7dc2769e747a017f84d76b1d066f7ac421b75c8ca9a9582bfe48bf673c4e9190c8e1bfd8f0f7037f9fc7988e
+  checksum: a0d52ecbb99bad37f370341b5c594c5caa1f72b15b3f225148ef378fc06aa25c93185ef061f7e6e5e443c9067e70d8f158742716112acf84088932ebcc49ad10
   languageName: node
   linkType: hard
 
