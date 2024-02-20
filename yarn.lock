@@ -1434,10 +1434,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18.11.18":
+"@types/node@npm:*":
   version: 18.15.11
   resolution: "@types/node@npm:18.15.11"
   checksum: 977b4ad04708897ff0eb049ecf82246d210939c82461922d20f7d2dcfd81bbc661582ba3af28869210f7e8b1934529dcd46bff7d448551400f9d48b9d3bddec3
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^20.9.0":
+  version: 20.11.19
+  resolution: "@types/node@npm:20.11.19"
+  dependencies:
+    undici-types: ~5.26.4
+  checksum: 259d16643ba611ade617a8212e594a3ac014727457507389bbf7213971346ab052d870f1e6e2df0afd0876ecd7874f578bccb130be01e069263cfc7136ddc0c1
   languageName: node
   linkType: hard
 
@@ -3947,16 +3956,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron@npm:28.2.3":
-  version: 28.2.3
-  resolution: "electron@npm:28.2.3"
+"electron@npm:29.0.0":
+  version: 29.0.0
+  resolution: "electron@npm:29.0.0"
   dependencies:
     "@electron/get": ^2.0.0
-    "@types/node": ^18.11.18
+    "@types/node": ^20.9.0
     extract-zip: ^2.0.1
   bin:
     electron: cli.js
-  checksum: 9a6f5ed5e3332d6591bda330aa3dbf8a93a486ea04cf5a25c4adde46d1eb814375973124b511c450045b61645833b0cff89552b0f89c470d8490a0c1c724805c
+  checksum: bbf4bb8261a6d927790ebeb5499f06cf3974905dea50580a6c1fde34439de7736b41720d0aceff8fb6c63d67fdc542e4a5a74932e07e56ba5ac11ef019db64cb
   languageName: node
   linkType: hard
 
@@ -10633,6 +10642,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: 3192ef6f3fd5df652f2dc1cd782b49d6ff14dc98e5dced492aa8a8c65425227da5da6aafe22523c67f035a272c599bb89cfe803c1db6311e44bed3042fc25487
+  languageName: node
+  linkType: hard
+
 "unique-filename@npm:^1.1.1":
   version: 1.1.1
   resolution: "unique-filename@npm:1.1.1"
@@ -10831,7 +10847,7 @@ __metadata:
     autoprefixer: ^10.4.17
     css-loader: ^6.10.0
     cssnano: ^6.0.3
-    electron: 28.2.3
+    electron: 29.0.0
     electron-squirrel-startup: ^1.0.0
     eslint: ^8.56.0
     eslint-config-prettier: ^9.1.0
