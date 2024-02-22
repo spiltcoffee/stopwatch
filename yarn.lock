@@ -344,15 +344,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/plugin-base@npm:7.2.0":
-  version: 7.2.0
-  resolution: "@electron-forge/plugin-base@npm:7.2.0"
-  dependencies:
-    "@electron-forge/shared-types": 7.2.0
-  checksum: e8cc39879def2c5ab24fbd87c7cec7bdcd8210f9aa8a0a4c6fec3989467369489d7ecc6fc996a349deb2b8dd886609e3ccb79252afa18331015481b86bd73410
-  languageName: node
-  linkType: hard
-
 "@electron-forge/plugin-base@npm:7.3.0":
   version: 7.3.0
   resolution: "@electron-forge/plugin-base@npm:7.3.0"
@@ -362,14 +353,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/plugin-electronegativity@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "@electron-forge/plugin-electronegativity@npm:7.2.0"
+"@electron-forge/plugin-electronegativity@npm:^7.3.0":
+  version: 7.3.0
+  resolution: "@electron-forge/plugin-electronegativity@npm:7.3.0"
   dependencies:
     "@doyensec/electronegativity": ^1.9.1
-    "@electron-forge/plugin-base": 7.2.0
-    "@electron-forge/shared-types": 7.2.0
-  checksum: 499af4e010dd11e5831ad7c1599f899c404837da6a40eab98492f5f92b40b504235179418a1da63080557a36b23e50550b5e00d663eb22932e5c5e66409358e0
+    "@electron-forge/plugin-base": 7.3.0
+    "@electron-forge/shared-types": 7.3.0
+  checksum: 7fb2830063a1698cd5e28d13cd131adbfa9d96ecb76e4d57f1148d4d59d7d93fe3b441a5d4a108cd6654528cd56036e96316a2d048ddc39bd7741fa3746275e2
   languageName: node
   linkType: hard
 
@@ -416,18 +407,6 @@ __metadata:
     fs-extra: ^10.0.0
     mime-types: ^2.1.25
   checksum: b32fb1c22d539b87c85a289f2b936f426f5d23081cff9b903b937fbb92efa3655864efcd5eaad7aab06fc113e93a976fa2a22fcf7da4e7a8d195ab2f094aacae
-  languageName: node
-  linkType: hard
-
-"@electron-forge/shared-types@npm:7.2.0":
-  version: 7.2.0
-  resolution: "@electron-forge/shared-types@npm:7.2.0"
-  dependencies:
-    "@electron-forge/tracer": 7.2.0
-    "@electron/packager": ^18.0.0
-    "@electron/rebuild": ^3.2.10
-    listr2: ^5.0.3
-  checksum: 06fa2a89eec44d2ef9c35013d70d17ef8a6679efde41415a11343bdc16dc229b3bc87f365230929baa0a80e4c31cbe51cc3facabb223205e5b444c6a0812e8ea
   languageName: node
   linkType: hard
 
@@ -497,15 +476,6 @@ __metadata:
     "@electron-forge/template-base": 7.3.0
     fs-extra: ^10.0.0
   checksum: 929f0023894d384095c2c11465c8e92c129767cc0994f33c3736917232935c07892a57210c53d6d89c3edaae7daeec0226bd3b108bd56d8fe5cb4e67a723cc23
-  languageName: node
-  linkType: hard
-
-"@electron-forge/tracer@npm:7.2.0":
-  version: 7.2.0
-  resolution: "@electron-forge/tracer@npm:7.2.0"
-  dependencies:
-    chrome-trace-event: ^1.0.3
-  checksum: fed8ccbc823abe621eabfc3648a48d611944f90b9ed4ec7206447ff42539b74fb30fc66dbc938bbc9d577d26af7ac59beff275f67e57f61d1cce3d932a278c03
   languageName: node
   linkType: hard
 
@@ -626,35 +596,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron/packager@npm:^18.0.0":
-  version: 18.0.0
-  resolution: "@electron/packager@npm:18.0.0"
-  dependencies:
-    "@electron/asar": ^3.2.1
-    "@electron/get": ^3.0.0
-    "@electron/notarize": ^2.1.0
-    "@electron/osx-sign": ^1.0.5
-    "@electron/universal": ^1.3.2
-    cross-spawn-windows-exe: ^1.2.0
-    debug: ^4.0.1
-    extract-zip: ^2.0.0
-    filenamify: ^4.1.0
-    fs-extra: ^11.1.0
-    galactus: ^1.0.0
-    get-package-info: ^1.0.0
-    junk: ^3.1.0
-    parse-author: ^2.0.0
-    plist: ^3.0.0
-    rcedit: ^4.0.0
-    resolve: ^1.1.6
-    semver: ^7.1.3
-    yargs-parser: ^21.1.1
-  bin:
-    electron-packager: bin/electron-packager.js
-  checksum: 0dfff38c8e49b62c83cc295bd71ae0279b86c20f9bdb07658d3592c9507685d5f8de96c99a5331fe00d399274f3423bd871ca3e1be5c19ea13ed5bdee34cc5b9
-  languageName: node
-  linkType: hard
-
 "@electron/packager@npm:^18.1.2":
   version: 18.1.3
   resolution: "@electron/packager@npm:18.1.3"
@@ -706,21 +647,6 @@ __metadata:
   bin:
     electron-rebuild: lib/src/cli.js
   checksum: 5bbcc81f1473d29ef5e7aa8826dc6a7bb9c7846d95364687d69e84e925e9b8f38e6b1c9c9a448b9132654ffe3cae2863bdb2e11e585ca502ac90ab29f4d44649
-  languageName: node
-  linkType: hard
-
-"@electron/universal@npm:^1.3.2":
-  version: 1.3.3
-  resolution: "@electron/universal@npm:1.3.3"
-  dependencies:
-    "@electron/asar": ^3.2.1
-    "@malept/cross-spawn-promise": ^1.1.0
-    debug: ^4.3.1
-    dir-compare: ^2.4.0
-    fs-extra: ^9.0.1
-    minimatch: ^3.0.4
-    plist: ^3.0.4
-  checksum: e68221dda6cc0e0c6a686c8fc28132a73c0008b8d4ac165966feb30b2c161cb08587389e4f8cb84078292c830bad7940219a64e155a07ca0730401878f5023ab
   languageName: node
   linkType: hard
 
@@ -2779,13 +2705,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buffer-equal@npm:1.0.0":
-  version: 1.0.0
-  resolution: "buffer-equal@npm:1.0.0"
-  checksum: c63a62d25ffc6f3a7064a86dd0d92d93a32d03b14f22d17374790bc10e94bca2312302895fdd28a2b0060999d4385cf90cbf6ad1a6678065156c664016d3be45
-  languageName: node
-  linkType: hard
-
 "buffer-from@npm:^1.0.0":
   version: 1.1.1
   resolution: "buffer-from@npm:1.1.1"
@@ -3268,7 +3187,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colors@npm:1.0.3, colors@npm:1.0.x":
+"colors@npm:1.0.x":
   version: 1.0.3
   resolution: "colors@npm:1.0.3"
   checksum: 234e8d3ab7e4003851cdd6a1f02eaa16dabc502ee5f4dc576ad7959c64b7477b15bd21177bab4055a4c0a66aa3d919753958030445f87c39a253d73b7a3637f5
@@ -3279,15 +3198,6 @@ __metadata:
   version: 11.1.0
   resolution: "commander@npm:11.1.0"
   checksum: fd1a8557c6b5b622c89ecdfde703242ab7db3b628ea5d1755784c79b8e7cb0d74d65b4a262289b533359cd58e1bfc0bf50245dfbcd2954682a6f367c828b79ef
-  languageName: node
-  linkType: hard
-
-"commander@npm:2.9.0":
-  version: 2.9.0
-  resolution: "commander@npm:2.9.0"
-  dependencies:
-    graceful-readlink: ">= 1.0.0"
-  checksum: 37939b6866ae190784fa946ea5b926dfe713731064c746e818642ac59e28f513b54e88e35d8c34b4d24d063cb465977dca2efd2ec974f91e495c743fcb2ae7a2
   languageName: node
   linkType: hard
 
@@ -3885,20 +3795,6 @@ __metadata:
   version: 1.2.2
   resolution: "didyoumean@npm:1.2.2"
   checksum: d5d98719d58b3c2fa59663c4c42ba9716f1fd01245c31d5fce31915bd3aa26e6aac149788e007358f778ebbd68a2256eb5973e8ca6f221df221ba060115acf2e
-  languageName: node
-  linkType: hard
-
-"dir-compare@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "dir-compare@npm:2.4.0"
-  dependencies:
-    buffer-equal: 1.0.0
-    colors: 1.0.3
-    commander: 2.9.0
-    minimatch: 3.0.4
-  bin:
-    dircompare: src/cli/dircompare.js
-  checksum: 16710bcb640b0edb753c6ecf10440c20a073588d797f624288601c52bca64a1f8c4dcd474d1fb7fda3595361b7cf528dee856140d83ecdaa19ba5695112d1209
   languageName: node
   linkType: hard
 
@@ -5668,13 +5564,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graceful-readlink@npm:>= 1.0.0":
-  version: 1.0.1
-  resolution: "graceful-readlink@npm:1.0.1"
-  checksum: 4c1889ca0a6fc0bb9585b55c26a99719be132cbc4b7d84036193b70608059b9783e52e2a866d5a8e39821b16a69e899644ca75c6206563f1319b6720836b9ab2
-  languageName: node
-  linkType: hard
-
 "graphemer@npm:^1.4.0":
   version: 1.4.0
   resolution: "graphemer@npm:1.4.0"
@@ -7381,15 +7270,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:3.0.4":
-  version: 3.0.4
-  resolution: "minimatch@npm:3.0.4"
-  dependencies:
-    brace-expansion: ^1.1.7
-  checksum: 66ac295f8a7b59788000ea3749938b0970344c841750abd96694f80269b926ebcafad3deeb3f1da2522978b119e6ae3a5869b63b13a7859a456b3408bd18a078
-  languageName: node
-  linkType: hard
-
 "minimatch@npm:9.0.3, minimatch@npm:^9.0.1, minimatch@npm:^9.0.3":
   version: 9.0.3
   resolution: "minimatch@npm:9.0.3"
@@ -8467,7 +8347,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plist@npm:^3.0.0, plist@npm:^3.0.4, plist@npm:^3.0.5":
+"plist@npm:^3.0.0, plist@npm:^3.0.5":
   version: 3.0.6
   resolution: "plist@npm:3.0.6"
   dependencies:
@@ -11011,7 +10891,7 @@ __metadata:
     "@electron-forge/cli": 7.3.0
     "@electron-forge/maker-squirrel": 7.3.0
     "@electron-forge/plugin-auto-unpack-natives": ^7.3.0
-    "@electron-forge/plugin-electronegativity": ^7.2.0
+    "@electron-forge/plugin-electronegativity": ^7.3.0
     "@electron-forge/plugin-webpack": 7.3.0
     "@electron-forge/publisher-github": 7.3.0
     "@fortawesome/fontawesome-free": ^6.5.1
