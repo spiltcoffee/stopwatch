@@ -353,14 +353,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/plugin-electronegativity@npm:^7.3.1":
-  version: 7.3.1
-  resolution: "@electron-forge/plugin-electronegativity@npm:7.3.1"
+"@electron-forge/plugin-base@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@electron-forge/plugin-base@npm:7.4.0"
+  dependencies:
+    "@electron-forge/shared-types": 7.4.0
+  checksum: 3c22b9ee9d725a1c443e384e1f0326be8caa54381be1dfe8333b45e6e34bf7b495eab45c9281a466ad2f990242169044ca35b5fd21c13ad925fa284e2e558c01
+  languageName: node
+  linkType: hard
+
+"@electron-forge/plugin-electronegativity@npm:^7.4.0":
+  version: 7.4.0
+  resolution: "@electron-forge/plugin-electronegativity@npm:7.4.0"
   dependencies:
     "@doyensec/electronegativity": ^1.9.1
-    "@electron-forge/plugin-base": 7.3.1
-    "@electron-forge/shared-types": 7.3.1
-  checksum: b4570e16d8c0ca8fb36f66f24d14ec5aea5c2857a77dd8f5057e713962fa9f4da2618c83da2f49ec918ff2d85e914872f5e12a5f2060f6a925174a243a22b48a
+    "@electron-forge/plugin-base": 7.4.0
+    "@electron-forge/shared-types": 7.4.0
+  checksum: da6ab2b60742054130576a96ae72469d33af055cde71c351cb306cf179489d586aa740866772bfeea9074160321cd35158bca4c62e3b8b5ff335908f5669e4f5
   languageName: node
   linkType: hard
 
@@ -422,6 +431,18 @@ __metadata:
     "@electron/rebuild": ^3.2.10
     listr2: ^5.0.3
   checksum: 73cb204109aa5a01c99d56d76db9ce5c38a5dc5a8932efeace6b7717c4f2425fd3c2f807794f93290beda1125fff37ca310b57eddcb0553d977633b10dcc4d23
+  languageName: node
+  linkType: hard
+
+"@electron-forge/shared-types@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@electron-forge/shared-types@npm:7.4.0"
+  dependencies:
+    "@electron-forge/tracer": 7.4.0
+    "@electron/packager": ^18.3.1
+    "@electron/rebuild": ^3.2.10
+    listr2: ^7.0.2
+  checksum: 91a2829e7307736fcfaed248f921a10e2224e688cc073c36c4c8c322ec75728a0dbb5555443206077b424bb6c63d101f5c498982d947522dae489b8c271ec8ea
   languageName: node
   linkType: hard
 
@@ -488,6 +509,15 @@ __metadata:
   dependencies:
     chrome-trace-event: ^1.0.3
   checksum: 5c7dca2727d6dc1359d050dd966f00daf53d1fbf8c8777204e7780afef6db8b80182f74a794d6fa59f40b0505f56591118838f1fd3c1791ffab9f1c3eb374d1f
+  languageName: node
+  linkType: hard
+
+"@electron-forge/tracer@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@electron-forge/tracer@npm:7.4.0"
+  dependencies:
+    chrome-trace-event: ^1.0.3
+  checksum: f8f793f9693c6879bcaec256f467f3fb777fcfc37d647361191106ff0b03d1e69c72fdc5697d46adda068c7b7155cef6567c6ddb688f5e1c50c8176ec759df65
   languageName: node
   linkType: hard
 
@@ -626,6 +656,35 @@ __metadata:
   bin:
     electron-packager: bin/electron-packager.js
   checksum: 9d8f7158ce67743b9f124fc39e353ba6679f6a435395816edd8ba9f91236574e7f69048f41ff6322eee700b0e6e1f6d71a28222245c30fd65857160cb7a2740a
+  languageName: node
+  linkType: hard
+
+"@electron/packager@npm:^18.3.1":
+  version: 18.3.2
+  resolution: "@electron/packager@npm:18.3.2"
+  dependencies:
+    "@electron/asar": ^3.2.1
+    "@electron/get": ^3.0.0
+    "@electron/notarize": ^2.1.0
+    "@electron/osx-sign": ^1.0.5
+    "@electron/universal": ^2.0.1
+    "@electron/windows-sign": ^1.0.0
+    debug: ^4.0.1
+    extract-zip: ^2.0.0
+    filenamify: ^4.1.0
+    fs-extra: ^11.1.0
+    galactus: ^1.0.0
+    get-package-info: ^1.0.0
+    junk: ^3.1.0
+    parse-author: ^2.0.0
+    plist: ^3.0.0
+    resedit: ^2.0.0
+    resolve: ^1.1.6
+    semver: ^7.1.3
+    yargs-parser: ^21.1.1
+  bin:
+    electron-packager: bin/electron-packager.js
+  checksum: f17fdc12a49c51c63ec8768843c04a219341f9ab3c329c85fcbc73f433cb49f8df52829c2fb20cd87e84515cd4c762f04a42fdb5b48dd39eb7730021b5cddd45
   languageName: node
   linkType: hard
 
@@ -2452,6 +2511,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ansi-escapes@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "ansi-escapes@npm:5.0.0"
+  dependencies:
+    type-fest: ^1.0.2
+  checksum: d4b5eb8207df38367945f5dd2ef41e08c28edc192dc766ef18af6b53736682f49d8bfcfa4e4d6ecbc2e2f97c258fda084fb29a9e43b69170b71090f771afccac
+  languageName: node
+  linkType: hard
+
 "ansi-escapes@npm:^6.2.0":
   version: 6.2.0
   resolution: "ansi-escapes@npm:6.2.0"
@@ -3263,6 +3331,16 @@ __metadata:
     slice-ansi: ^3.0.0
     string-width: ^4.2.0
   checksum: bf1e4e6195392dc718bf9cd71f317b6300dc4a9191d052f31046b8773230ece4fa09458813bf0e3455a5e68c0690d2ea2c197d14a8b85a7b5e01c97f4b5feb5d
+  languageName: node
+  linkType: hard
+
+"cli-truncate@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "cli-truncate@npm:3.1.0"
+  dependencies:
+    slice-ansi: ^5.0.0
+    string-width: ^5.0.0
+  checksum: c3243e41974445691c63f8b405df1d5a24049dc33d324fe448dc572e561a7b772ae982692900b1a5960901cc4fc7def25a629b9c69a4208ee89d12ab3332617a
   languageName: node
   linkType: hard
 
@@ -7054,6 +7132,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"listr2@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "listr2@npm:7.0.2"
+  dependencies:
+    cli-truncate: ^3.1.0
+    colorette: ^2.0.20
+    eventemitter3: ^5.0.1
+    log-update: ^5.0.1
+    rfdc: ^1.3.0
+    wrap-ansi: ^8.1.0
+  checksum: 1734c6b9367ceeb09bf372427930a4586b3727097373408f2f840896b9333cc80e53a1a696771a83a7d4d9ada46229843f3052b87f3b0b58c20e9451362c2dd3
+  languageName: node
+  linkType: hard
+
 "load-json-file@npm:^2.0.0":
   version: 2.0.0
   resolution: "load-json-file@npm:2.0.0"
@@ -7199,6 +7291,19 @@ __metadata:
     slice-ansi: ^4.0.0
     wrap-ansi: ^6.2.0
   checksum: ae2f85bbabc1906034154fb7d4c4477c79b3e703d22d78adee8b3862fa913942772e7fa11713e3d96fb46de4e3cabefbf5d0a544344f03b58d3c4bff52aa9eb2
+  languageName: node
+  linkType: hard
+
+"log-update@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "log-update@npm:5.0.1"
+  dependencies:
+    ansi-escapes: ^5.0.0
+    cli-cursor: ^4.0.0
+    slice-ansi: ^5.0.0
+    strip-ansi: ^7.0.1
+    wrap-ansi: ^8.0.1
+  checksum: 2c6b47dcce6f9233df6d232a37d9834cb3657a0749ef6398f1706118de74c55f158587d4128c225297ea66803f35c5ac3db4f3f617046d817233c45eedc32ef1
   languageName: node
   linkType: hard
 
@@ -8539,6 +8644,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pe-library@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "pe-library@npm:1.0.0"
+  checksum: 1237e065e201fbc36bd2b358b1fd4546923fb8045883ee70e90cd0f730fd83af80d3ec6241723558c8026f37587b89a1361606192dd323f85292b2be120d917a
+  languageName: node
+  linkType: hard
+
 "pend@npm:~1.2.0":
   version: 1.2.0
   resolution: "pend@npm:1.2.0"
@@ -9452,6 +9564,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"resedit@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "resedit@npm:2.0.0"
+  dependencies:
+    pe-library: ^1.0.0
+  checksum: 669d173572790446622e867b28237b4b9c4c1bb04f4a2f401b551589bc04c7147dad7573940de1a0f55b0c290264e73f4d856ede56ce166aea0ded6574a461c4
+  languageName: node
+  linkType: hard
+
 "resolve-alpn@npm:^1.0.0":
   version: 1.0.0
   resolution: "resolve-alpn@npm:1.0.0"
@@ -10260,7 +10381,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string-width@npm:^5.0.1, string-width@npm:^5.1.2":
+"string-width@npm:^5.0.0, string-width@npm:^5.0.1, string-width@npm:^5.1.2":
   version: 5.1.2
   resolution: "string-width@npm:5.1.2"
   dependencies:
@@ -10837,6 +10958,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"type-fest@npm:^1.0.2":
+  version: 1.4.0
+  resolution: "type-fest@npm:1.4.0"
+  checksum: b011c3388665b097ae6a109a437a04d6f61d81b7357f74cbcb02246f2f5bd72b888ae33631b99871388122ba0a87f4ff1c94078e7119ff22c70e52c0ff828201
+  languageName: node
+  linkType: hard
+
 "type-fest@npm:^3.0.0":
   version: 3.13.1
   resolution: "type-fest@npm:3.13.1"
@@ -11161,7 +11289,7 @@ __metadata:
     "@electron-forge/cli": 7.3.1
     "@electron-forge/maker-squirrel": 7.3.1
     "@electron-forge/plugin-auto-unpack-natives": ^7.3.1
-    "@electron-forge/plugin-electronegativity": ^7.3.1
+    "@electron-forge/plugin-electronegativity": ^7.4.0
     "@electron-forge/plugin-webpack": 7.3.1
     "@electron-forge/publisher-github": 7.3.1
     "@fortawesome/fontawesome-free": ^6.5.2
@@ -11705,7 +11833,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrap-ansi@npm:^8.1.0":
+"wrap-ansi@npm:^8.0.1, wrap-ansi@npm:^8.1.0":
   version: 8.1.0
   resolution: "wrap-ansi@npm:8.1.0"
   dependencies:
