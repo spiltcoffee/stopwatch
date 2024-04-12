@@ -226,24 +226,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/cli@npm:7.3.1":
-  version: 7.3.1
-  resolution: "@electron-forge/cli@npm:7.3.1"
+"@electron-forge/cli@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@electron-forge/cli@npm:7.4.0"
   dependencies:
-    "@electron-forge/core": 7.3.1
-    "@electron-forge/shared-types": 7.3.1
+    "@electron-forge/core": 7.4.0
+    "@electron-forge/shared-types": 7.4.0
     "@electron/get": ^3.0.0
     chalk: ^4.0.0
     commander: ^4.1.1
     debug: ^4.3.1
     fs-extra: ^10.0.0
-    listr2: ^5.0.3
+    listr2: ^7.0.2
     semver: ^7.2.1
   bin:
     electron-forge: dist/electron-forge.js
     electron-forge-vscode-nix: script/vscode.sh
     electron-forge-vscode-win: script/vscode.cmd
-  checksum: 37d532a4ab3f6add45e44b34fc60401debceefe826e79e1758ab62afe8225d3e7a78cd12b6c9cda84d840f530741dae5fdc951bd7fd9758ab61c194adc7fefb4
+  checksum: 10de1b0f4910eb07f8a5972d5bf5c65e9f0d1cea6699d405397df9d758b1ecef0c7cb4f4f10e2d930ede4e7ad8aa88133a5fc40d1e84f7ae491120da479420aa
   languageName: node
   linkType: hard
 
@@ -265,23 +265,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/core@npm:7.3.1":
-  version: 7.3.1
-  resolution: "@electron-forge/core@npm:7.3.1"
+"@electron-forge/core-utils@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@electron-forge/core-utils@npm:7.4.0"
   dependencies:
-    "@electron-forge/core-utils": 7.3.1
-    "@electron-forge/maker-base": 7.3.1
-    "@electron-forge/plugin-base": 7.3.1
-    "@electron-forge/publisher-base": 7.3.1
-    "@electron-forge/shared-types": 7.3.1
-    "@electron-forge/template-base": 7.3.1
-    "@electron-forge/template-vite": 7.3.1
-    "@electron-forge/template-vite-typescript": 7.3.1
-    "@electron-forge/template-webpack": 7.3.1
-    "@electron-forge/template-webpack-typescript": 7.3.1
-    "@electron-forge/tracer": 7.3.1
+    "@electron-forge/shared-types": 7.4.0
+    "@electron/rebuild": ^3.2.10
+    "@malept/cross-spawn-promise": ^2.0.0
+    chalk: ^4.0.0
+    debug: ^4.3.1
+    find-up: ^5.0.0
+    fs-extra: ^10.0.0
+    log-symbols: ^4.0.0
+    semver: ^7.2.1
+    yarn-or-npm: ^3.0.1
+  checksum: 123a1ce58ffefb1b5078bc0163f76bfe724c545ef9d0cb363bc0057dcf3678c4f0ffaa8352253283f1fedac07e0a095e4112f5f5ab834d0f01604890edb12617
+  languageName: node
+  linkType: hard
+
+"@electron-forge/core@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@electron-forge/core@npm:7.4.0"
+  dependencies:
+    "@electron-forge/core-utils": 7.4.0
+    "@electron-forge/maker-base": 7.4.0
+    "@electron-forge/plugin-base": 7.4.0
+    "@electron-forge/publisher-base": 7.4.0
+    "@electron-forge/shared-types": 7.4.0
+    "@electron-forge/template-base": 7.4.0
+    "@electron-forge/template-vite": 7.4.0
+    "@electron-forge/template-vite-typescript": 7.4.0
+    "@electron-forge/template-webpack": 7.4.0
+    "@electron-forge/template-webpack-typescript": 7.4.0
+    "@electron-forge/tracer": 7.4.0
     "@electron/get": ^3.0.0
-    "@electron/packager": ^18.1.3
+    "@electron/packager": ^18.3.1
     "@electron/rebuild": ^3.2.10
     "@malept/cross-spawn-promise": ^2.0.0
     chalk: ^4.0.0
@@ -292,7 +310,7 @@ __metadata:
     fs-extra: ^10.0.0
     got: ^11.8.5
     interpret: ^3.1.1
-    listr2: ^5.0.3
+    listr2: ^7.0.2
     lodash: ^4.17.20
     log-symbols: ^4.0.0
     node-fetch: ^2.6.7
@@ -304,7 +322,7 @@ __metadata:
     sudo-prompt: ^9.1.1
     username: ^5.1.0
     yarn-or-npm: ^3.0.1
-  checksum: 270599af1f46485a54fd2e1dc1bba07a9c9e71fd2a5da5e9b9e100e20b9085026b7340d8f71bc87671b5c1ee2075593afb3c00cb8583b86ac6058f57a565bf6c
+  checksum: fbcca5e3262feafb2b8952e98396645897480fdb67346b83f6f2e3d11ad18676218abd07db135127bfee2286cd61f8294510bc5625d03b8fc18d5640217a5ced
   languageName: node
   linkType: hard
 
@@ -316,6 +334,17 @@ __metadata:
     fs-extra: ^10.0.0
     which: ^2.0.2
   checksum: b20f5df274ae4145b7d0a2e1c3ce11fdb0204f97a0bb6e8242d5ba6b2f08982e6d7eb8d55fadb7ca345768d80e528cd6bf353f0359309f2143ec09669de669ff
+  languageName: node
+  linkType: hard
+
+"@electron-forge/maker-base@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@electron-forge/maker-base@npm:7.4.0"
+  dependencies:
+    "@electron-forge/shared-types": 7.4.0
+    fs-extra: ^10.0.0
+    which: ^2.0.2
+  checksum: 7feb1ff0fe4a8a7aa3cb43b5dcc5ef35a0e754bb8277e6b3518ae70e48436550941511b6b2c982e9e4d363601ea3ded131039a5980d5b24dfe97b0fc6c75e5ba
   languageName: node
   linkType: hard
 
@@ -393,15 +422,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/publisher-base@npm:7.3.1":
-  version: 7.3.1
-  resolution: "@electron-forge/publisher-base@npm:7.3.1"
-  dependencies:
-    "@electron-forge/shared-types": 7.3.1
-  checksum: 03bcd7a4ac95a63e66349adc3e4aaeb3281b05aa3c3d45f2e687545e38200942397fbdce2160c69dd4ddd91b8529fafae8a720a341ad959b87e510699cf4833e
-  languageName: node
-  linkType: hard
-
 "@electron-forge/publisher-base@npm:7.4.0":
   version: 7.4.0
   resolution: "@electron-forge/publisher-base@npm:7.4.0"
@@ -455,60 +475,60 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/template-base@npm:7.3.1":
-  version: 7.3.1
-  resolution: "@electron-forge/template-base@npm:7.3.1"
+"@electron-forge/template-base@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@electron-forge/template-base@npm:7.4.0"
   dependencies:
-    "@electron-forge/shared-types": 7.3.1
+    "@electron-forge/shared-types": 7.4.0
     "@malept/cross-spawn-promise": ^2.0.0
     debug: ^4.3.1
     fs-extra: ^10.0.0
     username: ^5.1.0
-  checksum: 7ac512099f4654535cb70b041b2c144bc900525af00ebed1cc7b3374031345fdfac26d3553d6fe672c582d583332d87fe1cc35c3dd728d5c65776a38bb1c0cfe
+  checksum: c4cd5a1d0b8d92ef3d779f8ace5342d4d92d2504ac2ea23ec21107422f843265ecaa97206cfeff421a1c01fe3688fb502f1393eff80cc124a97a23675aa56443
   languageName: node
   linkType: hard
 
-"@electron-forge/template-vite-typescript@npm:7.3.1":
-  version: 7.3.1
-  resolution: "@electron-forge/template-vite-typescript@npm:7.3.1"
+"@electron-forge/template-vite-typescript@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@electron-forge/template-vite-typescript@npm:7.4.0"
   dependencies:
-    "@electron-forge/shared-types": 7.3.1
-    "@electron-forge/template-base": 7.3.1
+    "@electron-forge/shared-types": 7.4.0
+    "@electron-forge/template-base": 7.4.0
     fs-extra: ^10.0.0
-  checksum: 60def116993b0ede85ef3a6c85164e782d2ddd899166544c843a4ab1f996a4dca0299c3b1448de46ee938e78bd24694e642e1bb88c9f53397ef24fe74f6cfc0a
+  checksum: a95f56616139a73a000ca2e6fb56b1dce5a003b212433acd1f1f66198dbc043d2d2bd63ae7d5496abc30a6a955425190d204c834e7d41bdf0560bf66bd233646
   languageName: node
   linkType: hard
 
-"@electron-forge/template-vite@npm:7.3.1":
-  version: 7.3.1
-  resolution: "@electron-forge/template-vite@npm:7.3.1"
+"@electron-forge/template-vite@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@electron-forge/template-vite@npm:7.4.0"
   dependencies:
-    "@electron-forge/shared-types": 7.3.1
-    "@electron-forge/template-base": 7.3.1
+    "@electron-forge/shared-types": 7.4.0
+    "@electron-forge/template-base": 7.4.0
     fs-extra: ^10.0.0
-  checksum: 1e12f5824412403903c49dfdb7dac2ee60b51c51302ae5c7427ddf420a2a734319827af25629243d9be62047696b84e995818f773d4cf22d519ef6ad6ed3fb93
+  checksum: 9ddab1229fe1e4c1b31443c48a18f1789b7b5e550eef9e3d0131e2100962e60893af6aa2723af8b20a210331461f33fab521653c1ebe6e18bac7ba645bf8d8c2
   languageName: node
   linkType: hard
 
-"@electron-forge/template-webpack-typescript@npm:7.3.1":
-  version: 7.3.1
-  resolution: "@electron-forge/template-webpack-typescript@npm:7.3.1"
+"@electron-forge/template-webpack-typescript@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@electron-forge/template-webpack-typescript@npm:7.4.0"
   dependencies:
-    "@electron-forge/shared-types": 7.3.1
-    "@electron-forge/template-base": 7.3.1
+    "@electron-forge/shared-types": 7.4.0
+    "@electron-forge/template-base": 7.4.0
     fs-extra: ^10.0.0
-  checksum: 134b5e1036210e342b149fb3179f7f711e50fe617175787265dc20f45c24ca2f9f98d928a48d9645043decd9c8efaf0efcf8a250e212d659d21df761bfcbae67
+  checksum: ed10bf2d71b9d61a12d619d21321cf9fabd5477e5c5fd77089a56b65b355eca66fc4712b25582ff4b3f76dbf57b38661af08ca8a4acf29fe846dc598cb97a2e2
   languageName: node
   linkType: hard
 
-"@electron-forge/template-webpack@npm:7.3.1":
-  version: 7.3.1
-  resolution: "@electron-forge/template-webpack@npm:7.3.1"
+"@electron-forge/template-webpack@npm:7.4.0":
+  version: 7.4.0
+  resolution: "@electron-forge/template-webpack@npm:7.4.0"
   dependencies:
-    "@electron-forge/shared-types": 7.3.1
-    "@electron-forge/template-base": 7.3.1
+    "@electron-forge/shared-types": 7.4.0
+    "@electron-forge/template-base": 7.4.0
     fs-extra: ^10.0.0
-  checksum: dda5b967c72cb5161f713dff3a239c40f535daf04070b5b54aa6bc90e2979c19bb2ca779210a61fe19fc0ca12f3ec1b98442e844198c1f2b80a8be8cd249a00a
+  checksum: 3d8625281b134a2e8bf115d085e7d6df49d755ab0b7241cac23a2b232802eb0520d576068b2facfe097a283b518fd20c9ff967eef8e1e59153d288e98815e1b5
   languageName: node
   linkType: hard
 
@@ -11295,7 +11315,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vr-stopwatch@workspace:."
   dependencies:
-    "@electron-forge/cli": 7.3.1
+    "@electron-forge/cli": 7.4.0
     "@electron-forge/maker-squirrel": 7.3.1
     "@electron-forge/plugin-auto-unpack-natives": ^7.4.0
     "@electron-forge/plugin-electronegativity": ^7.4.0
