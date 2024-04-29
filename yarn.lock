@@ -3679,14 +3679,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssnano-preset-default@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "cssnano-preset-default@npm:7.0.0"
+"cssnano-preset-default@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "cssnano-preset-default@npm:7.0.1"
   dependencies:
     browserslist: ^4.23.0
     css-declaration-sorter: ^7.2.0
     cssnano-utils: ^5.0.0
-    postcss-calc: ^9.0.1
+    postcss-calc: ^10.0.0
     postcss-colormin: ^7.0.0
     postcss-convert-values: ^7.0.0
     postcss-discard-comments: ^7.0.0
@@ -3715,7 +3715,7 @@ __metadata:
     postcss-unique-selectors: ^7.0.0
   peerDependencies:
     postcss: ^8.4.31
-  checksum: d480e57d20a7bb1e1b5ff7e6ea91b60de91f8a340593441522e52a9e51f83f335cc76cbe436c43643f3ebfdc667ec59d3944019f108fb2b14afc1eb750c83762
+  checksum: 079e0ea9bbc3239796050f16cd47ac75279a6e861677decc25666109e5153add1c18409c384828714ff41e9fe6c0446c97add6b9e29a1b170ba29fcbf130097a
   languageName: node
   linkType: hard
 
@@ -3728,15 +3728,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssnano@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "cssnano@npm:7.0.0"
+"cssnano@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "cssnano@npm:7.0.1"
   dependencies:
-    cssnano-preset-default: ^7.0.0
+    cssnano-preset-default: ^7.0.1
     lilconfig: ^3.1.1
   peerDependencies:
     postcss: ^8.4.31
-  checksum: 5597a908794c1c4560d5e81bdc1237eb51a7dfdb16d08510ca669855b8b7a4fed3d73ca8ccd7835104ab0cc47d33bcfa4046cb87c1cd78287fb10c1fd0d49c10
+  checksum: 595aa89f80ff3e122c4ef099f1cb4bf6b4eedd4a40fe0826a9b8ad0d990f3f402803959bd201710b779c49c525ff7b7ff63227c98629b29ba9d167dc4e385d4b
   languageName: node
   linkType: hard
 
@@ -8601,15 +8601,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-calc@npm:^9.0.1":
-  version: 9.0.1
-  resolution: "postcss-calc@npm:9.0.1"
+"postcss-calc@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "postcss-calc@npm:10.0.0"
   dependencies:
-    postcss-selector-parser: ^6.0.11
+    postcss-selector-parser: ^6.0.16
     postcss-value-parser: ^4.2.0
   peerDependencies:
-    postcss: ^8.2.2
-  checksum: 7327ed83bfec544ab8b3e38353baa72ff6d04378b856db4ad82dbd68ce0b73668867ef182b5d4025f9dd9aa9c64aacc50cd1bd9db8d8b51ccc4cb97866b9d72b
+    postcss: ^8.4.38
+  checksum: f42562bf134ef0a2038a709e3698f0d16a5ef9e20f97c0afc05dbdadf167a9a49d25b8d2f70e9fa1ecc867a2db2a04f8b3fb32db6e12d146356aae599908e5ce
   languageName: node
   linkType: hard
 
@@ -11114,7 +11114,7 @@ __metadata:
     "@vercel/webpack-asset-relocator-loader": 1.7.3
     autoprefixer: ^10.4.19
     css-loader: ^7.1.1
-    cssnano: ^7.0.0
+    cssnano: ^7.0.1
     electron: 30.0.1
     electron-squirrel-startup: ^1.0.0
     eslint: ^8.57.0
