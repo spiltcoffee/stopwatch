@@ -27,7 +27,7 @@
     "email": "spiltcoffee@users.noreply.github.com"
   },
   "dependencies": {
-    "@tweenjs/tween.js": "^23.1.1",
+    "@tweenjs/tween.js": "^23.1.2",
     "electron-squirrel-startup": "^1.0.0",
     "fs-jetpack": "^5.1.0",
     "lodash.get": "^4.4.2",

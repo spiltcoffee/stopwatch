@@ -1254,10 +1254,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tweenjs/tween.js@npm:^23.1.1":
-  version: 23.1.1
-  resolution: "@tweenjs/tween.js@npm:23.1.1"
-  checksum: a93b331f0c2dc2dd2fce2c08ab9e505cd71ce1b31a3e2218f31da4f2d2af84ac4c4eaab05f9929a7b7884c5e00c5d32e8fd1872e0a3e10e9cca20febc8d263b5
+"@tweenjs/tween.js@npm:^23.1.2":
+  version: 23.1.2
+  resolution: "@tweenjs/tween.js@npm:23.1.2"
+  checksum: 5bf8db79113f622be89ab3df7e96c0f5784cf3db1928d8029fff2a245bc62d0727fce18e74e287478539eafd451afe017841037c3b427e6c1dd5246ab2fb6ecf
   languageName: node
   linkType: hard
 
@@ -11108,7 +11108,7 @@ __metadata:
     "@electron-forge/plugin-webpack": 7.4.0
     "@electron-forge/publisher-github": 7.4.0
     "@fortawesome/fontawesome-free": ^6.5.2
-    "@tweenjs/tween.js": ^23.1.1
+    "@tweenjs/tween.js": ^23.1.2
     "@typescript-eslint/eslint-plugin": ^7.8.0
     "@typescript-eslint/parser": ^7.8.0
     "@vercel/webpack-asset-relocator-loader": 1.7.3
