@@ -46,7 +46,7 @@
     "@electron-forge/publisher-github": "7.4.0",
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@typescript-eslint/eslint-plugin": "^7.16.0",
-    "@typescript-eslint/parser": "^7.15.0",
+    "@typescript-eslint/parser": "^7.16.0",
     "@vercel/webpack-asset-relocator-loader": "1.7.4",
     "autoprefixer": "^10.4.19",
     "css-loader": "^7.1.2",
