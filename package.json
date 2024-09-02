@@ -61,7 +61,7 @@
     "husky": "^9.1.5",
     "lint-staged": "^15.2.9",
     "node-loader": "^2.0.0",
-    "postcss": "^8.4.41",
+    "postcss": "^8.4.44",
     "postcss-loader": "^8.1.1",
     "prettier": "^3.3.3",
     "style-loader": "^4.0.0",
