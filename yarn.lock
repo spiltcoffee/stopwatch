@@ -430,12 +430,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/publisher-github@npm:7.4.0":
-  version: 7.4.0
-  resolution: "@electron-forge/publisher-github@npm:7.4.0"
+"@electron-forge/publisher-base@npm:7.5.0":
+  version: 7.5.0
+  resolution: "@electron-forge/publisher-base@npm:7.5.0"
   dependencies:
-    "@electron-forge/publisher-base": 7.4.0
-    "@electron-forge/shared-types": 7.4.0
+    "@electron-forge/shared-types": 7.5.0
+  checksum: 8e26ae145b98615502d1aab7d381a9595859f62d1fb81495452d904611829c07656fc3cf0917647dd3ae1e1c50e661429fc850ccce524f9e2166fc462d091eec
+  languageName: node
+  linkType: hard
+
+"@electron-forge/publisher-github@npm:7.5.0":
+  version: 7.5.0
+  resolution: "@electron-forge/publisher-github@npm:7.5.0"
+  dependencies:
+    "@electron-forge/publisher-base": 7.5.0
+    "@electron-forge/shared-types": 7.5.0
     "@octokit/core": ^3.2.4
     "@octokit/plugin-retry": ^3.0.9
     "@octokit/request-error": ^2.0.5
@@ -446,7 +455,7 @@ __metadata:
     fs-extra: ^10.0.0
     log-symbols: ^4.0.0
     mime-types: ^2.1.25
-  checksum: b9aca843090d1b5c278356433792f322964ae22e7c2ab53855d5aff5690e0d2f49cca169515fef99ccd66ae2a85b260190214f8487d8180ef1aa459ce0a238f8
+  checksum: 0f8e8aed91136a412266a2b4ae015cfd3e7ed8b0dc5ef1608c62ba226880f873eaddcd35002e8e9a2cbc91e479a6805fb0a79cdef70e908406d3667c59265532
   languageName: node
   linkType: hard
 
@@ -11433,7 +11442,7 @@ __metadata:
     "@electron-forge/plugin-auto-unpack-natives": ^7.5.0
     "@electron-forge/plugin-electronegativity": ^7.4.0
     "@electron-forge/plugin-webpack": 7.4.0
-    "@electron-forge/publisher-github": 7.4.0
+    "@electron-forge/publisher-github": 7.5.0
     "@fortawesome/fontawesome-free": ^6.6.0
     "@tweenjs/tween.js": ^25.0.0
     "@typescript-eslint/eslint-plugin": ^8.4.0
