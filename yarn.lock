@@ -389,14 +389,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/plugin-electronegativity@npm:^7.4.0":
-  version: 7.4.0
-  resolution: "@electron-forge/plugin-electronegativity@npm:7.4.0"
+"@electron-forge/plugin-electronegativity@npm:^7.5.0":
+  version: 7.5.0
+  resolution: "@electron-forge/plugin-electronegativity@npm:7.5.0"
   dependencies:
     "@doyensec/electronegativity": ^1.9.1
-    "@electron-forge/plugin-base": 7.4.0
-    "@electron-forge/shared-types": 7.4.0
-  checksum: da6ab2b60742054130576a96ae72469d33af055cde71c351cb306cf179489d586aa740866772bfeea9074160321cd35158bca4c62e3b8b5ff335908f5669e4f5
+    "@electron-forge/plugin-base": 7.5.0
+    "@electron-forge/shared-types": 7.5.0
+  checksum: 8eae1bcb95a4e2a10d9d785e61f7aa6586a2c18ac1101219f5fce4b911fa64849bae3a87ae54a9b13bb798f7843ebdc73650e5013d3133b2d811c5597d85daf6
   languageName: node
   linkType: hard
 
@@ -11440,7 +11440,7 @@ __metadata:
     "@electron-forge/cli": 7.4.0
     "@electron-forge/maker-squirrel": 7.4.0
     "@electron-forge/plugin-auto-unpack-natives": ^7.5.0
-    "@electron-forge/plugin-electronegativity": ^7.4.0
+    "@electron-forge/plugin-electronegativity": ^7.5.0
     "@electron-forge/plugin-webpack": 7.4.0
     "@electron-forge/publisher-github": 7.5.0
     "@fortawesome/fontawesome-free": ^6.6.0
