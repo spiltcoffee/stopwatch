@@ -6139,9 +6139,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-webpack-plugin@npm:^5.6.2":
-  version: 5.6.2
-  resolution: "html-webpack-plugin@npm:5.6.2"
+"html-webpack-plugin@npm:^5.6.3":
+  version: 5.6.3
+  resolution: "html-webpack-plugin@npm:5.6.3"
   dependencies:
     "@types/html-minifier-terser": ^6.0.0
     html-minifier-terser: ^6.0.2
@@ -6156,7 +6156,7 @@ __metadata:
       optional: true
     webpack:
       optional: true
-  checksum: c579ce8b34ef1cd903829402aa6a62a6c92fe1cdfcd81d17ebc87f39eaab1381438b9d805a63457b255238db8f2865d71f48cd382375aa28718881e3ab2d2f9a
+  checksum: 59e7d971b0cfd9ba34c7acaa3c161e43c62596474dd8cd35d7b690498ff5891f21296de0aa1d2e7810348caa657e938461267155dda47913b5eeca7124406270
   languageName: node
   linkType: hard
 
@@ -11391,7 +11391,7 @@ __metadata:
     eslint-plugin-vue: ^9.29.1
     file-loader: ^6.2.0
     fs-jetpack: ^5.1.0
-    html-webpack-plugin: ^5.6.2
+    html-webpack-plugin: ^5.6.3
     husky: ^9.1.6
     lint-staged: ^15.2.10
     lodash.get: ^4.4.2
