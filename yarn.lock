@@ -7223,7 +7223,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loader-utils@npm:^2.0.0":
+"loader-utils@npm:^2.0.0, loader-utils@npm:^2.0.3":
   version: 2.0.4
   resolution: "loader-utils@npm:2.0.4"
   dependencies:
@@ -8069,14 +8069,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-loader@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "node-loader@npm:2.0.0"
+"node-loader@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "node-loader@npm:2.1.0"
   dependencies:
-    loader-utils: ^2.0.0
+    loader-utils: ^2.0.3
   peerDependencies:
     webpack: ^5.0.0
-  checksum: 9252a92b226c0e6fdd29fef92d9853d6c389a4c65119a32306dc12cee7886f2ab4dde333dda5e37df92283c34bd0267e98c384be6d548dbe69676e3343f549ea
+  checksum: c86312b510f49c001df1908437f3327314d29c7282c2a87cfb7067d6e35f255a0c67b5852a19ced9861c67fa109bab129ff3fe42d8e4d5cdbad39b6c35f09023
   languageName: node
   linkType: hard
 
@@ -11438,7 +11438,7 @@ __metadata:
     lint-staged: ^15.2.10
     lodash.get: ^4.4.2
     moment: ^2.30.1
-    node-loader: ^2.0.0
+    node-loader: ^2.1.0
     postcss: ^8.4.49
     postcss-loader: ^8.1.1
     prettier: ^3.3.3
