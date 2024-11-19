@@ -805,10 +805,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/fontawesome-free@npm:^6.6.0":
-  version: 6.6.0
-  resolution: "@fortawesome/fontawesome-free@npm:6.6.0"
-  checksum: 44ad86efbf3835c9d54aedb9e39065853bff7d81309e3c7ea7848227ec3d017f9c3db4844dc6abbbb21b3e96384b038cff2b86e8caf7d925ac2d8239915aa043
+"@fortawesome/fontawesome-free@npm:^6.7.0":
+  version: 6.7.0
+  resolution: "@fortawesome/fontawesome-free@npm:6.7.0"
+  checksum: bb133f2491b34b8a7f5c59a8207422297ad0e693d69c4ef11116ef3467ff8508c60f853604bd18ac3455b522e009a0fecc7fc1131414d64fd2ccd293fa7f66fe
   languageName: node
   linkType: hard
 
@@ -11505,7 +11505,7 @@ __metadata:
     "@electron-forge/plugin-electronegativity": ^7.5.0
     "@electron-forge/plugin-webpack": 7.5.0
     "@electron-forge/publisher-github": 7.5.0
-    "@fortawesome/fontawesome-free": ^6.6.0
+    "@fortawesome/fontawesome-free": ^6.7.0
     "@tweenjs/tween.js": ^25.0.0
     "@typescript-eslint/eslint-plugin": ^8.4.0
     "@typescript-eslint/parser": ^8.14.0
