@@ -292,6 +292,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron-forge/core-utils@npm:7.6.0":
+  version: 7.6.0
+  resolution: "@electron-forge/core-utils@npm:7.6.0"
+  dependencies:
+    "@electron-forge/shared-types": 7.6.0
+    "@electron/rebuild": ^3.7.0
+    "@malept/cross-spawn-promise": ^2.0.0
+    chalk: ^4.0.0
+    debug: ^4.3.1
+    find-up: ^5.0.0
+    fs-extra: ^10.0.0
+    log-symbols: ^4.0.0
+    semver: ^7.2.1
+    yarn-or-npm: ^3.0.1
+  checksum: fd2c7e0ce99dfcae0da8216c28a35597dd9c287d630099a3e01a7f79892da6d746a8dd337f3b2821c66d3b88ad85e55c063045c27b6b17d440c90002133f1d30
+  languageName: node
+  linkType: hard
+
 "@electron-forge/core@npm:7.5.0":
   version: 7.5.0
   resolution: "@electron-forge/core@npm:7.5.0"
@@ -411,14 +429,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/plugin-webpack@npm:7.5.0":
-  version: 7.5.0
-  resolution: "@electron-forge/plugin-webpack@npm:7.5.0"
+"@electron-forge/plugin-webpack@npm:7.6.0":
+  version: 7.6.0
+  resolution: "@electron-forge/plugin-webpack@npm:7.6.0"
   dependencies:
-    "@electron-forge/core-utils": 7.5.0
-    "@electron-forge/plugin-base": 7.5.0
-    "@electron-forge/shared-types": 7.5.0
-    "@electron-forge/web-multi-logger": 7.5.0
+    "@electron-forge/core-utils": 7.6.0
+    "@electron-forge/plugin-base": 7.6.0
+    "@electron-forge/shared-types": 7.6.0
+    "@electron-forge/web-multi-logger": 7.6.0
     chalk: ^4.0.0
     debug: ^4.3.1
     fast-glob: ^3.2.7
@@ -428,7 +446,7 @@ __metadata:
     webpack: ^5.69.1
     webpack-dev-server: ^4.0.0
     webpack-merge: ^5.7.3
-  checksum: 2e9d2401620076082388ac9ef952075391dfb666bc2ed7530ba53a87506e6c204db7083541cb538d22352dbd2d902816321644857886f751cec20cc6cc6f3d6d
+  checksum: afe0c405bd2840010b83bee836ab01becc1f80d08fe77df1fdc230c7f653810186cd0929b011b3893f407f4c610f4370bb33a8add14a06b1eb922b8aeab9af79
   languageName: node
   linkType: hard
 
@@ -569,16 +587,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/web-multi-logger@npm:7.5.0":
-  version: 7.5.0
-  resolution: "@electron-forge/web-multi-logger@npm:7.5.0"
+"@electron-forge/web-multi-logger@npm:7.6.0":
+  version: 7.6.0
+  resolution: "@electron-forge/web-multi-logger@npm:7.6.0"
   dependencies:
     express: ^4.17.1
     express-ws: ^5.0.2
     xterm: ^4.9.0
     xterm-addon-fit: ^0.5.0
     xterm-addon-search: ^0.8.0
-  checksum: 06c4c941bc1214657ed40cc59b08953c15d67bb91d786c22ce5c7e2ad1fcfa6b38b922281feb91b4817ebb0157132568d7925b8587049dfe99e94c2a4ed06ab4
+  checksum: 0892bdec707e2a9506b687bf5c42f05eaff04b9d66a3fb42f01af0653b08376b8365b9eb97d7897fbee73d5c43d4ef663f255c03ce7642e6f6cd13e707af6c72
   languageName: node
   linkType: hard
 
@@ -11661,7 +11679,7 @@ __metadata:
     "@electron-forge/maker-squirrel": 7.6.0
     "@electron-forge/plugin-auto-unpack-natives": ^7.6.0
     "@electron-forge/plugin-electronegativity": ^7.6.0
-    "@electron-forge/plugin-webpack": 7.5.0
+    "@electron-forge/plugin-webpack": 7.6.0
     "@electron-forge/publisher-github": 7.6.0
     "@fortawesome/fontawesome-free": ^6.7.1
     "@tweenjs/tween.js": ^25.0.0
