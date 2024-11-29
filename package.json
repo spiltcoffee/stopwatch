@@ -38,7 +38,7 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@electron-forge/cli": "7.5.0",
+    "@electron-forge/cli": "7.6.0",
     "@electron-forge/maker-squirrel": "7.6.0",
     "@electron-forge/plugin-auto-unpack-natives": "^7.6.0",
     "@electron-forge/plugin-electronegativity": "^7.6.0",
