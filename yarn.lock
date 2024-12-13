@@ -6961,7 +6961,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-url@npm:^1.1.0, is-url@npm:^1.2.4":
+"is-url@npm:^1.1.0":
   version: 1.2.4
   resolution: "is-url@npm:1.2.4"
   checksum: 100e74b3b1feab87a43ef7653736e88d997eb7bd32e71fd3ebc413e58c1cbe56269699c776aaea84244b0567f2a7d68dfaa512a062293ed2f9fdecb394148432
@@ -11475,14 +11475,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"update-electron-app@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "update-electron-app@npm:3.0.0"
+"update-electron-app@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "update-electron-app@npm:3.1.0"
   dependencies:
     github-url-to-object: ^4.0.4
-    is-url: ^1.2.4
     ms: ^2.1.1
-  checksum: 17b8250a3d8e9b31318d715fd2033e044b3755a257cc941a04c4d3df895f36fe94eca3381e716a89abb0ebf38f51243819fdaa517f66c89094f0eca86141aa67
+  checksum: 80d4210539dedc4cc1dca93c3506c9559da32e44949d895aa63505846b337db1aae8fed1a92bd99377228e4aee54ca6f56ce68281ca0237043630c269a606fe9
   languageName: node
   linkType: hard
 
@@ -11617,7 +11616,7 @@ __metadata:
     tailwindcss: ^3.4.16
     ts-loader: ^9.5.1
     typescript: ^5.7.2
-    update-electron-app: ^3.0.0
+    update-electron-app: ^3.1.0
     uuid: ^11.0.3
     vue: ^3.5.13
     vue-eslint-parser: ^9.4.3
