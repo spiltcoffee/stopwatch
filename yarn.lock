@@ -11166,13 +11166,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"update-electron-app@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "update-electron-app@npm:3.1.0"
+"update-electron-app@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "update-electron-app@npm:3.1.1"
   dependencies:
     github-url-to-object: ^4.0.4
     ms: ^2.1.1
-  checksum: 80d4210539dedc4cc1dca93c3506c9559da32e44949d895aa63505846b337db1aae8fed1a92bd99377228e4aee54ca6f56ce68281ca0237043630c269a606fe9
+  checksum: 6ae471ca5d63d976d9b1ca93c1e05f06c24c33da6c2de3e925940eb09847370d98191deafb2cab10740a53e4eb0dbd0ff1734571056af8445d3c9b1c8999464a
   languageName: node
   linkType: hard
 
@@ -11307,7 +11307,7 @@ __metadata:
     tailwindcss: ^4.0.1
     ts-loader: ^9.5.2
     typescript: ^5.7.3
-    update-electron-app: ^3.1.0
+    update-electron-app: ^3.1.1
     uuid: ^11.0.5
     vue: ^3.5.13
     vue-eslint-parser: ^9.4.3
