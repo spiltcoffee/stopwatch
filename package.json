@@ -63,7 +63,7 @@
     "node-loader": "^2.1.0",
     "postcss": "^8.5.2",
     "postcss-loader": "^8.1.1",
-    "prettier": "^3.5.0",
+    "prettier": "^3.5.1",
     "style-loader": "^4.0.0",
     "tailwindcss": "^4.0.6",
     "ts-loader": "^9.5.2",
