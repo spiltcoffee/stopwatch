@@ -285,6 +285,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron-forge/core-utils@npm:7.7.0":
+  version: 7.7.0
+  resolution: "@electron-forge/core-utils@npm:7.7.0"
+  dependencies:
+    "@electron-forge/shared-types": 7.7.0
+    "@electron/rebuild": ^3.7.0
+    "@malept/cross-spawn-promise": ^2.0.0
+    chalk: ^4.0.0
+    debug: ^4.3.1
+    find-up: ^5.0.0
+    fs-extra: ^10.0.0
+    log-symbols: ^4.0.0
+    semver: ^7.2.1
+  checksum: e5b56be0ca162ce3c8c34bfbbffa31867c8517347f620299060f02963b90ecf1a12f61f297ebf4ed942770b8cc219899b4ee2201797243497f07864ae83e0ee4
+  languageName: node
+  linkType: hard
+
 "@electron-forge/core@npm:7.6.1":
   version: 7.6.1
   resolution: "@electron-forge/core@npm:7.6.1"
@@ -372,6 +389,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron-forge/plugin-base@npm:7.7.0":
+  version: 7.7.0
+  resolution: "@electron-forge/plugin-base@npm:7.7.0"
+  dependencies:
+    "@electron-forge/shared-types": 7.7.0
+  checksum: 068f7d00c360444097f09df7d313427466585f18341a7bdd45b3c60293c918d98784cb07ccdfa4cca23cd10ef15d0d3440799f9d257216d0c8d9be6f08475727
+  languageName: node
+  linkType: hard
+
 "@electron-forge/plugin-electronegativity@npm:^7.6.1":
   version: 7.6.1
   resolution: "@electron-forge/plugin-electronegativity@npm:7.6.1"
@@ -383,14 +409,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/plugin-webpack@npm:7.6.1":
-  version: 7.6.1
-  resolution: "@electron-forge/plugin-webpack@npm:7.6.1"
+"@electron-forge/plugin-webpack@npm:7.7.0":
+  version: 7.7.0
+  resolution: "@electron-forge/plugin-webpack@npm:7.7.0"
   dependencies:
-    "@electron-forge/core-utils": 7.6.1
-    "@electron-forge/plugin-base": 7.6.1
-    "@electron-forge/shared-types": 7.6.1
-    "@electron-forge/web-multi-logger": 7.6.1
+    "@electron-forge/core-utils": 7.7.0
+    "@electron-forge/plugin-base": 7.7.0
+    "@electron-forge/shared-types": 7.7.0
+    "@electron-forge/web-multi-logger": 7.7.0
     chalk: ^4.0.0
     debug: ^4.3.1
     fast-glob: ^3.2.7
@@ -400,7 +426,7 @@ __metadata:
     webpack: ^5.69.1
     webpack-dev-server: ^4.0.0
     webpack-merge: ^5.7.3
-  checksum: d6f3b927ce8a1c64bf7a81cc035cd03ca919d4ee151cef42c26d0975ba98b2328041a1cbb4cfb9692884110969725ae03b1973fc254529dea54d9274bdd1185b
+  checksum: 5c341af4e9800ab5277d3bfab4fed8b1d993f2e8a5b472ca47f0777a544284fdec88ccc5da2db82f774bebf249b373a81fa520c17cb87f15e8a38f84ae06e5b4
   languageName: node
   linkType: hard
 
@@ -442,6 +468,18 @@ __metadata:
     "@electron/rebuild": ^3.7.0
     listr2: ^7.0.2
   checksum: 4edcb886703342e5a9ac5096acb427b7185ffa01cddb3a39194d462d2583651223af9e0a3872e5ccb8af390578b57f587bb4ea0fac815262759f72dd70f617d8
+  languageName: node
+  linkType: hard
+
+"@electron-forge/shared-types@npm:7.7.0":
+  version: 7.7.0
+  resolution: "@electron-forge/shared-types@npm:7.7.0"
+  dependencies:
+    "@electron-forge/tracer": 7.7.0
+    "@electron/packager": ^18.3.5
+    "@electron/rebuild": ^3.7.0
+    listr2: ^7.0.2
+  checksum: 31934de8ded00b8f3beee351bd09f49ca5474617dd264287978c3415714f75ac4e71761598cfc2c8e235053b358f789c9f76c3d6ae3507b57e6b0743e042ebdb
   languageName: node
   linkType: hard
 
@@ -511,16 +549,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/web-multi-logger@npm:7.6.1":
-  version: 7.6.1
-  resolution: "@electron-forge/web-multi-logger@npm:7.6.1"
+"@electron-forge/tracer@npm:7.7.0":
+  version: 7.7.0
+  resolution: "@electron-forge/tracer@npm:7.7.0"
+  dependencies:
+    chrome-trace-event: ^1.0.3
+  checksum: 1acbf656d4873f97fa57ac23476ea61fe6312fafd04e55c8b81cd4dc347c5747a8496a919fb56d8077bb5e34da746d1bef1ea4f80bece0d9aa3c8c6170093bb1
+  languageName: node
+  linkType: hard
+
+"@electron-forge/web-multi-logger@npm:7.7.0":
+  version: 7.7.0
+  resolution: "@electron-forge/web-multi-logger@npm:7.7.0"
   dependencies:
     express: ^4.17.1
     express-ws: ^5.0.2
     xterm: ^4.9.0
     xterm-addon-fit: ^0.5.0
     xterm-addon-search: ^0.8.0
-  checksum: 21c61e42e0e95e13020973020c96eb2aee27d6b93544366a42e360dcefbd412807d8b03574001836e1a3293ee2e7b073f5e01c26c0e4a9aba22d2653964cd2fa
+  checksum: 22dd843898a5d0304064f0b77a474b044b15a37b9cceb2d05f9ba2d4caf49d3051e5d9edcbe6b7c684f947df35d15be6d626e119d32f049b02fc06ea2761ebc7
   languageName: node
   linkType: hard
 
@@ -11287,7 +11334,7 @@ __metadata:
     "@electron-forge/maker-squirrel": 7.6.1
     "@electron-forge/plugin-auto-unpack-natives": ^7.6.1
     "@electron-forge/plugin-electronegativity": ^7.6.1
-    "@electron-forge/plugin-webpack": 7.6.1
+    "@electron-forge/plugin-webpack": 7.7.0
     "@electron-forge/publisher-github": 7.6.1
     "@fortawesome/fontawesome-free": ^6.7.2
     "@tweenjs/tween.js": ^25.0.0
