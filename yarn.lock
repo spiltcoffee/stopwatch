@@ -1581,12 +1581,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.9.0":
-  version: 20.11.19
-  resolution: "@types/node@npm:20.11.19"
+"@types/node@npm:^22.7.7":
+  version: 22.13.9
+  resolution: "@types/node@npm:22.13.9"
   dependencies:
-    undici-types: ~5.26.4
-  checksum: 259d16643ba611ade617a8212e594a3ac014727457507389bbf7213971346ab052d870f1e6e2df0afd0876ecd7874f578bccb130be01e069263cfc7136ddc0c1
+    undici-types: ~6.20.0
+  checksum: d36ae841fa20aa01aefecfeb9363cbc9a5d7ede711fd6bdd9e872975987d6ce2720d4196c8cc7d2c53b3353a121250f96550873f18a73477de86b4198b25bab5
   languageName: node
   linkType: hard
 
@@ -4311,16 +4311,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron@npm:34.3.0":
-  version: 34.3.0
-  resolution: "electron@npm:34.3.0"
+"electron@npm:35.0.0":
+  version: 35.0.0
+  resolution: "electron@npm:35.0.0"
   dependencies:
     "@electron/get": ^2.0.0
-    "@types/node": ^20.9.0
+    "@types/node": ^22.7.7
     extract-zip: ^2.0.1
   bin:
     electron: cli.js
-  checksum: 678d185ce7244d1549a1e81a80998d0e8cb961d8e99c3c07a7d99ab4e320044dee08e3ecdc8eaf5ada61120b8823bbe210dd80fc2580df8d9e9ee82c71bfed34
+  checksum: aeaa2a7d543522b09700083922b4898ee3e9118d7e85ffb26c8dc7061cc6363b1c5f04e75c648d0016a15d82e448ee1d3455dcba585dda930648d6e9050bd37e
   languageName: node
   linkType: hard
 
@@ -11015,10 +11015,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~5.26.4":
-  version: 5.26.5
-  resolution: "undici-types@npm:5.26.5"
-  checksum: 3192ef6f3fd5df652f2dc1cd782b49d6ff14dc98e5dced492aa8a8c65425227da5da6aafe22523c67f035a272c599bb89cfe803c1db6311e44bed3042fc25487
+"undici-types@npm:~6.20.0":
+  version: 6.20.0
+  resolution: "undici-types@npm:6.20.0"
+  checksum: b7bc50f012dc6afbcce56c9fd62d7e86b20a62ff21f12b7b5cbf1973b9578d90f22a9c7fe50e638e96905d33893bf2f9f16d98929c4673c2480de05c6c96ea8b
   languageName: node
   linkType: hard
 
@@ -11247,7 +11247,7 @@ __metadata:
     autoprefixer: ^10.4.20
     css-loader: ^7.1.2
     cssnano: ^7.0.6
-    electron: 34.3.0
+    electron: 35.0.0
     electron-squirrel-startup: ^1.0.1
     eslint: ^8.57.0
     eslint-config-prettier: ^10.0.2
