@@ -4784,6 +4784,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-scope@npm:^8.2.0":
+  version: 8.2.0
+  resolution: "eslint-scope@npm:8.2.0"
+  dependencies:
+    esrecurse: ^4.3.0
+    estraverse: ^5.2.0
+  checksum: 750eff4672ca2bf274ec0d1bbeae08aadd53c1907d5c6aff5564d8e047a5f49afa8ae6eee333cab637fd3ebcab2141659d8f2f040f6fdc982b0f61f8bf03136f
+  languageName: node
+  linkType: hard
+
 "eslint-utils@npm:^2.0.0, eslint-utils@npm:^2.1.0":
   version: 2.1.0
   resolution: "eslint-utils@npm:2.1.0"
@@ -4931,6 +4941,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"espree@npm:^10.3.0":
+  version: 10.3.0
+  resolution: "espree@npm:10.3.0"
+  dependencies:
+    acorn: ^8.14.0
+    acorn-jsx: ^5.3.2
+    eslint-visitor-keys: ^4.2.0
+  checksum: 63e8030ff5a98cea7f8b3e3a1487c998665e28d674af08b9b3100ed991670eb3cbb0e308c4548c79e03762753838fbe530c783f17309450d6b47a889fee72bef
+  languageName: node
+  linkType: hard
+
 "espree@npm:^7.3.0, espree@npm:^7.3.1":
   version: 7.3.1
   resolution: "espree@npm:7.3.1"
@@ -4969,6 +4990,15 @@ __metadata:
   dependencies:
     estraverse: ^5.1.0
   checksum: 2f4ad89c5aafaca61cc2c15e256190f0d6deb4791cae6552d3cb4b1eb8867958cdf27a56aaa3272ff17435e3eaa19ee0d4129fac336ca6373d7354d7b5da7966
+  languageName: node
+  linkType: hard
+
+"esquery@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "esquery@npm:1.6.0"
+  dependencies:
+    estraverse: ^5.1.0
+  checksum: 08ec4fe446d9ab27186da274d979558557fbdbbd10968fa9758552482720c54152a5640e08b9009e5a30706b66aba510692054d4129d32d0e12e05bbc0b96fb2
   languageName: node
   linkType: hard
 
@@ -11272,7 +11302,7 @@ __metadata:
     update-electron-app: ^3.1.1
     uuid: ^11.1.0
     vue: ^3.5.13
-    vue-eslint-parser: ^9.4.3
+    vue-eslint-parser: ^10.1.0
     vue-loader: ^17.4.2
     vue-template-compiler: ^2.7.16
     webpack: ^5.98.0
@@ -11281,6 +11311,23 @@ __metadata:
     webpack-merge: ^6.0.1
   languageName: unknown
   linkType: soft
+
+"vue-eslint-parser@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "vue-eslint-parser@npm:10.1.0"
+  dependencies:
+    debug: ^4.4.0
+    eslint-scope: ^8.2.0
+    eslint-visitor-keys: ^4.2.0
+    espree: ^10.3.0
+    esquery: ^1.6.0
+    lodash: ^4.17.21
+    semver: ^7.6.3
+  peerDependencies:
+    eslint: ^8.57.0 || ^9.0.0
+  checksum: 22587e33520efb3901c92b6d64b0c9bb6987eb1342ad38315a128dee3e915b38a8fa19e2bd1d362fcbde1bb311d87afd60fb75f28747335fbd28a8ae879f9da9
+  languageName: node
+  linkType: hard
 
 "vue-eslint-parser@npm:^9.4.3":
   version: 9.4.3
