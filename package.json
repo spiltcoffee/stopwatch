@@ -68,7 +68,7 @@
     "tailwindcss": "^4.0.9",
     "ts-loader": "^9.5.2",
     "typescript": "^5.8.2",
-    "vue-eslint-parser": "^9.4.3",
+    "vue-eslint-parser": "^10.1.0",
     "vue-loader": "^17.4.2",
     "vue-template-compiler": "^2.7.16",
     "webpack": "^5.98.0",
