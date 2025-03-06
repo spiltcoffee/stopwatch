@@ -11302,7 +11302,7 @@ __metadata:
     update-electron-app: ^3.1.1
     uuid: ^11.1.0
     vue: ^3.5.13
-    vue-eslint-parser: ^10.1.0
+    vue-eslint-parser: ^10.1.1
     vue-loader: ^17.4.2
     vue-template-compiler: ^2.7.16
     webpack: ^5.98.0
@@ -11312,9 +11312,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"vue-eslint-parser@npm:^10.1.0":
-  version: 10.1.0
-  resolution: "vue-eslint-parser@npm:10.1.0"
+"vue-eslint-parser@npm:^10.1.1":
+  version: 10.1.1
+  resolution: "vue-eslint-parser@npm:10.1.1"
   dependencies:
     debug: ^4.4.0
     eslint-scope: ^8.2.0
@@ -11325,7 +11325,7 @@ __metadata:
     semver: ^7.6.3
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
-  checksum: 22587e33520efb3901c92b6d64b0c9bb6987eb1342ad38315a128dee3e915b38a8fa19e2bd1d362fcbde1bb311d87afd60fb75f28747335fbd28a8ae879f9da9
+  checksum: 4ef3b22b894a53de3ac8764277b9733ad97b6d8eba57b215c166439cf2c15a25ced9c7c37bddc8bc737443339ad1d6a6c60bf34e95df2aee0d412ff569189dd9
   languageName: node
   linkType: hard
 
