@@ -433,18 +433,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/shared-types@npm:7.7.0":
-  version: 7.7.0
-  resolution: "@electron-forge/shared-types@npm:7.7.0"
-  dependencies:
-    "@electron-forge/tracer": 7.7.0
-    "@electron/packager": ^18.3.5
-    "@electron/rebuild": ^3.7.0
-    listr2: ^7.0.2
-  checksum: 31934de8ded00b8f3beee351bd09f49ca5474617dd264287978c3415714f75ac4e71761598cfc2c8e235053b358f789c9f76c3d6ae3507b57e6b0743e042ebdb
-  languageName: node
-  linkType: hard
-
 "@electron-forge/shared-types@npm:7.8.0":
   version: 7.8.0
   resolution: "@electron-forge/shared-types@npm:7.8.0"
@@ -512,15 +500,6 @@ __metadata:
     "@electron-forge/template-base": 7.8.0
     fs-extra: ^10.0.0
   checksum: f12d27d2eca3256603c234e6a061418067f62bc3e60a7974bdc394875ea1ee7220e0ba8ae526ffd6158ceadd89caca482763087df0f58f7d98a7ebb38029ebe5
-  languageName: node
-  linkType: hard
-
-"@electron-forge/tracer@npm:7.7.0":
-  version: 7.7.0
-  resolution: "@electron-forge/tracer@npm:7.7.0"
-  dependencies:
-    chrome-trace-event: ^1.0.3
-  checksum: 1acbf656d4873f97fa57ac23476ea61fe6312fafd04e55c8b81cd4dc347c5747a8496a919fb56d8077bb5e34da746d1bef1ea4f80bece0d9aa3c8c6170093bb1
   languageName: node
   linkType: hard
 
@@ -1471,6 +1450,18 @@ __metadata:
     "@types/qs": "*"
     "@types/range-parser": "*"
   checksum: 064080c3c21136f9017e108559602ec5989ce90828d6ede6e3c375e5693a72500b3c06206cdc4a59496ae1ad8af1e282223efb3d79907233fc4811a2cf4d4392
+  languageName: node
+  linkType: hard
+
+"@types/express-serve-static-core@npm:^4.17.21":
+  version: 4.19.6
+  resolution: "@types/express-serve-static-core@npm:4.19.6"
+  dependencies:
+    "@types/node": "*"
+    "@types/qs": "*"
+    "@types/range-parser": "*"
+    "@types/send": "*"
+  checksum: b0576eddc2d25ccdf10e68ba09598b87a4d7b2ad04a81dc847cb39fe56beb0b6a5cc017b1e00aa0060cb3b38e700384ce96d291a116a0f1e54895564a104aae9
   languageName: node
   linkType: hard
 
@@ -11364,7 +11355,7 @@ __metadata:
     vue-template-compiler: ^2.7.16
     webpack: ^5.98.0
     webpack-cli: ^6.0.1
-    webpack-dev-server: ^5.2.0
+    webpack-dev-server: ^5.2.1
     webpack-merge: ^6.0.1
   languageName: unknown
   linkType: soft
@@ -11605,13 +11596,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-dev-server@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "webpack-dev-server@npm:5.2.0"
+"webpack-dev-server@npm:^5.2.1":
+  version: 5.2.1
+  resolution: "webpack-dev-server@npm:5.2.1"
   dependencies:
     "@types/bonjour": ^3.5.13
     "@types/connect-history-api-fallback": ^1.5.4
     "@types/express": ^4.17.21
+    "@types/express-serve-static-core": ^4.17.21
     "@types/serve-index": ^1.9.4
     "@types/serve-static": ^1.15.5
     "@types/sockjs": ^0.3.36
@@ -11645,7 +11637,7 @@ __metadata:
       optional: true
   bin:
     webpack-dev-server: bin/webpack-dev-server.js
-  checksum: 87b7acc194cfa3e5c95cd797bf1f0c2ffc8718bbc02e8f47777b9a861a6b7691f27c5138162ba2a9ac2c337d122e14f220342789c290027a3f9db44b4af104c9
+  checksum: cb96b182970dad1ea67ccca7b1c7a207ee0815c3b65218b08a8fad07df6a1854a2fed3588b17b06a99f28c999f4f391d551a42058cf02425ff7d0d21bfd2d27f
   languageName: node
   linkType: hard
 
