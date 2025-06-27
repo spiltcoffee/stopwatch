@@ -10667,10 +10667,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^4.1.10":
-  version: 4.1.10
-  resolution: "tailwindcss@npm:4.1.10"
-  checksum: acf0200beae4242af32075dae0733fd6e766ff3c36f0df5730be5ec3f73250baf8bdd87d903ecd81377205411c5b4e6844ebd105cf86f67cf6ceb5737e05d054
+"tailwindcss@npm:^4.1.11":
+  version: 4.1.11
+  resolution: "tailwindcss@npm:4.1.11"
+  checksum: db5883219aa7b4192aa13a028547867c5d6c18b3438b99c25ac7af64c3f9475d1b96970cb27f52f6f53789bb91d8fc4ed8e7f181c73ba7dda721cf5a44983804
   languageName: node
   linkType: hard
 
@@ -11315,7 +11315,7 @@ __metadata:
     prettier: ^3.6.1
     process: ^0.11.10
     style-loader: ^4.0.0
-    tailwindcss: ^4.1.10
+    tailwindcss: ^4.1.11
     ts-loader: ^9.5.2
     typescript: ^5.8.3
     update-electron-app: ^3.1.1
